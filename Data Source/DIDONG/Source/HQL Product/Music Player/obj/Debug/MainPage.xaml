@@ -10,7 +10,8 @@
 
     <Grid>
         <ListView x:Name="lvShow" HorizontalAlignment="Left" Height="234" Margin="10,10,0,0" VerticalAlignment="Top" Width="380" FontSize="20"/>
-        <Button Content="Next" HorizontalAlignment="Left" Margin="281,582,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button x:ConnectionId='1' Content="Next" HorizontalAlignment="Left" Margin="281,582,0,0" VerticalAlignment="Top"                     />
         <MediaElement x:Name="mediaShow" HorizontalAlignment="Left" Height="242" Margin="10,222,0,0" VerticalAlignment="Top" Width="380"/>
     </Grid>
 </Page>
+

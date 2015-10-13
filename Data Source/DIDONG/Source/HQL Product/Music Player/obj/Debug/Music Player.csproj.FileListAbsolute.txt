@@ -1,0 +1,37 @@
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\App.g.i.cs
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\App.g.cs
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\LandScape.g.i.cs
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\LandScape.g.cs
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\MainPage.g.i.cs
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\MainPage.g.cs
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\App.xaml
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\LandScape.xaml
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\App.xbf
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\LandScape.xbf
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\MainPage.xaml
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\MainPage.xbf
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\App.xbf
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\LandScape.xbf
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\MainPage.xbf
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\Music Player.xr.xml
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\Music Player.exe
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\Music Player.pdb
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\resources.pri
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\AppxManifest.xml
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\Music Player.build.appxrecipe
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\Music Player.exe
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\Music Player.pdb
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\priconfig.xml
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\priconfig.xml.intermediate
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\layout.resfiles
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\layout.resfiles.intermediate
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\resources.resfiles
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\resources.resfiles.intermediate
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\pri.resfiles
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\pri.resfiles.intermediate
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\qualifiers.txt
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\ProjectArchitectures.txt
