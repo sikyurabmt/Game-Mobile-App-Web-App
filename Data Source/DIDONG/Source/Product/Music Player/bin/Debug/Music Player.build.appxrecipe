@@ -7,55 +7,55 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>30547048-84f8-4160-b4dc-a0ad52803940</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\Music Player.exe">
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\Music Player.exe">
       <PackagePath>Music Player.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\PortraitList.xbf">
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\PortraitList.xbf">
       <PackagePath>PortraitList.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\Music Player.xr.xml">
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\Music Player.xr.xml">
       <PackagePath>Music Player.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\HQL Product\Music Player\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
