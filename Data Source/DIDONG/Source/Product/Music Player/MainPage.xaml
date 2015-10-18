@@ -10,7 +10,7 @@
 
     <Page.BottomAppBar>
         <CommandBar Background="#FF7C92B9" Foreground="#FF0E0544">
-            <AppBarButton x:Name="btbarShuffle" Icon="Accept" Label="Shuffle" FontSize="29.333" Click="btbarShuffle_Click"/>
+            <AppBarButton x:Name="btbarShuffle" Label="Shuffle" FontSize="29.333" Click="btbarShuffle_Click" Icon="Shuffle"/>
             <AppBarButton x:Name="btbarRepeat" Label="Repeat" FontSize="29.333" Click="btbarRepeat_Click" Icon="RepeatOne"/>
             <AppBarButton x:Name="btbarList" Icon="list" Label="List" FontSize="29.333" Click="btbarList_Click"/>
         </CommandBar>
@@ -19,10 +19,12 @@
     <Grid Background="#FF283270" Loaded="Grid_Loaded">
         <MediaElement x:Name="mediaShow" HorizontalAlignment="Left" Height="170" Margin="10,85,0,0" VerticalAlignment="Top" Width="380"></MediaElement>
         <Grid HorizontalAlignment="Left" Margin="10,450,0,10" Width="380">
-            <Slider x:Name="progressBar" Margin="10,0,10,0" VerticalAlignment="Top" Height="40"/>
+            <Slider x:Name="progressBar" Margin="10,0,10,0" VerticalAlignment="Top" Height="40" ValueChanged="progressBar_ValueChanged"/>
             <AppBarButton x:Name="btPP" HorizontalAlignment="Left" Icon="Play" Label="Play" Margin="150,40,0,0" VerticalAlignment="Top" Foreground="#FF9BD4E0" FontSize="29.333" Click="btPP_Click"/>
             <AppBarButton x:Name="btNext" HorizontalAlignment="Left" Icon="Next" Label="Next" Margin="220,40,0,0" VerticalAlignment="Top" Foreground="#FF9BD4E0" FontSize="29.333" Click="btNext_Click" Width="80"/>
             <AppBarButton x:Name="btPrev" HorizontalAlignment="Left" Label="Previous" Margin="80,40,0,0" VerticalAlignment="Stretch" Foreground="#FF9BD4E0" Icon="Previous" FontSize="29.333" Click="btPrev_Click"/>
+            <TextBlock x:Name="tblNowTime" HorizontalAlignment="Left" Margin="10,45,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="25" FontSize="15"/>
+            <TextBlock x:Name="tblTotalTime" HorizontalAlignment="Right" Margin="0,45,9,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="25" FontSize="15"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="80" Margin="10,0,0,0" VerticalAlignment="Top" Width="380">
             <TextBlock x:Name="tblTitle" HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="Title of song" VerticalAlignment="Top" Height="34" Width="380" FontSize="28" FontWeight="Bold" Foreground="#FF9ECBD3"/>

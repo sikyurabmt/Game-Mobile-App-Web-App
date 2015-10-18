@@ -32,7 +32,7 @@ namespace Music_Player
     {
 
         MusicManager musicManager = new MusicManager();
-        int nSeconds = 0;
+        DispatcherTimer playTimer;
 
         public MainPage()
         {
@@ -40,6 +40,34 @@ namespace Music_Player
             this.NavigationCacheMode = NavigationCacheMode.Required;
             musicManager.initList();
             HardwareButtons.BackPressed += HardwareButtons_BackPressed;
+
+            playTimer = new DispatcherTimer();
+            playTimer.Interval = TimeSpan.FromSeconds(1); //one second
+            playTimer.Tick += new EventHandler<object>(playTimer_Tick);
+            playTimer.Start();
+        }
+
+        public void playTimer_Tick(object sender, object e)
+        {
+            if (BackgroundMediaPlayer.Current.CurrentState == MediaPlayerState.Playing)
+            {
+                progressBar.Value = BackgroundMediaPlayer.Current.Position.TotalSeconds;
+                try
+                {
+                    tblNowTime.Text = String.Format(@"{0:hh\:mm\:ss}",
+                                       BackgroundMediaPlayer.Current.Position).Remove(8);
+                }
+                catch
+                {
+                    tblNowTime.Text = String.Format(@"{0:hh\:mm\:ss}",
+                                       BackgroundMediaPlayer.Current.Position);
+                }
+            }
+            if (BackgroundMediaPlayer.Current.NaturalDuration.TotalSeconds == BackgroundMediaPlayer.Current.Position.TotalSeconds)
+            {
+                musicManager.getNextNumber();
+                startMusic_getMusicProperties(MusicManager.musicList[MusicManager.STT]);
+            }
         }
         void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
         {
@@ -68,14 +96,11 @@ namespace Music_Player
             MusicManager.state = MusicManager.MediaState.PLAY;
             tblTitle.Text = musicManager.musicProperties.Title;
             tblArtist.Text = musicManager.musicProperties.Artist;
-
-            nSeconds = (int)musicManager.musicProperties.Duration.TotalSeconds;
-            progressBar.Maximum = nSeconds;
-
+            tblTotalTime.Text = String.Format(@"{0:hh\:mm\:ss}", musicManager.musicProperties.Duration);
+            progressBar.Maximum = musicManager.musicProperties.Duration.TotalSeconds;
             btPP.Icon = new SymbolIcon(Symbol.Pause);
             btPP.Label = "Pause";
         }
-
 
         private void pauseMusic()
         {
@@ -92,35 +117,10 @@ namespace Music_Player
             MusicManager.state = MusicManager.MediaState.PLAY;
             tblArtist.Text = musicManager.musicProperties.Artist;
         }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
-        }
-
-        private void btPP_Click(object sender, RoutedEventArgs e)
-        {
-            if (MusicManager.state == MusicManager.MediaState.STOP)
-            {
-                startMusic_getMusicProperties(MusicManager.musicList[MusicManager.STT]);
-            }
-            else
-            {
-                if (MusicManager.state == MusicManager.MediaState.PLAY)
-                {
-                    pauseMusic();
-                    btPP.Icon = new SymbolIcon(Symbol.Play);
-                    btPP.Label = "Play";
-                }
-                else
-                {
-                    if (MusicManager.state == MusicManager.MediaState.PAUSE)
-                    {
-                        playMusic();
-                        btPP.Icon = new SymbolIcon(Symbol.Pause);
-                        btPP.Label = "Pause";
-                    }
-                }
-            }
+            //tblNowTime.Text = BackgroundMediaPlayer.Current.Position.Seconds.ToString();
         }
 
         private void btNext_Click(object sender, RoutedEventArgs e)
@@ -128,7 +128,6 @@ namespace Music_Player
             musicManager.getNextNumber();
             startMusic_getMusicProperties(MusicManager.musicList[MusicManager.STT]);
         }
-
 
         private void btPrev_Click(object sender, RoutedEventArgs e)
         {
@@ -141,64 +140,80 @@ namespace Music_Player
             Frame.Navigate(typeof(PortraitList));
         }
 
+        private void btPP_Click(object sender, RoutedEventArgs e)
+        {
+            switch (MusicManager.state)
+            {
+                case MusicManager.MediaState.PLAY:
+                    pauseMusic();
+                    btPP.Icon = new SymbolIcon(Symbol.Play);
+                    btPP.Label = "Play";
+                    break;
+                case MusicManager.MediaState.PAUSE:
+                    playMusic();
+                    btPP.Icon = new SymbolIcon(Symbol.Pause);
+                    btPP.Label = "Pause";
+                    break;
+                case MusicManager.MediaState.STOP:
+                    startMusic_getMusicProperties(MusicManager.musicList[MusicManager.STT]);
+                    break;
+                default:
+                    break;
+            }
+        }
+
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-            if (MusicManager.nof == MusicManager.NumOfLoad.FIRST)
+            switch (MusicManager.nof)
             {
-                
-            }
-            else
-            {
-                if (MusicManager.nof == MusicManager.NumOfLoad.SECOND)
-                {
+                case MusicManager.NumOfLoad.FIRST:
+                    break;
+                case MusicManager.NumOfLoad.SECOND:
                     startMusic_getMusicProperties(MusicManager.musicList[MusicManager.STT]);
-                }
+                    break;
             }
         }
 
         private void btbarRepeat_Click(object sender, RoutedEventArgs e)
         {
-            if (MusicManager.rp == MusicManager.Repeat.ALL)
+            switch (MusicManager.rp)
             {
-                MusicManager.rp = MusicManager.Repeat.ONE;
-                btbarRepeat.Icon = new SymbolIcon(Symbol.RepeatOne);
-                btbarRepeat.Label = "One";
-            }
-            else
-            {
-                if (MusicManager.rp == MusicManager.Repeat.ONE)
-                {
+                case MusicManager.Repeat.ONE:
                     MusicManager.rp = MusicManager.Repeat.NO;
-                    btbarRepeat.Icon = new SymbolIcon(Symbol.Accept);
+                    btbarRepeat.Icon = new SymbolIcon(Symbol.RepeatAll);
                     btbarRepeat.Label = "No";
-                }
-                else
-                {
-                    if (MusicManager.rp == MusicManager.Repeat.NO)
-                    {
-                        MusicManager.rp = MusicManager.Repeat.ALL;
-                        btbarRepeat.Icon = new SymbolIcon(Symbol.RepeatAll);
-                        btbarRepeat.Label = "All";
-                    }
-                }
+                    break;
+                case MusicManager.Repeat.ALL:
+                    MusicManager.rp = MusicManager.Repeat.ONE;
+                    btbarRepeat.Icon = new SymbolIcon(Symbol.RepeatOne);
+                    btbarRepeat.Label = "One";
+                    break;
+                case MusicManager.Repeat.NO:
+                    MusicManager.rp = MusicManager.Repeat.ALL;
+                    btbarRepeat.Icon = new SymbolIcon(Symbol.Sync);
+                    btbarRepeat.Label = "All";
+                    break;
             }
         }
 
         private void btbarShuffle_Click(object sender, RoutedEventArgs e)
         {
-            if (MusicManager.pb == MusicManager.Playback.ORDER)
+            switch (MusicManager.pb)
             {
-                MusicManager.pb = MusicManager.Playback.RANDOM;
-                btbarShuffle.Icon = new SymbolIcon(Symbol.Shuffle);
-            }
-            else
-            {
-                if (MusicManager.pb == MusicManager.Playback.RANDOM)
-                {
+                case MusicManager.Playback.ORDER:
+                    MusicManager.pb = MusicManager.Playback.RANDOM;
+                    btbarShuffle.Icon = new SymbolIcon(Symbol.Shuffle);
+                    break;
+                case MusicManager.Playback.RANDOM:
                     MusicManager.pb = MusicManager.Playback.ORDER;
-                    btbarShuffle.Icon = new SymbolIcon(Symbol.Accept);
-                }
+                    btbarShuffle.Icon = new SymbolIcon(Symbol.ShowBcc);
+                    break;
             }
+        }
+
+        private void progressBar_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
         }
     }
 }
