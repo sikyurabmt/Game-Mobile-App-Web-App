@@ -12,8 +12,8 @@ namespace Music_Player
     public class MusicManager
     {
         public StorageFolder folder = KnownFolders.MusicLibrary;   //type folder
-        public MusicProperties musicProperties;
         public static List<StorageFile> musicList = new List<StorageFile>();
+        public MusicProperties musicProperties;
         public static int STT = 0;
         public static MediaState state;
         public static NumOfLoad nof;
@@ -66,13 +66,17 @@ namespace Music_Player
 
         public void getNextNumber()
         {
+            if (rp == Repeat.ONE)
+            {
+                return;
+            }
             if (pb == Playback.RANDOM)
             {
                 Random rNum = new Random();
                 STT = rNum.Next(0, MusicManager.musicList.Count - 1);
                 return;
             }
-            if (pb == Playback.ORDER || rp == Repeat.ALL)
+            if (pb == Playback.ORDER && (rp == Repeat.ALL || rp ==Repeat.NO))
             {
                 if (STT == musicList.Count - 1)
                 {
@@ -82,10 +86,6 @@ namespace Music_Player
                 {
                     STT++;
                 }
-                return;
-            }
-            if (rp == Repeat.ONE)
-            {
                 return;
             }
         }

@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="#FF283270">
         <TextBlock x:Name="tblNumber" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="List Music" VerticalAlignment="Top" Height="64" Width="380" FontSize="33"/>
         <ListBox x:ConnectionId='1' x:Name="lbList" HorizontalAlignment="Left" Height="551" Margin="10,79,0,0" VerticalAlignment="Top" Width="380"                       />
     </Grid>

@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
+using Windows.Phone.UI.Input;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -35,6 +36,21 @@ namespace Music_Player
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+            HardwareButtons.BackPressed += HardwareButtons_BackPressed;
+        }
+        void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+
+            if (rootFrame != null && rootFrame.CanGoBack)
+            {
+                e.Handled = true;
+                rootFrame.GoBack();
+            }
+            else
+            {
+                Application.Current.Exit();
+            }
         }
 
         /// <summary>

@@ -32,17 +32,6 @@ namespace Music_Player
             {
                 lbList.Items.Add(item.Name);
             }
-            HardwareButtons.BackPressed += HardwareButtons_BackPressed;
-        }
-        void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
-        {
-            Frame rootFrame = Window.Current.Content as Frame;
-            if (rootFrame != null && rootFrame.CanGoBack)
-            {
-                e.Handled = true;
-                rootFrame.GoBack();
-            }
-            MusicManager.nof = MusicManager.NumOfLoad.FIRST;
         }
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
