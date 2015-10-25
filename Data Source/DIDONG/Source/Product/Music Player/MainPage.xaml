@@ -21,7 +21,7 @@
             <AppBarButton x:Name="btShuffle" Label="Shuffle" Margin="80,40,0,0" Icon="Shuffle" Click="btShuffle_Click" Foreground="Gray"/>
             <AppBarButton x:Name="btRepeat" Label="Repeat" Margin="150,40,0,0" Icon="RepeatOne" Click="btRepeat_Click"/>
             <AppBarButton x:Name="btList" Label="List" Margin="220,40,0,0" Icon="List" Click="btList_Click"/>
-            <Slider x:Name="progressBar" Margin="10,0,10,0" VerticalAlignment="Top" Height="40" Tapped="progressBar_Tapped"/>
+            <Slider x:Name="progressBar" Margin="10,0,10,0" VerticalAlignment="Top" Height="40" Tapped="progressBar_Tapped" ValueChanged="progressBar_ValueChanged"/>
             <TextBlock x:Name="tblNowTime" HorizontalAlignment="Left" Margin="10,45,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="25" FontSize="15"/>
             <TextBlock x:Name="tblTotalTime" HorizontalAlignment="Right" Margin="0,45,9,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="25" FontSize="15"/>
         </Grid>

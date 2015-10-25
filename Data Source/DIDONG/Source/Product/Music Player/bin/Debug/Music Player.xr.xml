@@ -48,6 +48,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootEvent Name="Tapped" />
+      <RootEvent Name="ValueChanged" />
     </RootType>
     <RootType FullName="Music_Player.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">

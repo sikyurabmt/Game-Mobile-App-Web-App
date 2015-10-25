@@ -201,5 +201,10 @@ namespace Music_Player
         {
             BackgroundMediaPlayer.Current.Position = new TimeSpan(0, 0, (int)progressBar.Value);
         }
+
+        private void progressBar_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
+        }
     }
 }

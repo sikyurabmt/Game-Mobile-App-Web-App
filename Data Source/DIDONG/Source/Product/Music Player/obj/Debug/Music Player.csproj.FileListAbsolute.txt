@@ -72,3 +72,40 @@ D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\qu
 D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\qualifiers.txt.intermediate
 D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\ProjectArchitectures.txt
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\App.xbf
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\MainPage.xbf
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\PortraitList.xbf
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\Music Player.xr.xml
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\Music Player.exe
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\Music Player.pdb
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\resources.pri
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\AppxManifest.xml
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\bin\Debug\Music Player.build.appxrecipe
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\App.g.i.cs
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\App.g.cs
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\MainPage.g.i.cs
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\MainPage.g.cs
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\PortraitList.g.i.cs
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\PortraitList.g.cs
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\XamlTypeInfo.g.cs
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\App.xaml
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\PortraitList.xaml
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\App.xbf
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\PortraitList.xbf
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\XamlSaveStateFile.xml
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\MainPage.xaml
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\MainPage.xbf
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\Music Player.exe
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\Music Player.pdb
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\priconfig.xml
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\priconfig.xml.intermediate
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\layout.resfiles
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\layout.resfiles.intermediate
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\resources.resfiles
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\resources.resfiles.intermediate
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\pri.resfiles
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\pri.resfiles.intermediate
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\qualifiers.txt
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\qualifiers.txt.intermediate
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Học tập\Năm 3, học kì 1\HQL\Data Source\DIDONG\Source\Product\Music Player\obj\Debug\ProjectArchitectures.txt

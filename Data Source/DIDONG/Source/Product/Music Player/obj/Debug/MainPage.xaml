@@ -21,7 +21,7 @@
             <AppBarButton x:ConnectionId='5' x:Name="btShuffle" Label="Shuffle" Margin="80,40,0,0" Icon="Shuffle"                         Foreground="Gray"/>
             <AppBarButton x:ConnectionId='6' x:Name="btRepeat" Label="Repeat" Margin="150,40,0,0" Icon="RepeatOne"                       />
             <AppBarButton x:ConnectionId='7' x:Name="btList" Label="List" Margin="220,40,0,0" Icon="List"                     />
-            <Slider x:ConnectionId='8' x:Name="progressBar" Margin="10,0,10,0" VerticalAlignment="Top" Height="40"                            />
+            <Slider x:ConnectionId='8' x:Name="progressBar" Margin="10,0,10,0" VerticalAlignment="Top" Height="40"                                                                    />
             <TextBlock x:Name="tblNowTime" HorizontalAlignment="Left" Margin="10,45,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="25" FontSize="15"/>
             <TextBlock x:Name="tblTotalTime" HorizontalAlignment="Right" Margin="0,45,9,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="25" FontSize="15"/>
         </Grid>
