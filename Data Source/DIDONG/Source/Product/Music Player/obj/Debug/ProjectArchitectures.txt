@@ -1,1 +1,0 @@
-D:\Data Projects\HQL\Data Source\DIDONG\Source\Product\Music Player\Music Player.csproj;neutral
