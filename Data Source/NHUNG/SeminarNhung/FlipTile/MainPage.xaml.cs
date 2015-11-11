@@ -22,6 +22,33 @@ namespace FlipTile
             //BuildLocalizedApplicationBar();
         }
 
+        private void bt_Updated(object sender, RoutedEventArgs e)
+        {
+            Uri mp = new Uri("/MainPage.xaml?", UriKind.Relative);
+            ShellTile PinnedTile = ShellTile.ActiveTiles.First();
+
+            FlipTileData TileData = new FlipTileData
+            {
+                Title = "Flip Tile",
+
+                Count = 10,
+                
+                SmallBackgroundImage = new Uri("/Assets/Tiles/SmallCalendarIcon.png", UriKind.Relative),
+                BackgroundImage = new Uri("/Assets/Tiles/BackGroundImage.png", UriKind.Relative),
+                BackBackgroundImage = new Uri("/Assets/Tiles/BackGroundImage.png", UriKind.Relative),
+
+                WideBackgroundImage = new Uri("/Assets/Tiles/LargeBackgroundImage.png", UriKind.Relative),
+                WideBackBackgroundImage = new Uri("/Assets/Tiles/LargeBackgroundImage.png", UriKind.Relative),
+
+                BackTitle = "Flip Tile", // title when it flip
+                BackContent = "I need time -_-", // content when it flip
+                WideBackContent = "Seminar Flip Tile" // content of WideBackground
+            };
+
+            PinnedTile.Update(TileData);
+            ShellTile.Create(mp, TileData, true);
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{
