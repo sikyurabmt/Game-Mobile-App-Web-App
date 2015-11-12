@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Bin\Debug\Calendar_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="11/12/2015 1:03:16 AM">
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="11/12/2015 12:25:06 AM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\obj\Debug\Calendar.dll" archivePath="Calendar.dll" lastWriteTime="11/12/2015 1:03:15 AM" />
+﻿<xapCache source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Bin\Debug\Calendar_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="11/12/2015 3:41:56 PM">
+  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="11/12/2015 9:40:18 AM" />
+  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\obj\Debug\Calendar.dll" archivePath="Calendar.dll" lastWriteTime="11/12/2015 3:41:55 PM" />
   <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="11/11/2015 9:23:05 PM" />
   <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="11/11/2015 9:23:05 PM" />
   <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="11/11/2015 9:23:05 PM" />
@@ -17,6 +17,6 @@
   <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="11/11/2015 9:23:05 PM" />
   <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="11/11/2015 9:23:05 PM" />
   <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="11/11/2015 9:23:08 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="11/12/2015 1:03:16 AM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="11/12/2015 12:25:06 AM" />
+  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="11/12/2015 3:41:56 PM" />
+  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="11/12/2015 9:40:18 AM" />
 </xapCache>

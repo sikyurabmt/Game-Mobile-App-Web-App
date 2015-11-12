@@ -48,10 +48,12 @@ namespace Calendar
             }
         }
 
+        
+
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            var obj = PhoneApplicationService.Current.State["List"];
+            //var obj = PhoneApplicationService.Current.State["List"];
 
         }
         private void previousMonth(object sender, RoutedEventArgs e)

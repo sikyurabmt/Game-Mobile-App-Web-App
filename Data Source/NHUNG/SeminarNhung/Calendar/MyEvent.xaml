@@ -32,10 +32,47 @@
             <TextBox x:Name="txtLocal" HorizontalAlignment="Left" Height="72" Margin="1,197,-1,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456"/>
             <TextBlock HorizontalAlignment="Left" Margin="24,11,0,0" TextWrapping="Wrap" Text="Subject" VerticalAlignment="Top" RenderTransformOrigin="0.635,1.711" Height="48" Width="119"/>
             <TextBlock HorizontalAlignment="Left" Margin="19,151,0,0" TextWrapping="Wrap" Text="Local" VerticalAlignment="Top" Height="42"/>
-            <TextBox x:Name="txtDate" HorizontalAlignment="Left" Height="72" Margin="-1,327,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456"/>
+
             <TextBlock HorizontalAlignment="Left" Margin="23,281,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" Height="45"/>
+            <TextBlock HorizontalAlignment="Left" Margin="170,281,214,222" TextWrapping="Wrap" Text="Month" VerticalAlignment="Top" Height="45"/>
+            <TextBlock HorizontalAlignment="Left" Margin="373,281,0,0" TextWrapping="Wrap" Text="Year" VerticalAlignment="Top" Height="45"/>
             <ProgressBar HorizontalAlignment="Left" Height="80" Margin="21,469,0,0" VerticalAlignment="Top" Width="410"/>
             <Button x:Name="btSave" Content="Save" HorizontalAlignment="Left" Margin="149,459,0,0" VerticalAlignment="Top" Click="btSave_Click"/>
+
+            <ListBox Name="listMonth"  IsEnabled="True" DataContext="{Binding listmonth}" Margin="170,316,214,222" Visibility="Visible" Tap="listMonth_Tapped" Loaded="listMonth_Loaded" SelectionChanged="listMonth_SelectionChanged" >
+                <ListBox.Background>
+                    <SolidColorBrush Color="{StaticResource PhoneBorderColor}"/>
+                </ListBox.Background>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding strMonth}" Height="70" FontSize="40"  Padding="15,10,5,10"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <ListBox Name="listYear"  DataContext="{Binding listyear}" Margin="328,314,38,224" Visibility="Visible" Tap="listYear_Tapped" Loaded="listYear_Loaded" SelectionChanged="listYear_SelectionChanged" >
+                <ListBox.Foreground>
+                    <SolidColorBrush Color="{StaticResource PhoneBorderColor}"/>
+                </ListBox.Foreground>
+                <ListBox.Background>
+                    <SolidColorBrush Color="{StaticResource PhoneBorderColor}"/>
+                </ListBox.Background>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding strYear}" Height="70" FontSize="40"  Padding="8,10,5,10"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <ListBox Name="listDate" IsEnabled="True"  DataContext="{Binding listdate}" Margin="34,315,350,223" Visibility="Visible" Tap="listDate_Tapped" Loaded="listDate_Loaded" SelectionChanged="listDate_SelectionChanged" >
+                <ListBox.Background>
+                    <SolidColorBrush Color="{StaticResource PhoneBorderColor}"/>
+                </ListBox.Background>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding strDate}" Height="70" FontSize="40"  Padding="15,10,5,10"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </Grid>
     </Grid>
 
