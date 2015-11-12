@@ -46,7 +46,7 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" Loaded="MainPage_Loaded">
 
             <StackPanel HorizontalAlignment="Center" Background="#FF575757" Height="400">
                 <StackPanel>
@@ -223,7 +223,8 @@
             <Button Name  ="btAdd" Content="Add" HorizontalAlignment="Left" Margin="177,514,0,0" VerticalAlignment="Top" Click="btAdd_Click"/>
         </Grid>
         <Canvas HorizontalAlignment="Left" Height="100" Margin="651,304,-271,0" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
-        
+        <TextBlock x:Name="tb_test" HorizontalAlignment="Left" Margin="288,512,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="181"/>
+
 
         <!--Uncomment to see an alignment grid to help ensure your controls are
             aligned on common boundaries.  The image has a top margin of -32px to

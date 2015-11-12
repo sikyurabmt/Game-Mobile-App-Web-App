@@ -16,13 +16,16 @@ namespace Calendar
     {
         // Constructor
         DateTime calendarDate;
-       
+        List<EventData> list = new List<EventData>();
+
         public MainPage()
         {
             InitializeComponent();
             calendarDate = DateTime.Today;
             Initialize_Calendar(calendarDate);
 
+
+           // var k = PhoneApplicationService.Current.State["List"];
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
         }
@@ -50,12 +53,7 @@ namespace Calendar
 
         
 
-        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
-        {
-            base.OnNavigatedTo(e);
-            //var obj = PhoneApplicationService.Current.State["List"];
-
-        }
+        
         private void previousMonth(object sender, RoutedEventArgs e)
         {
             calendarDate = calendarDate.AddMonths(-1);
@@ -70,17 +68,56 @@ namespace Calendar
 
         private void tap1(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            
+           
         }
 
         private void btAdd_Click(object sender, RoutedEventArgs e)
         {
+           
             NavigationService.Navigate(new Uri("/MyEvent.xaml", UriKind.Relative));
         }
 
-     
-     
-    }
+        private void MainPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            string subject, local, date;
+           if(NavigationContext.QueryString.TryGetValue("subject", out subject))
+           {
+               subject = string.Format("subject: {0}", subject);
+           }
 
-   
+            if(NavigationContext.QueryString.TryGetValue("local", out local))
+            {
+                local = string.Format("\tLocal: {0}", local);
+            }
+
+            if(NavigationContext.QueryString.TryGetValue("date", out date))
+            {
+                date = string.Format("\tDate: {0}", date);
+            }
+
+            tb_test.Text = subject + local + date;
+
+            ShellTile PinnedTile = ShellTile.ActiveTiles.First();
+
+            FlipTileData TileData = new FlipTileData
+            {
+                Title = "Flip Tile",
+
+                Count = 10,
+
+                SmallBackgroundImage = new Uri("/Assets/Tiles/SmallCalendarIcon.png", UriKind.Relative),
+                BackgroundImage = new Uri("/Assets/Tiles/BackGroundImage.png", UriKind.Relative),
+                BackBackgroundImage = new Uri("/Assets/Tiles/BackGroundImage.png", UriKind.Relative),
+
+                WideBackgroundImage = new Uri("/Assets/Tiles/LargeBackgroundImage.png", UriKind.Relative),
+                WideBackBackgroundImage = new Uri("/Assets/Tiles/LargeBackgroundImage.png", UriKind.Relative),
+
+                BackTitle = tb_test.Text, // title when it flip
+                BackContent =  tb_test.Text, // content when it flip
+                WideBackContent = "Seminar Flip Tile" // content of WideBackground
+            };
+
+            PinnedTile.Update(TileData);
+        }
+    }
 }

@@ -13,7 +13,7 @@ namespace Calendar
 {
     public partial class MyEvent : PhoneApplicationPage
     {
-        List<EventData> List;
+        public List<EventData> List;
         public ObservableCollection<ListDate> listdate { get; set; }
         public ObservableCollection<ListYear> listyear { get; set; }
         public ObservableCollection<ListMonth> listmonth { get; set; }
@@ -36,18 +36,15 @@ namespace Calendar
         {
             List = new List<EventData>();
             EventData data = new EventData();
-            Uri a = new Uri("/MainPage.xaml", UriKind.Relative);
-           // navigate = new Navigate(this.NavigationService,a,  List);
+         
             data.strSubject = txtSubject.Text;
             data.strLocal = txtLocal.Text;
             data.date = DateTime.Today;
+            string strdate = data.date.ToString();
             List.Add(data);
-            PhoneApplicationService.Current.State["List"] = List;
-           // NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
-            //NavigationService.Navigate(new Uri("/MainPage.xaml?object1=" + List, UriKind.Relative));
-            
+            string uri = string.Format("/MainPage.xaml?subject={0}&local={1}&date={2}" ,data.strSubject,data.strLocal,strdate);
+            NavigationService.Navigate(new Uri(uri, UriKind.Relative));
         }
-
         void InitlistDate()
         {
             listdate = new ObservableCollection<ListDate>();
@@ -115,18 +112,7 @@ namespace Calendar
         {
             public string strYear{get;set;}
         }
-        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
-        {
-           
-        }
-        public class EventData
-        {
-            public string strSubject { get; set; }
-            public string strLocal { get; set; }
-            public DateTime date { get; set; }
-
-        }
-
+       
         private void listDate_Tapped(object sender, System.Windows.Input.GestureEventArgs e)
         {
             date = Convert.ToInt32(listDate.SelectedIndex + 1);
@@ -188,5 +174,9 @@ namespace Calendar
         {
             year = Convert.ToInt32(listYear.SelectedIndex + DateTime.Now.Year + 1);
         }
+
+       
+
+      
     }
 }

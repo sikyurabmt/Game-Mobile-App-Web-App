@@ -48,6 +48,18 @@
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Assets\Tiles\BackGroundImage.png">
+      <PackagePath>Assets\Tiles\BackGroundImage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Assets\Tiles\CalendarIcon.png">
+      <PackagePath>Assets\Tiles\CalendarIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Assets\Tiles\LargeBackgroundImage.png">
+      <PackagePath>Assets\Tiles\LargeBackgroundImage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Assets\Tiles\SmallICalendarIcon.png">
+      <PackagePath>Assets\Tiles\SmallICalendarIcon.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\Calendar\Assets\WideLogo.png">
       <PackagePath>Assets\WideLogo.png</PackagePath>
     </AppxPackagedFile>
