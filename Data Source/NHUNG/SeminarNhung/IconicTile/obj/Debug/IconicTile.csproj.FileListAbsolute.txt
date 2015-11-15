@@ -62,3 +62,9 @@ C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\qualifiers.txt
 C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\ProjectArchitectures.txt
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\IconicTile.build.appxrecipe
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\AppManifest.xaml
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\IconicTile_Debug_AnyCPU.xap
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\MDILProjectFiles.xml
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\XapCacheFile.xml

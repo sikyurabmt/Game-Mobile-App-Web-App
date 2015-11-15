@@ -1,26 +1,26 @@
-﻿<xapCache source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Bin\Debug\IconicTile_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="11/15/2015 12:04:14 PM">
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="11/13/2015 9:01:38 AM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\obj\Debug\IconicTile.dll" archivePath="IconicTile.dll" lastWriteTime="11/15/2015 12:04:13 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\SplashScreen.png" archivePath="Assets\SplashScreen.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\SquareTile150x150.png" archivePath="Assets\SquareTile150x150.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\SquareTile71x71.png" archivePath="Assets\SquareTile71x71.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\StoreLogo.png" archivePath="Assets\StoreLogo.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\Tiles\BackGroundImage.png" archivePath="Assets\Tiles\BackGroundImage.png" lastWriteTime="11/11/2015 7:42:15 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\Tiles\LargeBackgroundImage.png" archivePath="Assets\Tiles\LargeBackgroundImage.png" lastWriteTime="11/11/2015 7:44:46 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\Tiles\SmallICalendarIcon.png" archivePath="Assets\Tiles\SmallICalendarIcon.png" lastWriteTime="11/11/2015 7:47:37 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\WideLogo.png" archivePath="Assets\WideLogo.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="11/11/2015 7:30:39 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="11/11/2015 7:30:46 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Assets\Tiles\CalendarIcon.png" archivePath="Assets\Tiles\CalendarIcon.png" lastWriteTime="11/11/2015 7:42:45 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="11/11/2015 8:24:52 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="11/15/2015 12:04:13 PM" />
-  <file source="C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="11/13/2015 9:01:39 AM" />
+﻿<xapCache source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\IconicTile_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="11/15/2015 3:18:27 PM">
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="11/15/2015 3:18:26 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\IconicTile.dll" archivePath="IconicTile.dll" lastWriteTime="11/15/2015 3:18:26 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\SplashScreen.png" archivePath="Assets\SplashScreen.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\SquareTile150x150.png" archivePath="Assets\SquareTile150x150.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\SquareTile71x71.png" archivePath="Assets\SquareTile71x71.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\StoreLogo.png" archivePath="Assets\StoreLogo.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\Tiles\BackGroundImage.png" archivePath="Assets\Tiles\BackGroundImage.png" lastWriteTime="11/11/2015 7:42:15 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\Tiles\LargeBackgroundImage.png" archivePath="Assets\Tiles\LargeBackgroundImage.png" lastWriteTime="11/11/2015 7:44:46 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\Tiles\SmalICalendarIcon.png" archivePath="Assets\Tiles\SmalICalendarIcon.png" lastWriteTime="11/11/2015 7:47:37 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\WideLogo.png" archivePath="Assets\WideLogo.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="11/11/2015 7:30:39 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="11/11/2015 7:30:46 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Assets\Tiles\CalendarIcon.png" archivePath="Assets\Tiles\CalendarIcon.png" lastWriteTime="11/11/2015 7:42:45 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="11/11/2015 8:24:52 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="11/15/2015 3:18:27 PM" />
+  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="11/15/2015 3:18:26 PM" />
 </xapCache>

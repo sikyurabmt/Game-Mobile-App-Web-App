@@ -62,3 +62,9 @@ C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\qualifiers.txt
 C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\ProjectArchitectures.txt
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\CycleTile.build.appxrecipe
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\AppManifest.xaml
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\CycleTile_Debug_AnyCPU.xap
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\MDILProjectFiles.xml
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\XapCacheFile.xml
