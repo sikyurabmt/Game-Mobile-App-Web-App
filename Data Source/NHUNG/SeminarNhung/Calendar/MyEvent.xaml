@@ -27,7 +27,7 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" >
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" Loaded="MyEvent_Loaded">
             <TextBox x:Name="txtSubject" HorizontalAlignment="Left" Height="72" Margin="3,58,-3,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456"/>
             <TextBox x:Name="txtLocal" HorizontalAlignment="Left" Height="72" Margin="1,197,-1,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456"/>
             <TextBlock HorizontalAlignment="Left" Margin="24,11,0,0" TextWrapping="Wrap" Text="Subject" VerticalAlignment="Top" RenderTransformOrigin="0.635,1.711" Height="48" Width="119"/>
@@ -63,7 +63,7 @@
                 </ListBox.ItemTemplate>
             </ListBox>
 
-            <ListBox Name="listDate" IsEnabled="True"  DataContext="{Binding listdate}" Margin="34,315,350,223" Visibility="Visible" Tap="listDate_Tapped" Loaded="listDate_Loaded" SelectionChanged="listDate_SelectionChanged" >
+            <ListBox Name="listDate" IsEnabled="True"  DataContext="{Binding listdate}" Margin="34,315,350,223" Visibility="Visible" Tap="listDate_Tapped"  SelectionChanged="listDate_SelectionChanged" >
                 <ListBox.Background>
                     <SolidColorBrush Color="{StaticResource PhoneBorderColor}"/>
                 </ListBox.Background>

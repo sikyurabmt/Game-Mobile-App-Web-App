@@ -1,1 +1,1 @@
-c:\users\hang by\documents\visual studio 2013\Projects\SeminarNhung\IconicTile\IconicTile.csproj;neutral
+C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\IconicTile\IconicTile.csproj;neutral

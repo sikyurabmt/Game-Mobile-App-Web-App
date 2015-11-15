@@ -24,7 +24,7 @@ namespace FlipTile
 
         private void bt_Updated(object sender, RoutedEventArgs e)
         {
-            Uri mp = new Uri("/MainPage.xaml?", UriKind.Relative);
+            Uri mp = new Uri("/MainPage.xaml?", UriKind.Relative);// Navigate to the page for modifying Application Tile properties.
             ShellTile PinnedTile = ShellTile.ActiveTiles.First();
 
             FlipTileData TileData = new FlipTileData
@@ -41,7 +41,7 @@ namespace FlipTile
                 WideBackBackgroundImage = new Uri("/Assets/Tiles/LargeBackgroundImage.png", UriKind.Relative),
 
                 BackTitle = "Flip Tile", // title when it flip
-                BackContent = "I need time -_-", // content when it flip
+                BackContent = "Flip Tile", // content when it flip
                 WideBackContent = "Seminar Flip Tile" // content of WideBackground
             };
 

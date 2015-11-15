@@ -26,9 +26,9 @@ namespace IconicTile
         private void btUpdated_Click(object sender, RoutedEventArgs e)
         {
 
-            this.NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative)); //// Navigate to the page for modifying Application Tile properties.
+            this.NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative)); // Navigate to the page for modifying Application Tile properties.
             Uri mp = new Uri("/MainPage.xaml?", UriKind.Relative);
-            string strDay = DateTime.Today.ToString();
+            string strDay = DateTime.Today.ToString().Substring(0,10);
 
 
             IconicTileData TileData = new IconicTileData()
@@ -36,16 +36,15 @@ namespace IconicTile
                 Title = "Iconic Tile",
                 Count = 10,
                 WideContent1 = strDay,
-                WideContent2 = "a",
-                WideContent3 = "b",
+                WideContent2 = "WideContent2",
+                WideContent3 = "WideContent3",
                 SmallIconImage = new Uri("Assets/Tiles/CalendarIcon.png", UriKind.Relative),//Gets or sets the icon image for the small Tile size
                 //IconImage = new Uri("Assets/Tiles/CalendarIcon.png", UriKind.Relative),//Gets or sets the icon image for the medium and large Tile sizes
                // BackgroundColor = Color.FromArgb(255, 255, 255, 255),
             };
 
 
-            //ShellTile ShellTile = ShellTile.ActiveTiles.First();
-            ShellTile ShellTile = ShellTile.ActiveTiles.FirstOrDefault();
+            ShellTile ShellTile = ShellTile.ActiveTiles.First();
             ShellTile.Update(TileData);
             ShellTile.Create(mp, TileData, true);
         }

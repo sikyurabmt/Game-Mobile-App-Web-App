@@ -25,6 +25,7 @@ namespace CycleTile
         private void bt_Update(object sender, RoutedEventArgs e)
         {
             ShellTile ShellTile = ShellTile.ActiveTiles.First();
+            Uri mp = new Uri("/MainPage.xaml?", UriKind.Relative);
             CycleTileData TileData = new CycleTileData
             {
                 Title = "Cycle Tile",
@@ -37,6 +38,7 @@ namespace CycleTile
                      }
             };
             ShellTile.Update(TileData);
+            ShellTile.Create(mp, TileData, true);
         }
 
         // Sample code for building a localized ApplicationBar

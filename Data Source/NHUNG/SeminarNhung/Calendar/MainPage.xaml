@@ -82,7 +82,7 @@
                 <StackPanel Name="Calendar" Margin="0, 0, 0, 5">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <Grid Width="50" Height="30">
-                            <TextBlock Text="" VerticalAlignment="Center" HorizontalAlignment="Center" Tap="tap1"/>
+                            <TextBlock Text="" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Grid>
                         <Grid Width="50" Height="30">
                             <TextBlock Text="" VerticalAlignment="Center" HorizontalAlignment="Center"/>

@@ -14,22 +14,21 @@ namespace Calendar
 {
     public partial class MainPage : PhoneApplicationPage
     {
-        // Constructor
+        #region Constructor
         DateTime calendarDate;
-        List<EventData> list = new List<EventData>();
-
+        string result = "";
         public MainPage()
         {
             InitializeComponent();
             calendarDate = DateTime.Today;
             Initialize_Calendar(calendarDate);
 
-
-           // var k = PhoneApplicationService.Current.State["List"];
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
         }
+        #endregion
 
+        #region Init Calendar
         void Initialize_Calendar(DateTime date)
         {
             CalendarHeader.Text = date.ToString("MMMM yyyy");
@@ -50,10 +49,6 @@ namespace Calendar
                 }
             }
         }
-
-        
-
-        
         private void previousMonth(object sender, RoutedEventArgs e)
         {
             calendarDate = calendarDate.AddMonths(-1);
@@ -65,43 +60,31 @@ namespace Calendar
             calendarDate = calendarDate.AddMonths(1);
             Initialize_Calendar(calendarDate);
         }
+        #endregion
 
-        private void tap1(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-           
-        }
-
+        #region Event Click
         private void btAdd_Click(object sender, RoutedEventArgs e)
         {
-           
-            NavigationService.Navigate(new Uri("/MyEvent.xaml", UriKind.Relative));
+            string date = DateTime.Now.Date.ToString().Substring(0,10);
+            string uri = string.Format("/MyEvent.xaml?date={0}", date);
+            NavigationService.Navigate(new Uri(uri, UriKind.Relative));
         }
+        #endregion
 
+        #region Load and Update Tile
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            string subject, local, date;
-           if(NavigationContext.QueryString.TryGetValue("subject", out subject))
+           
+           if(NavigationContext.QueryString.TryGetValue("result", out result))
            {
-               subject = string.Format("subject: {0}", subject);
+               result = string.Format("{0}", result);
            }
-
-            if(NavigationContext.QueryString.TryGetValue("local", out local))
-            {
-                local = string.Format("\tLocal: {0}", local);
-            }
-
-            if(NavigationContext.QueryString.TryGetValue("date", out date))
-            {
-                date = string.Format("\tDate: {0}", date);
-            }
-
-            tb_test.Text = subject + local + date;
 
             ShellTile PinnedTile = ShellTile.ActiveTiles.First();
 
             FlipTileData TileData = new FlipTileData
             {
-                Title = "Flip Tile",
+                Title = result,
 
                 Count = 10,
 
@@ -112,12 +95,13 @@ namespace Calendar
                 WideBackgroundImage = new Uri("/Assets/Tiles/LargeBackgroundImage.png", UriKind.Relative),
                 WideBackBackgroundImage = new Uri("/Assets/Tiles/LargeBackgroundImage.png", UriKind.Relative),
 
-                BackTitle = tb_test.Text, // title when it flip
-                BackContent =  tb_test.Text, // content when it flip
+                BackTitle = result, // title when it flip
+                BackContent = result, // content when it flip
                 WideBackContent = "Seminar Flip Tile" // content of WideBackground
             };
 
             PinnedTile.Update(TileData);
         }
+        #endregion
     }
 }
