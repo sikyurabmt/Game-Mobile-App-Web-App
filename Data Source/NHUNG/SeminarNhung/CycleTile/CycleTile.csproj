@@ -140,6 +140,7 @@
     <Content Include="Assets\Tiles\BackGroundImage.png" />
     <Content Include="Assets\Tiles\CalendarIcon.png" />
     <Content Include="Assets\Tiles\LargeBackgroundImage.png" />
+    <Content Include="Assets\Tiles\SmalICalendarIcon.png" />
     <Content Include="Assets\Tiles\SmallICalendarIcon.png" />
     <Content Include="Assets\WideLogo.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">

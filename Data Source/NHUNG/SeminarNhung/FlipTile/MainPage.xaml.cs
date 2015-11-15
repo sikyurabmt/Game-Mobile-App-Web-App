@@ -42,11 +42,11 @@ namespace FlipTile
 
                 BackTitle = "Flip Tile", // title when it flip
                 BackContent = "Flip Tile", // content when it flip
-                WideBackContent = "Seminar Flip Tile" // content of WideBackground
+                WideBackContent = "Seminar" // content of WideBackground
             };
 
             PinnedTile.Update(TileData);
-            ShellTile.Create(mp, TileData, true);
+          //  ShellTile.Create(mp, TileData, true);
         }
 
         // Sample code for building a localized ApplicationBar

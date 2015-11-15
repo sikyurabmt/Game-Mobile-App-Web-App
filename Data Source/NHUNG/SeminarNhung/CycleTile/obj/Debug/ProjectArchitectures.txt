@@ -1,1 +1,1 @@
-C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\CycleTile\CycleTile.csproj;neutral
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\CycleTile.csproj;neutral

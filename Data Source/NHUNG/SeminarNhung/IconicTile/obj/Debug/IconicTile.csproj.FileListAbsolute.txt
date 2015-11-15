@@ -33,3 +33,32 @@ c:\users\hang by\documents\visual studio 2013\Projects\SeminarNhung\IconicTile\o
 c:\users\hang by\documents\visual studio 2013\Projects\SeminarNhung\IconicTile\obj\Debug\ProjectArchitectures.txt
 c:\users\hang by\documents\visual studio 2013\Projects\SeminarNhung\IconicTile\obj\Debug\MDILProjectFiles.xml
 c:\users\hang by\documents\visual studio 2013\Projects\SeminarNhung\IconicTile\obj\Debug\XapCacheFile.xml
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\IconicTile.dll
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\IconicTile.pdb
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\resources.pri
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\AppxManifest.xml
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\App.g.cs
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\MainPage.g.cs
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\IconicTile.g.resources
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\IconicTile.Resources.AppResources.resources
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\IconicTile.csproj.GenerateResource.Cache
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\IconicTile.dll
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\IconicTile.pdb
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\priconfig.xml
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\priconfig.xml.intermediate
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\layout.resfiles
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\layout.resfiles.intermediate
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\resources.resfiles
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\resources.resfiles.intermediate
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\pri.resfiles
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\pri.resfiles.intermediate
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\qualifiers.txt
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\ProjectArchitectures.txt

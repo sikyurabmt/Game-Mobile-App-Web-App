@@ -33,3 +33,32 @@ C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\CycleTile\ob
 C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\CycleTile\obj\Debug\ProjectArchitectures.txt
 C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\CycleTile\obj\Debug\MDILProjectFiles.xml
 C:\Users\Hang BY\Documents\Visual Studio 2013\Projects\SeminarNhung\CycleTile\obj\Debug\XapCacheFile.xml
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\CycleTile.dll
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\CycleTile.pdb
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\resources.pri
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\AppxManifest.xml
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\App.g.cs
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\MainPage.g.cs
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\CycleTile.g.resources
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\CycleTile.Resources.AppResources.resources
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\CycleTile.csproj.GenerateResource.Cache
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\CycleTile.dll
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\CycleTile.pdb
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\priconfig.xml
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\priconfig.xml.intermediate
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\layout.resfiles
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\layout.resfiles.intermediate
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\resources.resfiles
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\resources.resfiles.intermediate
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\pri.resfiles
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\pri.resfiles.intermediate
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\qualifiers.txt
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\ProjectArchitectures.txt
