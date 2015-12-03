@@ -1,0 +1,32 @@
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\App.g.i.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\App.g.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\MainPage.g.i.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\MainPage.g.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\XamlTypeInfo.g.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\App.xaml
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\App.xbf
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\XamlSaveStateFile.xml
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\App.xbf
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\MainPage.xbf
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\Speech Recognition Ahihi.xr.xml
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\Speech Recognition Ahihi.exe
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\Speech Recognition Ahihi.pdb
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\resources.pri
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\AppxManifest.xml
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\Speech Recognition Ahihi.build.appxrecipe
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\MainPage.xaml
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\MainPage.xbf
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\Speech Recognition Ahihi.exe
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\Speech Recognition Ahihi.pdb
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\priconfig.xml
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\priconfig.xml.intermediate
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\layout.resfiles
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\layout.resfiles.intermediate
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\resources.resfiles
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\resources.resfiles.intermediate
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\pri.resfiles
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\pri.resfiles.intermediate
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\qualifiers.txt
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\qualifiers.txt.intermediate
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\ProjectArchitectures.txt
