@@ -1,5 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\vegeta\documents\visual studio 2013\projects\mp test\mp test\obj\debug\intermediatexaml\mp test.exe" HashGuid="323e772f-296f-e78f-054d-fc03f399c306" />
+    <LocalAssembly PathName="c:\users\vegeta\documents\visual studio 2013\projects\mp test\mp test\obj\debug\intermediatexaml\mp test.exe" HashGuid="cc966e33-2b5f-9ce6-b1d4-e78ec614b338" />
+    <ReferenceAssembly PathName="d:\data projects\hql\data source\didong\source\mp test\backgroundtask\bin\debug\backgroundtask.winmd" HashGuid="d4b463f8-888f-a5b6-a079-70b22082e0c7" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

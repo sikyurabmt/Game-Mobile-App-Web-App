@@ -30,3 +30,7 @@ c:\users\vegeta\documents\visual studio 2013\Projects\MP Test\MP Test\obj\Debug\
 c:\users\vegeta\documents\visual studio 2013\Projects\MP Test\MP Test\obj\Debug\qualifiers.txt.intermediate
 c:\users\vegeta\documents\visual studio 2013\Projects\MP Test\MP Test\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\vegeta\documents\visual studio 2013\Projects\MP Test\MP Test\obj\Debug\ProjectArchitectures.txt
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\MP Test\MP Test\bin\Debug\BackgroundTask.winmd
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\MP Test\MP Test\bin\Debug\BackgroundTask.pdb
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\MP Test\MP Test\bin\Debug\BackgroundTask.pri
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\MP Test\MP Test\obj\Debug\MP Test.csprojResolveAssemblyReference.cache
