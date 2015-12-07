@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="Vez_Music_Player.ExtraPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Vez_Music_Player"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#FF283270">
+        <TextBlock x:Name="tblNumber" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="List Music" VerticalAlignment="Top" Height="64" Width="380" FontSize="33"/>
+        <ListBox x:Name="lbList" HorizontalAlignment="Left" Height="551" Margin="10,79,0,0" VerticalAlignment="Top" Width="380" Tapped="lbList_Tapped"/>
+    </Grid>
+</Page>

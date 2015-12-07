@@ -1,1 +1,1 @@
-C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\Speech Recognition Ahihi.csproj;neutral
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\Speech Recognition Ahihi.csproj;neutral

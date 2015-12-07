@@ -30,3 +30,35 @@ c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\S
 c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\qualifiers.txt.intermediate
 c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\vegeta\documents\visual studio 2013\Projects\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\ProjectArchitectures.txt
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\App.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\MainPage.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\Speech Recognition Ahihi.xr.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\Speech Recognition Ahihi.exe
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\Speech Recognition Ahihi.pdb
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\resources.pri
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\AppxManifest.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\bin\Debug\Speech Recognition Ahihi.build.appxrecipe
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\App.g.i.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\App.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\MainPage.g.i.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\MainPage.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\XamlTypeInfo.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\App.xaml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\MainPage.xaml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\App.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\MainPage.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\XamlSaveStateFile.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\Speech Recognition Ahihi.exe
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\Speech Recognition Ahihi.pdb
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\priconfig.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\priconfig.xml.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\layout.resfiles
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\layout.resfiles.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\resources.resfiles
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\resources.resfiles.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\pri.resfiles
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\pri.resfiles.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\qualifiers.txt
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\qualifiers.txt.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Speech Recognition Ahihi\Speech Recognition Ahihi\obj\Debug\ProjectArchitectures.txt

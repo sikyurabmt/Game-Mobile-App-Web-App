@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>VEGETAPC</Machine>
+    <WindowsUser>Vegeta</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>59cafb51-0317-4ce5-8e35-6277752988f5</PackageIdentityName>
+    <IntermediateOutputPath>D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\Vez Music Player.exe">
+      <PackagePath>Vez Music Player.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\BackgroundTask\bin\Debug\BackgroundTask.winmd">
+      <PackagePath>BackgroundTask.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\StoreManifest.xml">
+      <PackagePath>StoreManifest.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\ExtraPage.xbf">
+      <PackagePath>ExtraPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\Vez Music Player.xr.xml">
+      <PackagePath>Vez Music Player.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

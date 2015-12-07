@@ -1,0 +1,2 @@
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\BackgroundTask\BackgroundTask.csproj;neutral
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\Vez Music Player.csproj;neutral

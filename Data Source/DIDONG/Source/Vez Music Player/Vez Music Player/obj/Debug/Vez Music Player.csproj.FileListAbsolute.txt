@@ -1,0 +1,78 @@
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\App.g.i.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\App.g.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\ExtraPage.g.i.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\ExtraPage.g.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\MainPage.g.i.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\MainPage.g.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\XamlTypeInfo.g.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\App.xaml
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\App.xbf
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\XamlSaveStateFile.xml
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\ExtraPage.xaml
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\MainPage.xaml
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\ExtraPage.xbf
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\MainPage.xbf
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\bin\Debug\App.xbf
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\bin\Debug\ExtraPage.xbf
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\bin\Debug\MainPage.xbf
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\bin\Debug\Vez Music Player.xr.xml
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\bin\Debug\Vez Music Player.exe
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\bin\Debug\Vez Music Player.pdb
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\bin\Debug\resources.pri
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\bin\Debug\AppxManifest.xml
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\bin\Debug\Vez Music Player.build.appxrecipe
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\Vez Music Player.exe
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\Vez Music Player.pdb
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\priconfig.xml
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\priconfig.xml.intermediate
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\layout.resfiles
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\layout.resfiles.intermediate
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\resources.resfiles
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\resources.resfiles.intermediate
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\pri.resfiles
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\pri.resfiles.intermediate
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\qualifiers.txt
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\qualifiers.txt.intermediate
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\vegeta\documents\visual studio 2013\Projects\Vez Music Player\Vez Music Player\obj\Debug\ProjectArchitectures.txt
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\App.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\ExtraPage.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\MainPage.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\Vez Music Player.xr.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\Vez Music Player.exe
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\Vez Music Player.pdb
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\resources.pri
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\AppxManifest.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\BackgroundTask.winmd
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\BackgroundTask.pdb
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\BackgroundTask.pri
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\Vez Music Player.csprojResolveAssemblyReference.cache
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\App.g.i.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\App.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\ExtraPage.g.i.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\ExtraPage.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\MainPage.g.i.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\MainPage.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\XamlTypeInfo.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\App.xaml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\ExtraPage.xaml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\MainPage.xaml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\App.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\ExtraPage.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\MainPage.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\XamlSaveStateFile.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\Vez Music Player.exe
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\Vez Music Player.pdb
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\priconfig.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\priconfig.xml.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\layout.resfiles
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\layout.resfiles.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\resources.resfiles
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\resources.resfiles.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\pri.resfiles
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\pri.resfiles.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\qualifiers.txt
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\qualifiers.txt.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\obj\Debug\ProjectArchitectures.txt
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Vez Music Player\Vez Music Player\bin\Debug\Vez Music Player.build.appxrecipe

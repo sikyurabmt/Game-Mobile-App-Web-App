@@ -14,10 +14,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 using Windows.Media.SpeechRecognition;
-using System.Threading.Tasks;
-using Windows.Storage;
-using Windows.ApplicationModel.Activation;//IActivatedEventArgs, ActivationKind
 using Windows.Media.SpeechSynthesis;
+
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -48,30 +46,23 @@ namespace Speech_Recognition_Ahihi
         private async void SpeakText(MediaElement audioPlayer, string TTS)
         {
             SpeechSynthesizer ttssynthesizer = new SpeechSynthesizer();
-
             //Set the Voice/Speaker
             using (var Speaker = new SpeechSynthesizer())
             {
                 Speaker.Voice = (SpeechSynthesizer.AllVoices.First(x => x.Gender == VoiceGender.Male));
                 ttssynthesizer.Voice = Speaker.Voice;
             }
-
             SpeechSynthesisStream ttsStream = await ttssynthesizer.SynthesizeTextToStreamAsync(TTS);
-
             audioPlayer.SetSource(ttsStream, "");
         }
 
         private async void btnSTT_Click(object sender, RoutedEventArgs e)
         {
-            // Compile the dictation grammar
             await speechRecog.CompileConstraintsAsync();
-
-            // Start Recognition
             SpeechRecognitionResult speechRecognitionResult = await this.speechRecog.RecognizeWithUIAsync();
-
-            // Show Output
-            var sttDialog = new Windows.UI.Popups.MessageDialog(speechRecognitionResult.Text, "Heard you said...");
-            await sttDialog.ShowAsync();
+            //var sttDialog = new Windows.UI.Popups.MessageDialog(speechRecognitionResult.Text, "Heard you said...");
+            //await sttDialog.ShowAsync();
+            txtInfo.Text = speechRecognitionResult.Text;
         }
     }
 }
