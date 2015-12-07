@@ -34,3 +34,39 @@ C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\MP Test\MP Test\bin\Debug\
 C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\MP Test\MP Test\bin\Debug\BackgroundTask.pdb
 C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\MP Test\MP Test\bin\Debug\BackgroundTask.pri
 C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\MP Test\MP Test\obj\Debug\MP Test.csprojResolveAssemblyReference.cache
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Debug\App.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Debug\MainPage.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Debug\MP Test.xr.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Debug\MP Test.exe
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Debug\MP Test.pdb
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Debug\resources.pri
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Debug\AppxManifest.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Debug\MP Test.build.appxrecipe
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Debug\BackgroundTask.winmd
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Debug\BackgroundTask.pdb
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Debug\BackgroundTask.pri
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\MP Test.csprojResolveAssemblyReference.cache
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\App.g.i.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\App.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\MainPage.g.i.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\MainPage.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\XamlTypeInfo.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\App.xaml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\MainPage.xaml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\App.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\MainPage.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\XamlSaveStateFile.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\MP Test.exe
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\MP Test.pdb
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\priconfig.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\priconfig.xml.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\layout.resfiles
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\layout.resfiles.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\resources.resfiles
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\resources.resfiles.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\pri.resfiles
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\pri.resfiles.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\qualifiers.txt
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\qualifiers.txt.intermediate
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Debug\ProjectArchitectures.txt

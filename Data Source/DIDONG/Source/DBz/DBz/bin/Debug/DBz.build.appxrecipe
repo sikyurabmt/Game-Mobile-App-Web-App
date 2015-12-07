@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>VEGETAPC</Machine>
+    <WindowsUser>Vegeta</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>d7b58e11-8182-49d4-84fd-d00a8de1f271</PackageIdentityName>
+    <IntermediateOutputPath>c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\bin\Debug\DBz.exe">
+      <PackagePath>DBz.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Users\Vegeta\documents\visual studio 2013\Projects\DBz\BackgroundAudioComponent\bin\Debug\BackgroundAudioComponent.winmd">
+      <PackagePath>BackgroundAudioComponent.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\Assets\Media\Ring01.wma">
+      <PackagePath>Assets\Media\Ring01.wma</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\Assets\Media\Ring02.wma">
+      <PackagePath>Assets\Media\Ring02.wma</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\Assets\Media\Ring03.wma">
+      <PackagePath>Assets\Media\Ring03.wma</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\bin\Debug\DBz.xr.xml">
+      <PackagePath>DBz.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

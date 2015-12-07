@@ -1,0 +1,20 @@
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Release\App.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Release\MainPage.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Release\MP Test.xr.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Release\MP Test.exe
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Release\MP Test.pdb
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Release\BackgroundTask.winmd
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Release\BackgroundTask.pdb
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\bin\Release\BackgroundTask.pri
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Release\App.g.i.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Release\App.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Release\MainPage.g.i.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Release\MainPage.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Release\XamlTypeInfo.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Release\App.xaml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Release\App.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Release\XamlSaveStateFile.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Release\MainPage.xaml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Release\MainPage.xbf
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Release\MP Test.exe
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MP Test\MP Test\obj\Release\MP Test.pdb

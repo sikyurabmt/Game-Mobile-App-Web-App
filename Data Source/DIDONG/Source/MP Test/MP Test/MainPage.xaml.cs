@@ -25,11 +25,15 @@ namespace MP_Test
         public StorageFolder folder = KnownFolders.MusicLibrary;
         public static List<StorageFile> musicList = new List<StorageFile>();
         private MediaPlayer mediaPlayer;
+        static String[] tracks = { "ms-appx:///Assets/Media/Ring01.wma", 
+                                   "ms-appx:///Assets/Media/Ring02.wma",
+                                   "ms-appx:///Assets/Media/Ring03.wma"};
         public MainPage()
         {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
             initValue();
+            mediaPlayer = BackgroundMediaPlayer.Current;
         }
         public async void initValue()
         {
@@ -51,13 +55,22 @@ namespace MP_Test
             BackgroundMediaPlayer.Current.SetFileSource(musicList[i]); 
             
         }
+        private void StartTrackAt2(int id)
+        {
+            string source = tracks[id];
+            mediaPlayer.AutoPlay = false;
+            mediaPlayer.SetUriSource(new Uri(source));
+            //BackgroundMediaPlayer.Current.SetUriSource(new Uri(source));
+            mediaPlayer.Play();
+            tblTitle.Text = source;
+        }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            StartTrackAt(0);
+            StartTrackAt2(2);
         }
     }
 }

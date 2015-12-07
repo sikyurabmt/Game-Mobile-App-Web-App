@@ -1,0 +1,2 @@
+c:\users\vegeta\documents\visual studio 2013\Projects\DBz\BackgroundAudioComponent\BackgroundAudioComponent.csproj;neutral
+c:\users\vegeta\documents\visual studio 2013\Projects\DBz\DBz\DBz.csproj;neutral
