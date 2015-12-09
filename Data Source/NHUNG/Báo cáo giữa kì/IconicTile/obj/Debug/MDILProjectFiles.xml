@@ -11,9 +11,8 @@
     <File>Assets\SquareTile150x150.png</File>
     <File>Assets\SquareTile71x71.png</File>
     <File>Assets\StoreLogo.png</File>
-    <File>Assets\Tiles\BackGroundImage.png</File>
-    <File>Assets\Tiles\LargeBackgroundImage.png</File>
-    <File>Assets\Tiles\SmalICalendarIcon.png</File>
+    <File>Assets\Tiles\Image2.png</File>
+    <File>Assets\Tiles\Image3.png</File>
     <File>Assets\WideLogo.png</File>
     <File>Assets\Tiles\FlipCycleTileLarge.png</File>
     <File>Assets\Tiles\FlipCycleTileMedium.png</File>
@@ -21,7 +20,7 @@
     <File>Assets\Tiles\IconicTileMediumLarge.png</File>
     <File>Assets\Tiles\IconicTileSmall.png</File>
     <File>AppManifest.xaml</File>
-    <File>Assets\Tiles\CalendarIcon.png</File>
+    <File>Assets\Tiles\Image1.png</File>
     <File>WMAppManifest.xml</File>
     <File>AppxManifest.xml</File>
   </XAPFiles>

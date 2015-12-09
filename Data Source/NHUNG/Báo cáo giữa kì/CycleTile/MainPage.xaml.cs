@@ -30,11 +30,12 @@ namespace CycleTile
             {
                 Title = "Cycle Tile",
                 Count = 10,
-                SmallBackgroundImage = new Uri("/Assets/Tiles/SmallCalendarIcon.png", UriKind.Relative),//Gets and sets the front-side background image for the small Tile size
+                SmallBackgroundImage = new Uri("/Assets/Tiles/Image1.png", UriKind.Relative),//Gets and sets the front-side background image for the small Tile size
                 CycleImages = new Uri[]
                      {
-                         new Uri("/Assets/Tiles/BackGroundImage.png",UriKind.Relative),
-                         new Uri("/Assets/Tiles/LargeBackgroundImage.png",UriKind.Relative),
+                         new Uri("/Assets/Tiles/Image1.png",UriKind.Relative),
+                         new Uri("/Assets/Tiles/Image2.png",UriKind.Relative),
+                          new Uri("/Assets/Tiles/Image3.png",UriKind.Relative),
                      }
             };
             ShellTile.Update(TileData);

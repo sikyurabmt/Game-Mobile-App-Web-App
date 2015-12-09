@@ -7,78 +7,69 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>f5466164-deb7-40f1-b71d-b931f02bf4f3</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\CycleTile.dll">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\CycleTile.dll">
       <PackagePath>CycleTile.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\AlignmentGrid.png">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\AlignmentGrid.png">
       <PackagePath>Assets\AlignmentGrid.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\ApplicationIcon.png">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\ApplicationIcon.png">
       <PackagePath>Assets\ApplicationIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\BadgeLogo.png">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\BadgeLogo.png">
       <PackagePath>Assets\BadgeLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\Logo.png">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\SquareTile150x150.png">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\SquareTile150x150.png">
       <PackagePath>Assets\SquareTile150x150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\SquareTile71x71.png">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\SquareTile71x71.png">
       <PackagePath>Assets\SquareTile71x71.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\Tiles\BackGroundImage.png">
-      <PackagePath>Assets\Tiles\BackGroundImage.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\Tiles\Image1.png">
+      <PackagePath>Assets\Tiles\Image1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\Tiles\CalendarIcon.png">
-      <PackagePath>Assets\Tiles\CalendarIcon.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\Tiles\Image2.png">
+      <PackagePath>Assets\Tiles\Image2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\Tiles\LargeBackgroundImage.png">
-      <PackagePath>Assets\Tiles\LargeBackgroundImage.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\Tiles\Image3.png">
+      <PackagePath>Assets\Tiles\Image3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\Tiles\SmalICalendarIcon.png">
-      <PackagePath>Assets\Tiles\SmalICalendarIcon.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\WideLogo.png">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\WideLogo.png">
       <PackagePath>Assets\WideLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\Tiles\FlipCycleTileLarge.png">
-      <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\Tiles\FlipCycleTileMedium.png">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\Tiles\FlipCycleTileMedium.png">
       <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\Tiles\FlipCycleTileSmall.png">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\Tiles\FlipCycleTileSmall.png">
       <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\Tiles\IconicTileMediumLarge.png">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Assets\Tiles\IconicTileMediumLarge.png">
       <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Assets\Tiles\IconicTileSmall.png">
-      <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

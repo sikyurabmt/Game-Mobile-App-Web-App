@@ -2,7 +2,7 @@
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2014/deployment" AppPlatformVersion="8.1">
   <DefaultLanguage xmlns="" code="en-US" />
   <App xmlns="" ProductID="{ce284236-e909-46a8-8a56-3b9dbf087790}" Title="FlipTile" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="FlipTile author" Description="Sample description" SDOptOut="false" BackUpOptOut="false" Publisher="FlipTile" PublisherID="{4b45afa7-2b55-4b34-b561-ce4054081bfa}">
-    <IconPath IsRelative="true" IsResource="false">Assets\Tiles\CalendarIcon.png</IconPath>
+    <IconPath IsRelative="true" IsResource="false">Assets\Tiles\Image1.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
@@ -16,7 +16,8 @@
     <Tokens>
       <PrimaryToken TokenID="FlipTileToken" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\SmallICalendarIcon.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">
+          </SmallImageURI>
           <Count>0</Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">
           </BackgroundImageURI>

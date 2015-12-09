@@ -1,0 +1,2 @@
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\DemoTaskAgent\DemoTaskAgent.csproj;neutral
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\ScheduledTaskAgent1\ScheduledTaskAgent1.csproj;neutral

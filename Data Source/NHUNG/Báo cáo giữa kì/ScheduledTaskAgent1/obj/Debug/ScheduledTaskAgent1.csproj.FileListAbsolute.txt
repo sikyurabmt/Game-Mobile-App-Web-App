@@ -1,0 +1,12 @@
+C:\Users\Hang BY\Desktop\Đồ án\nhúng\seminar\Periodic Background Agent for Tiles and Toasts\C#\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.dll
+C:\Users\Hang BY\Desktop\Đồ án\nhúng\seminar\Periodic Background Agent for Tiles and Toasts\C#\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.pdb
+C:\Users\Hang BY\Desktop\Đồ án\nhúng\seminar\Periodic Background Agent for Tiles and Toasts\C#\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.dll
+C:\Users\Hang BY\Desktop\Đồ án\nhúng\seminar\Periodic Background Agent for Tiles and Toasts\C#\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.pdb
+C:\Users\Hang BY\Desktop\Periodic Background Agent for Tiles and Toasts\C#\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.dll
+C:\Users\Hang BY\Desktop\Periodic Background Agent for Tiles and Toasts\C#\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.pdb
+C:\Users\Hang BY\Desktop\Periodic Background Agent for Tiles and Toasts\C#\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.dll
+C:\Users\Hang BY\Desktop\Periodic Background Agent for Tiles and Toasts\C#\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.pdb
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.dll
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.pdb
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.dll
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.pdb

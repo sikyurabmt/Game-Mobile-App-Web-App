@@ -38,7 +38,7 @@ namespace IconicTile
                 WideContent1 = strDay,
                 WideContent2 = "WideContent2",
                 WideContent3 = "WideContent3",
-                SmallIconImage = new Uri("Assets/Tiles/CalendarIcon.png", UriKind.Relative),//Gets or sets the icon image for the small Tile size
+                SmallIconImage = new Uri("Assets/Tiles/Image1.png", UriKind.Relative),//Gets or sets the icon image for the small Tile size
                 //IconImage = new Uri("Assets/Tiles/CalendarIcon.png", UriKind.Relative),//Gets or sets the icon image for the medium and large Tile sizes
                // BackgroundColor = Color.FromArgb(255, 255, 255, 255),
             };

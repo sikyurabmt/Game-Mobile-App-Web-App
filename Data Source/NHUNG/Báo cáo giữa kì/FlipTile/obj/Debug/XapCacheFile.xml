@@ -1,26 +1,27 @@
-﻿<xapCache source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Bin\Debug\FlipTile_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="11/15/2015 2:39:27 PM">
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="11/15/2015 2:34:38 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\obj\Debug\FlipTile.dll" archivePath="FlipTile.dll" lastWriteTime="11/15/2015 2:39:25 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\SplashScreen.png" archivePath="Assets\SplashScreen.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\SquareTile150x150.png" archivePath="Assets\SquareTile150x150.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\SquareTile71x71.png" archivePath="Assets\SquareTile71x71.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\StoreLogo.png" archivePath="Assets\StoreLogo.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\Tiles\BackGroundImage.png" archivePath="Assets\Tiles\BackGroundImage.png" lastWriteTime="11/11/2015 7:42:15 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\Tiles\LargeBackgroundImage.png" archivePath="Assets\Tiles\LargeBackgroundImage.png" lastWriteTime="11/11/2015 7:44:46 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\Tiles\SmallCalendarIcon.png" archivePath="Assets\Tiles\SmallCalendarIcon.png" lastWriteTime="11/11/2015 7:47:37 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\WideLogo.png" archivePath="Assets\WideLogo.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="11/11/2015 8:48:17 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="11/11/2015 8:48:21 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Assets\Tiles\CalendarIcon.png" archivePath="Assets\Tiles\CalendarIcon.png" lastWriteTime="11/11/2015 7:42:45 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="11/12/2015 2:02:33 AM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="11/15/2015 2:39:27 PM" />
-  <file source="C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="11/15/2015 2:34:38 PM" />
+﻿<xapCache source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\FlipTile_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="12/10/2015 12:14:43 AM">
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="12/10/2015 12:14:42 AM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\FlipTile.dll" archivePath="FlipTile.dll" lastWriteTime="12/10/2015 12:14:42 AM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\SplashScreen.png" archivePath="Assets\SplashScreen.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\SquareTile150x150.png" archivePath="Assets\SquareTile150x150.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\SquareTile71x71.png" archivePath="Assets\SquareTile71x71.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\StoreLogo.png" archivePath="Assets\StoreLogo.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\Tiles\Image2.png" archivePath="Assets\Tiles\Image2.png" lastWriteTime="12/9/2015 11:16:18 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\Tiles\Image3.png" archivePath="Assets\Tiles\Image3.png" lastWriteTime="12/9/2015 11:16:18 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\Tiles\LargeImage1.png" archivePath="Assets\Tiles\LargeImage1.png" lastWriteTime="12/9/2015 11:16:18 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\Tiles\LargeImage2.png" archivePath="Assets\Tiles\LargeImage2.png" lastWriteTime="12/9/2015 11:16:18 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\WideLogo.png" archivePath="Assets\WideLogo.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="11/11/2015 8:48:17 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12/10/2015 12:14:43 AM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Assets\Tiles\Image1.png" archivePath="Assets\Tiles\Image1.png" lastWriteTime="12/9/2015 11:16:18 PM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="12/10/2015 12:14:43 AM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="12/10/2015 12:14:43 AM" />
+  <file source="C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="12/10/2015 12:14:42 AM" />
 </xapCache>

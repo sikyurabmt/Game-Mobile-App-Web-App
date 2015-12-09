@@ -68,3 +68,36 @@ C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\AppManifest.xaml
 C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\Bin\Debug\CycleTile_Debug_AnyCPU.xap
 C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\MDILProjectFiles.xml
 C:\Users\Hang BY\Desktop\SeminarNhung\CycleTile\obj\Debug\XapCacheFile.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\CycleTile.dll
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\CycleTile.pdb
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\resources.pri
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\AppxManifest.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\CycleTile.build.appxrecipe
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\AppManifest.xaml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\Bin\Debug\CycleTile_Debug_AnyCPU.xap
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\App.g.cs
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\MainPage.g.cs
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\CycleTile.g.resources
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\CycleTile.Resources.AppResources.resources
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\CycleTile.csproj.GenerateResource.Cache
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\CycleTile.dll
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\CycleTile.pdb
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\priconfig.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\priconfig.xml.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\layout.resfiles
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\layout.resfiles.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\resources.resfiles
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\resources.resfiles.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\pri.resfiles
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\pri.resfiles.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\qualifiers.txt
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\ProjectArchitectures.txt
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\MDILProjectFiles.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\CycleTile\obj\Debug\XapCacheFile.xml

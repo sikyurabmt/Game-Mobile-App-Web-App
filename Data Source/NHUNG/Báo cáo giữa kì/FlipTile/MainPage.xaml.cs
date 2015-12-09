@@ -33,12 +33,12 @@ namespace FlipTile
 
                 Count = 10,
                 
-                SmallBackgroundImage = new Uri("/Assets/Tiles/SmallCalendarIcon.png", UriKind.Relative),
-                BackgroundImage = new Uri("/Assets/Tiles/BackGroundImage.png", UriKind.Relative),
-                BackBackgroundImage = new Uri("/Assets/Tiles/BackGroundImage.png", UriKind.Relative),
+                SmallBackgroundImage = new Uri("/Assets/Tiles/Image1.png", UriKind.Relative),
+                BackgroundImage = new Uri("/Assets/Tiles/Image2.png", UriKind.Relative),
+                BackBackgroundImage = new Uri("/Assets/Tiles/Image3.png", UriKind.Relative),
 
-                WideBackgroundImage = new Uri("/Assets/Tiles/LargeBackgroundImage.png", UriKind.Relative),
-                WideBackBackgroundImage = new Uri("/Assets/Tiles/LargeBackgroundImage.png", UriKind.Relative),
+                WideBackgroundImage = new Uri("/Assets/Tiles/LargeImage1.png", UriKind.Relative),
+                WideBackBackgroundImage = new Uri("/Assets/Tiles/LargeImage2.png", UriKind.Relative),
 
                 BackTitle = "Flip Tile", // title when it flip
                 BackContent = "Flip Tile", // content when it flip

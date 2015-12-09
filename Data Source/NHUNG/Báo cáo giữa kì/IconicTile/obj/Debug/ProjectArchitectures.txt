@@ -1,1 +1,1 @@
-C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\IconicTile.csproj;neutral
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\IconicTile.csproj;neutral

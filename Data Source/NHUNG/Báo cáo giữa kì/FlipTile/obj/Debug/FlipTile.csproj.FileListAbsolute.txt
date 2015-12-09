@@ -68,3 +68,38 @@ C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\obj\Debug\MultipleQualifiersPerDi
 C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\obj\Debug\ProjectArchitectures.txt
 C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\obj\Debug\MDILProjectFiles.xml
 C:\Users\Hang BY\Desktop\SeminarNhung\FlipTile\obj\Debug\XapCacheFile.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\FlipTile.dll
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\FlipTile.pdb
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\resources.pri
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\AppxManifest.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\FlipTile.build.appxrecipe
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\AppManifest.xaml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\Bin\Debug\FlipTile_Debug_AnyCPU.xap
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\App.g.cs
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\MainPage.g.cs
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\FlipTile.g.resources
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\FlipTile.Resources.AppResources.resources
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\FlipTile.csproj.GenerateResource.Cache
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\FlipTile.dll
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\FlipTile.pdb
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\priconfig.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\priconfig.xml.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\layout.resfiles
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\layout.resfiles.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\resources.resfiles
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\resources.resfiles.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\pri.resfiles
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\pri.resfiles.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\qualifiers.txt
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\ProjectArchitectures.txt
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\MDILProjectFiles.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\FlipTile\obj\Debug\XapCacheFile.xml

@@ -68,3 +68,38 @@ C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\AppManifest.xaml
 C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\Bin\Debug\IconicTile_Debug_AnyCPU.xap
 C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\MDILProjectFiles.xml
 C:\Users\Hang BY\Desktop\SeminarNhung\IconicTile\obj\Debug\XapCacheFile.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\IconicTile.dll
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\IconicTile.pdb
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\resources.pri
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\AppxManifest.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\App.g.cs
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\MainPage.g.cs
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\IconicTile.g.resources
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\IconicTile.Resources.AppResources.resources
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\IconicTile.csproj.GenerateResource.Cache
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\IconicTile.dll
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\IconicTile.pdb
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\priconfig.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\priconfig.xml.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\layout.resfiles
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\layout.resfiles.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\resources.resfiles
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\resources.resfiles.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\pri.resfiles
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\pri.resfiles.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\qualifiers.txt
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\ProjectArchitectures.txt
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\IconicTile.build.appxrecipe
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\AppManifest.xaml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\Bin\Debug\IconicTile_Debug_AnyCPU.xap
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\MDILProjectFiles.xml
+C:\Users\Hang BY\Desktop\Báo cáo giữa kì\IconicTile\obj\Debug\XapCacheFile.xml
