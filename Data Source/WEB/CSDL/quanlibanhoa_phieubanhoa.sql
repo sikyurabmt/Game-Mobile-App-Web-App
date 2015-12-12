@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: quanlybanhoa
+-- Host: 127.0.0.1    Database: quanlibanhoa
 -- ------------------------------------------------------
 -- Server version	5.7.9-log
 
@@ -16,32 +16,31 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `khachhang`
+-- Table structure for table `phieubanhoa`
 --
 
-DROP TABLE IF EXISTS `khachhang`;
+DROP TABLE IF EXISTS `phieubanhoa`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `khachhang` (
-  `MaKhachHang` int(11) NOT NULL,
-  `MaLoaiKH` int(11) DEFAULT NULL,
-  `TenKhachHang` varchar(45) DEFAULT NULL,
-  `Email` varchar(45) DEFAULT NULL,
-  `DiaChi` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`MaKhachHang`),
-  KEY `fr_khachhang_loaikh_idx` (`MaLoaiKH`),
-  CONSTRAINT `fr_khachhang_loaikh` FOREIGN KEY (`MaLoaiKH`) REFERENCES `loaikhachhang` (`LoaiKhachHang`) ON DELETE NO ACTION ON UPDATE NO ACTION
+CREATE TABLE `phieubanhoa` (
+  `SoPhieu` int(11) NOT NULL,
+  `MaKH` int(11) DEFAULT NULL,
+  `MaHTTT` int(11) DEFAULT NULL,
+  `MaHTVC` int(11) DEFAULT NULL,
+  `MaTT` int(11) DEFAULT NULL,
+  `NgayMua` varchar(45) DEFAULT NULL,
+  `TongTien` float DEFAULT NULL,
+  PRIMARY KEY (`SoPhieu`),
+  KEY `fk_phieubanhoa_khachhang_idx` (`MaKH`),
+  KEY `fk_phieubanhoa_httt_idx` (`MaHTTT`),
+  KEY `fk_phieubanhoa_htvc_idx` (`MaHTVC`),
+  KEY `fk_phieubanhoa_tt_idx` (`MaTT`),
+  CONSTRAINT `fk_phieubanhoa_httt` FOREIGN KEY (`MaHTTT`) REFERENCES `hinhthucthanhtoan` (`MaHTTT`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_phieubanhoa_htvc` FOREIGN KEY (`MaHTVC`) REFERENCES `hinhthucvanchuyen` (`MaHTVC`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_phieubanhoa_khachhang` FOREIGN KEY (`MaKH`) REFERENCES `khachhang` (`MaKH`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_phieubanhoa_tt` FOREIGN KEY (`MaTT`) REFERENCES `tinhtrang` (`MaTinhTrang`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `khachhang`
---
-
-LOCK TABLES `khachhang` WRITE;
-/*!40000 ALTER TABLE `khachhang` DISABLE KEYS */;
-/*!40000 ALTER TABLE `khachhang` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -52,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-27 22:27:30
+-- Dump completed on 2015-12-12  9:53:22

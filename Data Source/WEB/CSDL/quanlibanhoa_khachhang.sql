@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: quanlybanhoa
+-- Host: 127.0.0.1    Database: quanlibanhoa
 -- ------------------------------------------------------
 -- Server version	5.7.9-log
 
@@ -16,28 +16,26 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `baocaodoanhthutheothang`
+-- Table structure for table `khachhang`
 --
 
-DROP TABLE IF EXISTS `baocaodoanhthutheothang`;
+DROP TABLE IF EXISTS `khachhang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `baocaodoanhthutheothang` (
-  `Thang` int(11) NOT NULL,
-  `Nam` int(11) NOT NULL,
-  `TongDoanhThu` float DEFAULT NULL,
-  PRIMARY KEY (`Thang`,`Nam`)
+CREATE TABLE `khachhang` (
+  `MaKH` int(11) NOT NULL,
+  `LoaiKH` int(11) DEFAULT NULL,
+  `MaTK` int(11) DEFAULT NULL,
+  `HoTen` varchar(45) DEFAULT NULL,
+  `SDT` varchar(45) DEFAULT NULL,
+  `Email` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`MaKH`),
+  KEY `fk_khachhang_taikhoan_idx` (`MaTK`),
+  KEY `fk_khachhang_loaikhachhang_idx` (`LoaiKH`),
+  CONSTRAINT `fk_khachhang_loaikhachhang` FOREIGN KEY (`LoaiKH`) REFERENCES `loaikhachhang` (`MaLoaiKH`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_khachhang_taikhoan` FOREIGN KEY (`MaTK`) REFERENCES `taikhoan` (`MaTaiKhoan`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `baocaodoanhthutheothang`
---
-
-LOCK TABLES `baocaodoanhthutheothang` WRITE;
-/*!40000 ALTER TABLE `baocaodoanhthutheothang` DISABLE KEYS */;
-/*!40000 ALTER TABLE `baocaodoanhthutheothang` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -48,4 +46,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-27 22:27:30
+-- Dump completed on 2015-12-12  9:53:21

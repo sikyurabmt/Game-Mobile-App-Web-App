@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: quanlybanhoa
+-- Host: 127.0.0.1    Database: quanlibanhoa
 -- ------------------------------------------------------
 -- Server version	5.7.9-log
 
@@ -16,27 +16,23 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `loaihoa`
+-- Table structure for table `ct_phieuban`
 --
 
-DROP TABLE IF EXISTS `loaihoa`;
+DROP TABLE IF EXISTS `ct_phieuban`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `loaihoa` (
-  `MaLoaiHoa` int(11) NOT NULL,
-  `TenLoaiHoa` varchar(10) DEFAULT NULL,
-  PRIMARY KEY (`MaLoaiHoa`)
+CREATE TABLE `ct_phieuban` (
+  `SoPhieu` int(11) NOT NULL,
+  `MaHoa` int(11) DEFAULT NULL,
+  `SoLuong` int(11) DEFAULT NULL,
+  `ThanhTien` float DEFAULT NULL,
+  PRIMARY KEY (`SoPhieu`),
+  KEY `fk_ct_hoa_idx` (`MaHoa`),
+  CONSTRAINT `fk_ct_hoa` FOREIGN KEY (`MaHoa`) REFERENCES `hoa` (`MaHoa`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_ct_phieubanhoa` FOREIGN KEY (`SoPhieu`) REFERENCES `phieubanhoa` (`SoPhieu`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `loaihoa`
---
-
-LOCK TABLES `loaihoa` WRITE;
-/*!40000 ALTER TABLE `loaihoa` DISABLE KEYS */;
-/*!40000 ALTER TABLE `loaihoa` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -47,4 +43,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-27 22:27:30
+-- Dump completed on 2015-12-12  9:53:22

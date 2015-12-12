@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: quanlybanhoa
+-- Host: 127.0.0.1    Database: quanlibanhoa
 -- ------------------------------------------------------
 -- Server version	5.7.9-log
 
@@ -16,32 +16,19 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `ct_phieuban`
+-- Table structure for table `loaikhachhang`
 --
 
-DROP TABLE IF EXISTS `ct_phieuban`;
+DROP TABLE IF EXISTS `loaikhachhang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `ct_phieuban` (
-  `SoPhieuBan` int(11) NOT NULL,
-  `MaHoa` int(11) NOT NULL,
-  `SoLuong` int(11) DEFAULT NULL,
-  `ThanhTien` float DEFAULT NULL,
-  PRIMARY KEY (`SoPhieuBan`,`MaHoa`),
-  KEY `fr_ctban_hoa_idx` (`MaHoa`),
-  CONSTRAINT `fk_ctban_hoa` FOREIGN KEY (`MaHoa`) REFERENCES `hoa` (`MaHoa`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_ctban_phieuban` FOREIGN KEY (`SoPhieuBan`) REFERENCES `phieuban` (`SoPhieuBan`) ON DELETE NO ACTION ON UPDATE NO ACTION
+CREATE TABLE `loaikhachhang` (
+  `MaLoaiKH` int(11) NOT NULL,
+  `TenLoaiKH` varchar(45) DEFAULT NULL,
+  `UuDai` float DEFAULT NULL,
+  PRIMARY KEY (`MaLoaiKH`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `ct_phieuban`
---
-
-LOCK TABLES `ct_phieuban` WRITE;
-/*!40000 ALTER TABLE `ct_phieuban` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ct_phieuban` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -52,4 +39,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-27 22:27:31
+-- Dump completed on 2015-12-12  9:53:22

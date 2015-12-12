@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: quanlybanhoa
+-- Host: 127.0.0.1    Database: quanlibanhoa
 -- ------------------------------------------------------
 -- Server version	5.7.9-log
 
@@ -16,31 +16,22 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `phieumua`
+-- Table structure for table `phieumuahoa`
 --
 
-DROP TABLE IF EXISTS `phieumua`;
+DROP TABLE IF EXISTS `phieumuahoa`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `phieumua` (
-  `SoPhieuMua` int(11) NOT NULL,
-  `MaNhaCC` int(11) DEFAULT NULL,
-  `NgayMua` date DEFAULT NULL,
-  `TongTien` int(11) DEFAULT NULL,
-  PRIMARY KEY (`SoPhieuMua`),
-  KEY `fr_phieumua_nhacc_idx` (`MaNhaCC`),
-  CONSTRAINT `fk_phieumua_nhacc` FOREIGN KEY (`MaNhaCC`) REFERENCES `nhacungcap` (`MaNhaCC`) ON DELETE NO ACTION ON UPDATE NO ACTION
+CREATE TABLE `phieumuahoa` (
+  `SoPhieu` int(11) NOT NULL,
+  `MaNCC` int(11) DEFAULT NULL,
+  `NgayMua` varchar(10) DEFAULT NULL,
+  `TongTien` float DEFAULT NULL,
+  PRIMARY KEY (`SoPhieu`),
+  KEY `fk_phieumua_ncc_idx` (`MaNCC`),
+  CONSTRAINT `fk_phieumua_ncc` FOREIGN KEY (`MaNCC`) REFERENCES `nhacungcap` (`MaNCC`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `phieumua`
---
-
-LOCK TABLES `phieumua` WRITE;
-/*!40000 ALTER TABLE `phieumua` DISABLE KEYS */;
-/*!40000 ALTER TABLE `phieumua` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -51,4 +42,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-27 22:27:31
+-- Dump completed on 2015-12-12  9:53:22

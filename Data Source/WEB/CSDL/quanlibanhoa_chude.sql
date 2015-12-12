@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: quanlybanhoa
+-- Host: 127.0.0.1    Database: quanlibanhoa
 -- ------------------------------------------------------
 -- Server version	5.7.9-log
 
@@ -16,31 +16,18 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `baocaotongdoanhthuhoatheothang`
+-- Table structure for table `chude`
 --
 
-DROP TABLE IF EXISTS `baocaotongdoanhthuhoatheothang`;
+DROP TABLE IF EXISTS `chude`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `baocaotongdoanhthuhoatheothang` (
-  `Thang` int(11) NOT NULL,
-  `Nam` int(11) NOT NULL,
-  `MaHoa` int(11) NOT NULL,
-  `TongSoluongMuaVao` int(11) DEFAULT NULL,
-  `TongSoLuongBanRa` int(11) DEFAULT NULL,
-  `LoiNhuan` float DEFAULT NULL,
-  PRIMARY KEY (`Thang`,`Nam`,`MaHoa`)
+CREATE TABLE `chude` (
+  `MaChuDe` int(11) NOT NULL,
+  `TenChuDe` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`MaChuDe`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `baocaotongdoanhthuhoatheothang`
---
-
-LOCK TABLES `baocaotongdoanhthuhoatheothang` WRITE;
-/*!40000 ALTER TABLE `baocaotongdoanhthuhoatheothang` DISABLE KEYS */;
-/*!40000 ALTER TABLE `baocaotongdoanhthuhoatheothang` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -51,4 +38,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-27 22:27:30
+-- Dump completed on 2015-12-12  9:53:22

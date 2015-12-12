@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: quanlybanhoa
+-- Host: 127.0.0.1    Database: quanlibanhoa
 -- ------------------------------------------------------
 -- Server version	5.7.9-log
 
@@ -16,31 +16,26 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `phieuban`
+-- Table structure for table `hoa`
 --
 
-DROP TABLE IF EXISTS `phieuban`;
+DROP TABLE IF EXISTS `hoa`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `phieuban` (
-  `SoPhieuBan` int(11) NOT NULL,
-  `MaKhachHang` int(11) DEFAULT NULL,
-  `NgayBan` date DEFAULT NULL,
-  `TongTien` float DEFAULT NULL,
-  PRIMARY KEY (`SoPhieuBan`),
-  KEY `fr_phieumua_khachhang_idx` (`MaKhachHang`),
-  CONSTRAINT `fr_phieumua_khachhang` FOREIGN KEY (`MaKhachHang`) REFERENCES `khachhang` (`MaKhachHang`) ON DELETE NO ACTION ON UPDATE NO ACTION
+CREATE TABLE `hoa` (
+  `MaHoa` int(11) NOT NULL,
+  `MaLH` int(11) DEFAULT NULL,
+  `MaCD` int(11) DEFAULT NULL,
+  `TenHoa` varchar(45) DEFAULT NULL,
+  `GiaMuaVao` float DEFAULT NULL,
+  `GiaBanRa` float DEFAULT NULL,
+  PRIMARY KEY (`MaHoa`),
+  KEY `fk_hoa_loaihoa_idx` (`MaLH`),
+  KEY `fk_hoa_chude_idx` (`MaCD`),
+  CONSTRAINT `fk_hoa_chude` FOREIGN KEY (`MaCD`) REFERENCES `chude` (`MaChuDe`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_hoa_loaihoa` FOREIGN KEY (`MaLH`) REFERENCES `loaihoa` (`MaLoaiHoa`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `phieuban`
---
-
-LOCK TABLES `phieuban` WRITE;
-/*!40000 ALTER TABLE `phieuban` DISABLE KEYS */;
-/*!40000 ALTER TABLE `phieuban` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -51,4 +46,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-27 22:27:31
+-- Dump completed on 2015-12-12  9:53:21
