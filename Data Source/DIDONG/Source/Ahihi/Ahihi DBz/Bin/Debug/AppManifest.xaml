@@ -1,0 +1,5 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="Ahihi DBz" EntryPointType="Ahihi_DBz.App" RuntimeVersion="6.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="Ahihi DBz" Source="Ahihi DBz.dll" />
+  </Deployment.Parts>
+</Deployment>

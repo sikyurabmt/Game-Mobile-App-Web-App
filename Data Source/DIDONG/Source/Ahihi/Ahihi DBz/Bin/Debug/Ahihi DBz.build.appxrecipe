@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>VEGETAPC</Machine>
+    <WindowsUser>Vegeta</WindowsUser>
+    <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>935f3f8b-591e-4f78-bada-e9be6ed1cd88</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Bin\Debug\Ahihi DBz.dll">
+      <PackagePath>Ahihi DBz.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\AlignmentGrid.png">
+      <PackagePath>Assets\AlignmentGrid.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\ApplicationIcon.png">
+      <PackagePath>Assets\ApplicationIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\SquareTile150x150.png">
+      <PackagePath>Assets\SquareTile150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\SquareTile71x71.png">
+      <PackagePath>Assets\SquareTile71x71.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\Tiles\FlipCycleTileLarge.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\Tiles\FlipCycleTileMedium.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\Tiles\FlipCycleTileSmall.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\Tiles\IconicTileMediumLarge.png">
+      <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Assets\Tiles\IconicTileSmall.png">
+      <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Images\next.png">
+      <PackagePath>Images\next.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Images\pause.png">
+      <PackagePath>Images\pause.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Images\play.png">
+      <PackagePath>Images\play.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Images\previous.png">
+      <PackagePath>Images\previous.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Images\stop.png">
+      <PackagePath>Images\stop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Images\background.jpg">
+      <PackagePath>Images\background.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Images\background2.jpg">
+      <PackagePath>Images\background2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Images\bb.jpg">
+      <PackagePath>Images\bb.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\Ahihi\Ahihi DBz\Bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
