@@ -1,0 +1,36 @@
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\Ahihi DBz.dll
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\Ahihi DBz.pdb
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\resources.pri
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\AppxManifest.xml
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\Ahihi.build.appxrecipe
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\App.g.cs
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\ListSong.g.cs
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\MainPage.g.cs
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\Ahihi DBz.g.resources
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\Ahihi_DBz.Resources.AppResources.resources
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\Ahihi.csproj.GenerateResource.Cache
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\Ahihi DBz.dll
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\Ahihi DBz.pdb
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\priconfig.xml
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\priconfig.xml.intermediate
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\layout.resfiles
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\layout.resfiles.intermediate
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\resources.resfiles
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\resources.resfiles.intermediate
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\pri.resfiles
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\pri.resfiles.intermediate
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\qualifiers.txt
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\ProjectArchitectures.txt
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\AppManifest.xaml
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\Bin\Debug\Ahihi_DBz_Debug_AnyCPU.xap
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\MDILProjectFiles.xml
+C:\Users\Hang BY\Desktop\Nhúng\Ahihi DBz\obj\Debug\XapCacheFile.xml
