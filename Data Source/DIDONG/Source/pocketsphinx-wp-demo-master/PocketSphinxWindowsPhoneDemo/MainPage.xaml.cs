@@ -27,7 +27,7 @@ namespace PocketSphinxWindowsPhoneDemo
     {
 
         #region Constant values
-        
+
         private const string WakeupText = "something new";
 
         private string[] DigitValues = new string[] { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
@@ -44,7 +44,7 @@ namespace PocketSphinxWindowsPhoneDemo
             get { return _mode; }
             set
             {
-                if(_mode != value)
+                if (_mode != value)
                 {
                     _mode = value;
                     SetRecognizerMode(_mode);
@@ -61,7 +61,7 @@ namespace PocketSphinxWindowsPhoneDemo
         private WasapiAudioRecorder audioRecorder;
 
         private enum RecognizerMode { Wakeup, Digits, Menu };
-               
+
         #endregion
 
         #region Constructor & Loaded event
@@ -74,11 +74,6 @@ namespace PocketSphinxWindowsPhoneDemo
 
         private async void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
-            // UI
-            progressBar.IsIndeterminate = true;
-            ContentPanel.IsHitTestVisible = false;
-            StateMessageBlock.Text = "components are loading";
-
             // Initializing
             await InitialzeSpeechRecognizer();
             InitializeAudioRecorder();
@@ -86,12 +81,6 @@ namespace PocketSphinxWindowsPhoneDemo
             // Start processes
             StartSpeechRecognizerProcessing();
             StartNativeRecorder();
-
-            // UI            
-            progressBar.Visibility = System.Windows.Visibility.Collapsed;
-            progressBar.IsIndeterminate = false;
-            ContentPanel.IsHitTestVisible = true;
-            StateMessageBlock.Text = "ready for use";
         }
 
         #endregion
@@ -100,7 +89,7 @@ namespace PocketSphinxWindowsPhoneDemo
 
         private void FindMatchToToggle(string recognizedText)
         {
-            bool matchFound = false; 
+            bool matchFound = false;
 
             switch (Mode)
             {
@@ -116,7 +105,7 @@ namespace PocketSphinxWindowsPhoneDemo
                             recognizedText = word;
                             matchFound = true;
                         }
-                    }                    
+                    }
                     break;
                 case RecognizerMode.Menu:
                     matchFound = (MenuValues.Contains(recognizedText.ToLower()));
@@ -133,7 +122,7 @@ namespace PocketSphinxWindowsPhoneDemo
 
         private void ToggleSearch()
         {
-            switch(Mode)
+            switch (Mode)
             {
                 case RecognizerMode.Wakeup:
                     Mode = RecognizerMode.Digits;
@@ -156,8 +145,6 @@ namespace PocketSphinxWindowsPhoneDemo
             Debug.WriteLine(result);
             speechRecognizer.StartProcessing();
             Debug.WriteLine(result);
-
-            ModeMessageBlock.Text = string.Format("running '{0}' mode", mode);
         }
 
         #endregion
@@ -195,7 +182,7 @@ namespace PocketSphinxWindowsPhoneDemo
             }
             catch (Exception ex)
             {
-                var initResult = ex.Message;                
+                var initResult = ex.Message;
                 initResults.Add(initResult);
             }
 
@@ -211,14 +198,14 @@ namespace PocketSphinxWindowsPhoneDemo
 
             try
             {
-                if(speechRecognizer.IsProcessing())
+                if (speechRecognizer.IsProcessing())
                 {
                     result = "PocketSphinx already started";
                 }
                 else
                 {
                     result = speechRecognizer.StartProcessing();
-                }                
+                }
             }
             catch
             {
@@ -253,7 +240,7 @@ namespace PocketSphinxWindowsPhoneDemo
         void speechRecognizer_resultFound(string result)
         {
             Debug.WriteLine("result found: {0}", result);
-            StateMessageBlock.Text = string.Format("found: {0}", result);
+            tblStateMessageBlock.Text = string.Format("found: {0}", result);
         }
 
         #endregion
@@ -291,7 +278,7 @@ namespace PocketSphinxWindowsPhoneDemo
                 Debug.WriteLine(ex.Message);
                 StopNativeRecorder();
                 StopSpeechRecognizerProcessing();
-                StateMessageBlock.Text = "all stoped because of error";
+                tblStateMessageBlock.Text = "all stoped because of error";
             }
 
             // incoming raw sound
@@ -300,7 +287,7 @@ namespace PocketSphinxWindowsPhoneDemo
 
         #endregion
 
-        #region 
+        #region
 
         MediaLibrary a = new MediaLibrary();
         SongCollection songs;
@@ -340,6 +327,34 @@ namespace PocketSphinxWindowsPhoneDemo
         }
         #endregion Test background
 
+        private void appbar_previous_click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void appbar_play_click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void appbar_stop_click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void appbar_next_click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void appbar_list_click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void appbar_option_click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

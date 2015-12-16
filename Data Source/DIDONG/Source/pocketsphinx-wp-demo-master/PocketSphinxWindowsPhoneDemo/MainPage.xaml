@@ -15,42 +15,32 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
-        <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="PocketSphinx" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="WP Demo" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
-        </StackPanel>
-
-        <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
-            <TextBlock x:Name="ModeMessageBlock" 
-                       TextAlignment="Center" 
-                       VerticalAlignment="Top" 
-                       TextWrapping="Wrap" />
-            
-            <TextBlock x:Name="MainMessageBlock" 
-                       Style="{StaticResource PhoneTextExtraLargeStyle}"
-                       TextAlignment="Center" 
-                       VerticalAlignment="Center" 
-                       TextWrapping="Wrap" />
-
-            <TextBlock x:Name="StateMessageBlock" 
-                       TextAlignment="Center" 
-                       VerticalAlignment="Bottom" 
-                       TextWrapping="Wrap" />
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Images/background.jpg"/>
+        </Grid.Background>
+        <Grid HorizontalAlignment="Left" Height="120" Margin="10,10,0,0" VerticalAlignment="Top" Width="460">
+            <TextBlock x:Name="tblTitle" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Title" VerticalAlignment="Top" Height="40" Width="460" FontSize="30" FontWeight="Bold" Foreground="#FF9ECBD3"/>
+            <TextBlock x:Name="tblArtist" HorizontalAlignment="Left" Margin="0,40,0,0" TextWrapping="Wrap" Text="Artist" VerticalAlignment="Top" FontSize="24" Width="460" Foreground="#FFBDBAF7" Height="40"/>
+            <TextBlock x:Name="tblAlbum" HorizontalAlignment="Left" Margin="0,80,0,0" TextWrapping="Wrap" Text="Album" VerticalAlignment="Top" FontSize="24" Width="460" Foreground="#FFBDBAF7" Height="40"/>
         </Grid>
-
-        <ProgressBar Grid.Row="1" 
-                         x:Name="progressBar" 
-                         IsIndeterminate="True" />
-
+        <Grid HorizontalAlignment="Left" Height="111" Margin="0,585,0,0" VerticalAlignment="Top" Width="480">
+            <Slider HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="480" Height="100"/>
+            <TextBlock x:Name="tblNowTime" HorizontalAlignment="Left" Margin="15,62,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="25" FontSize="20" Foreground="#FFBDBAF7"/>
+            <TextBlock x:Name="tblTotalTime" HorizontalAlignment="Right" Margin="0,62,15,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="25" FontSize="20" Foreground="#FFBDBAF7"/>
+            <TextBlock x:Name="tblStateMessageBlock" HorizontalAlignment="Left" Margin="115,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        </Grid>
     </Grid>
-
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/previous.png" Text="previous" Click="appbar_previous_click"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/play.png" Text="play" Click="appbar_play_click"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/stop.png" Text="stop" Click="appbar_stop_click"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/next.png" Text="next" Click="appbar_next_click"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="list" Click="appbar_list_click"/>
+                <shell:ApplicationBarMenuItem Text="option" Click="appbar_option_click"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
 </phone:PhoneApplicationPage>

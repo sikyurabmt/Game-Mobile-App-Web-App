@@ -196,6 +196,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\album.png" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\background2.jpg" />
+    <Content Include="Images\bb.jpg" />
+    <Content Include="Images\next.png" />
+    <Content Include="Images\pause.png" />
+    <Content Include="Images\play.png" />
+    <Content Include="Images\previous.png" />
+    <Content Include="Images\stop.png" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
