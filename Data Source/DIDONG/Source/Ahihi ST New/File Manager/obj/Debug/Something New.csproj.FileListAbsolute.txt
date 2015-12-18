@@ -1,0 +1,21 @@
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\Bin\Debug\Files\setup.txt
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\Bin\Debug\File Manager.dll
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\Bin\Debug\File Manager.pdb
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\Bin\Debug\AppManifest.xaml
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\Bin\Debug\File_Manager_Debug_AnyCPU.xap
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\obj\Debug\App.g.cs
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\obj\Debug\MainPage.g.cs
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\obj\Debug\Page1.g.cs
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\obj\Debug\File Manager.g.resources
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\obj\Debug\File_Manager.Resources.AppResources.resources
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\obj\Debug\Something New.csproj.GenerateResource.Cache
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\obj\Debug\File Manager.dll
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\obj\Debug\File Manager.pdb
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\obj\Debug\XapCacheFile.xml

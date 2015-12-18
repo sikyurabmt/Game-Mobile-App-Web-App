@@ -1,0 +1,21 @@
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\Bin\Debug\Assets\ApplicationIcon.png
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\Bin\Debug\File Manager.dll
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\Bin\Debug\File Manager.pdb
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\Bin\Debug\AppManifest.xaml
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\Bin\Debug\Properties\WMAppManifest.xml
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\Bin\Debug\File_Manager_Debug_AnyCPU.xap
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\obj\Debug\App.g.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\obj\Debug\MainPage.g.cs
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\obj\Debug\File Manager.g.resources
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\obj\Debug\File_Manager.Resources.AppResources.resources
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\obj\Debug\File Manager.csproj.GenerateResource.Cache
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\obj\Debug\File Manager.dll
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\obj\Debug\File Manager.pdb
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\obj\Debug\XapCacheFile.xml
+c:\users\vegeta\documents\visual studio 2013\Projects\File Manager\File Manager\Bin\Debug\Files\setup.txt
+C:\Users\Vegeta\Documents\Visual Studio 2013\Projects\File Manager\File Manager\obj\Debug\Page1.g.cs
