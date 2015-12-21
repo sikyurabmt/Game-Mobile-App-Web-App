@@ -150,10 +150,6 @@ namespace File_Manager
             else
             {
                 Stop();
-                //if (IsPlaying())
-                //{
-                //    Stop();
-                //}
             }
         }
 
@@ -166,6 +162,7 @@ namespace File_Manager
             else
             {
                 GetNextSong();
+                Stop();
             }
         }
 
@@ -178,6 +175,7 @@ namespace File_Manager
             else
             {
                 GetPreviousSong();
+                Stop();
             }
         }
 

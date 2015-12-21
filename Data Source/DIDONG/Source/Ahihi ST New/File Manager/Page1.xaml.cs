@@ -54,31 +54,19 @@ namespace File_Manager
             switch (SettingManager._Color)
             {
                 case SettingManager.Color.BLUE:
-                    tblTitle.Foreground = new SolidColorBrush(Colors.Blue);
-                    tblArtist.Foreground = new SolidColorBrush(Colors.Blue);
-                    tblAlbum.Foreground = new SolidColorBrush(Colors.Blue);
-                    tblNowTime.Foreground = new SolidColorBrush(Colors.Blue);
-                    tblTotalTime.Foreground = new SolidColorBrush(Colors.Blue);
+                    tblTitle.Foreground = tblArtist.Foreground = tblAlbum.Foreground = tblNowTime.Foreground = tblTotalTime.Foreground = new SolidColorBrush(Colors.Blue);
                     //tblTitle.Foreground = new SolidColorBrush(Color.FromArgb(158, 203, 211, 100));
                     //tblArtist.Foreground = new SolidColorBrush(Color.FromArgb(189, 186, 247, 100));
                     //tblAlbum.Foreground = new SolidColorBrush(Color.FromArgb(189, 186, 247, 100));
                     break;
                 case SettingManager.Color.RED:
-                    tblTitle.Foreground = new SolidColorBrush(Colors.Red);
-                    tblArtist.Foreground = new SolidColorBrush(Colors.Red);
-                    tblAlbum.Foreground = new SolidColorBrush(Colors.Red);
-                    tblNowTime.Foreground = new SolidColorBrush(Colors.Red);
-                    tblTotalTime.Foreground = new SolidColorBrush(Colors.Red);
+                    tblTitle.Foreground = tblArtist.Foreground = tblAlbum.Foreground = tblNowTime.Foreground = tblTotalTime.Foreground = new SolidColorBrush(Colors.Red);
                     //tblTitle.Foreground = new SolidColorBrush(Color.FromArgb(250, 50, 50, 100));
                     //tblArtist.Foreground = new SolidColorBrush(Color.FromArgb(247, 130, 130, 100));
                     //tblAlbum.Foreground = new SolidColorBrush(Color.FromArgb(247, 130, 130, 100));
                     break;
                 case SettingManager.Color.YELLOW:
-                    tblTitle.Foreground = new SolidColorBrush(Colors.Yellow);
-                    tblArtist.Foreground = new SolidColorBrush(Colors.Yellow);
-                    tblAlbum.Foreground = new SolidColorBrush(Colors.Yellow);
-                    tblNowTime.Foreground = new SolidColorBrush(Colors.Yellow);
-                    tblTotalTime.Foreground = new SolidColorBrush(Colors.Yellow);
+                    tblTitle.Foreground = tblArtist.Foreground = tblAlbum.Foreground = tblNowTime.Foreground = tblTotalTime.Foreground = new SolidColorBrush(Colors.Yellow);
                     //tblTitle.Foreground = new SolidColorBrush(Color.FromArgb(230, 234, 20, 100));
                     //tblArtist.Foreground = new SolidColorBrush(Color.FromArgb(190, 190, 80, 100));
                     //tblAlbum.Foreground = new SolidColorBrush(Color.FromArgb(190, 190, 80, 100));
@@ -157,7 +145,10 @@ namespace File_Manager
 
         private void LayoutRoot_Loaded(object sender, RoutedEventArgs e)
         {
-            //ChangeValue();
+            if (mm.IsPlaying())
+            {
+                SetProperties();
+            }
         }
 
         private void appbar_previous_click(object sender, EventArgs e)
