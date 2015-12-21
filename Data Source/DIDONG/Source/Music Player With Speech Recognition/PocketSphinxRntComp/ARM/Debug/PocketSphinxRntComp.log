@@ -1,0 +1,273 @@
+﻿Build started 12/21/2015 8:23:18 AM.
+     1>Project "E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\PocketSphinxRntComp.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /I"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\/include" /I"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\/include/win32" /I"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\\" /I"Generated Files\\" /IARM\Debug\ /I"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\\" /I"Generated Files\\" /IARM\Debug\ /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /nologo /W3 /WX- /sdl /MP /Od /Oy- /D HAVE_CONFIG_H /D _WIN32 /D _WIN32_WP /D _CRT_SECURE_NO_WARNINGS /D _WINRT_DLL /D _WINDLL /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"pch.h" /Fp"ARM\Debug\PocketSphinxRntComp.pch" /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt pch.cpp
+         pch.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /I"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\/include" /I"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\/include/win32" /I"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\\" /I"Generated Files\\" /IARM\Debug\ /I"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\\" /I"Generated Files\\" /IARM\Debug\ /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /nologo /W3 /WX- /sdl /MP /Od /Oy- /D HAVE_CONFIG_H /D _WIN32 /D _WIN32_WP /D _CRT_SECURE_NO_WARNINGS /D _WINRT_DLL /D _WINDLL /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt libpocketsphinx\acmod.c libpocketsphinx\allphone_search.c libpocketsphinx\bin_mdef.c libpocketsphinx\blkarray_list.c libpocketsphinx\dict.c libpocketsphinx\dict2pid.c libpocketsphinx\fsg_history.c libpocketsphinx\fsg_lextree.c libpocketsphinx\fsg_search.c libpocketsphinx\hmm.c libpocketsphinx\kws_detections.c libpocketsphinx\kws_search.c libpocketsphinx\mdef.c libpocketsphinx\ms_gauden.c libpocketsphinx\ms_mgau.c libpocketsphinx\ms_senone.c libpocketsphinx\ngram_search.c libpocketsphinx\ngram_search_fwdflat.c libpocketsphinx\ngram_search_fwdtree.c libpocketsphinx\phone_loop_search.c libpocketsphinx\pocketsphinx.c libpocketsphinx\ps_alignment.c libpocketsphinx\ps_lattice.c libpocketsphinx\ps_mllr.c libpocketsphinx\ptm_mgau.c libpocketsphinx\s2_semi_mgau.c libpocketsphinx\state_align_search.c libpocketsphinx\tmat.c libpocketsphinx\vector.c libsphinxbase\feat\agc.c libsphinxbase\feat\cmn.c libsphinxbase\feat\cmn_prior.c libsphinxbase\feat\feat.c libsphinxbase\feat\lda.c libsphinxbase\fe\fe_interface.c libsphinxbase\fe\fe_noise.c libsphinxbase\fe\fe_prespch_buf.c libsphinxbase\fe\fe_sigproc.c libsphinxbase\fe\fe_warp.c libsphinxbase\fe\fe_warp_affine.c libsphinxbase\fe\fe_warp_inverse_linear.c libsphinxbase\fe\fe_warp_piecewise_linear.c libsphinxbase\fe\fixlog.c libsphinxbase\fe\yin.c libsphinxbase\lm\fsg_model.c libsphinxbase\lm\jsgf.c libsphinxbase\lm\jsgf_parser.c libsphinxbase\lm\jsgf_scanner.c libsphinxbase\lm\lm3g_model.c libsphinxbase\lm\ngram_model.c libsphinxbase\lm\ngram_model_arpa.c libsphinxbase\lm\ngram_model_dmp.c libsphinxbase\lm\ngram_model_dmp32.c libsphinxbase\lm\ngram_model_set.c libsphinxbase\util\bio.c libsphinxbase\util\bitvec.c libsphinxbase\util\blas_lite.c libsphinxbase\util\case.c libsphinxbase\util\ckd_alloc.c libsphinxbase\util\cmd_ln.c libsphinxbase\util\dtoa.c libsphinxbase\util\err.c libsphinxbase\util\errno.c libsphinxbase\util\f2c_lite.c libsphinxbase\util\filename.c libsphinxbase\util\genrand.c libsphinxbase\util\glist.c libsphinxbase\util\hash_table.c libsphinxbase\util\heap.c libsphinxbase\util\huff_code.c libsphinxbase\util\listelem_alloc.c libsphinxbase\util\logmath.c libsphinxbase\util\matrix.c libsphinxbase\util\mmio.c libsphinxbase\util\pio.c libsphinxbase\util\profile.c libsphinxbase\util\slamch.c libsphinxbase\util\slapack_lite.c libsphinxbase\util\strfuncs.c libsphinxbase\util\utf8.c
+         acmod.c
+         allphone_search.c
+         bin_mdef.c
+         blkarray_list.c
+     1>libpocketsphinx\bin_mdef.c(148): warning C4244: '=' : conversion from 'int16' to 'uint8', possible loss of data
+     1>libpocketsphinx\bin_mdef.c(149): warning C4244: '=' : conversion from 'int16' to 'uint8', possible loss of data
+     1>libpocketsphinx\bin_mdef.c(150): warning C4244: '=' : conversion from 'int16' to 'uint8', possible loss of data
+     1>libpocketsphinx\acmod.c(195): warning C4244: '=' : conversion from 'double' to 'mfcc_t', possible loss of data
+     1>libpocketsphinx\acmod.c(200): warning C4244: '=' : conversion from 'double' to 'mfcc_t', possible loss of data
+         dict.c
+     1>libpocketsphinx\acmod.c(510): warning C4018: '<' : signed/unsigned mismatch
+     1>libpocketsphinx\acmod.c(521): warning C4018: '<' : signed/unsigned mismatch
+     1>libpocketsphinx\allphone_search.c(605): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\allphone_search.c(609): warning C4244: '=' : conversion from 'double' to 'float32', possible loss of data
+         dict2pid.c
+         fsg_history.c
+         fsg_lextree.c
+         fsg_search.c
+         hmm.c
+         kws_detections.c
+         kws_search.c
+     1>libpocketsphinx\fsg_search.c(214): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\fsg_search.c(223): warning C4244: '=' : conversion from 'double' to 'float32', possible loss of data
+         mdef.c
+         ms_gauden.c
+         ms_mgau.c
+         ms_senone.c
+     1>libpocketsphinx\ms_mgau.c(133): warning C4018: '>' : signed/unsigned mismatch
+     1>libpocketsphinx\ms_mgau.c(136): warning C4018: '<' : signed/unsigned mismatch
+     1>libpocketsphinx\ms_mgau.c(216): warning C4018: '<' : signed/unsigned mismatch
+     1>libpocketsphinx\ms_mgau.c(224): warning C4018: '<' : signed/unsigned mismatch
+         ngram_search.c
+         ngram_search_fwdflat.c
+         ngram_search_fwdtree.c
+     1>libpocketsphinx\ms_senone.c(118): warning C4018: '<' : signed/unsigned mismatch
+     1>libpocketsphinx\ms_senone.c(224): warning C4018: '<' : signed/unsigned mismatch
+     1>libpocketsphinx\ms_senone.c(225): warning C4018: '<' : signed/unsigned mismatch
+     1>libpocketsphinx\ms_senone.c(240): warning C4018: '<' : signed/unsigned mismatch
+     1>libpocketsphinx\ms_senone.c(314): warning C4018: '<' : signed/unsigned mismatch
+     1>libpocketsphinx\ms_senone.c(325): warning C4018: '<' : signed/unsigned mismatch
+     1>libpocketsphinx\ms_senone.c(371): warning C4018: '<' : signed/unsigned mismatch
+     1>libpocketsphinx\ms_senone.c(372): warning C4018: '<=' : signed/unsigned mismatch
+     1>libpocketsphinx\ms_senone.c(376): warning C4018: '<' : signed/unsigned mismatch
+     1>libpocketsphinx\ngram_search.c(94): warning C4090: 'function' : different 'const' qualifiers
+         phone_loop_search.c
+     1>libpocketsphinx\ngram_search.c(137): warning C4244: '=' : conversion from 'double' to 'float32', possible loss of data
+     1>libpocketsphinx\ngram_search_fwdflat.c(706): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ngram_search.c(723): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ngram_search.c(1043): warning C4244: 'function' : conversion from 'double' to 'float32', possible loss of data
+     1>libpocketsphinx\ngram_search.c(1188): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ngram_search.c(1244): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         pocketsphinx.c
+         ps_alignment.c
+         ps_lattice.c
+         ps_mllr.c
+     1>libpocketsphinx\pocketsphinx.c(283): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ps_lattice.c(475): warning C4244: 'initializing' : conversion from 'float64' to 'float32', possible loss of data
+     1>libpocketsphinx\pocketsphinx.c(303): warning C4244: 'function' : conversion from 'int32' to 'float32', possible loss of data
+     1>libpocketsphinx\ps_lattice.c(1275): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ps_lattice.c(1307): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ps_lattice.c(1325): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ps_lattice.c(1363): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ps_lattice.c(1384): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ps_lattice.c(1399): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ps_lattice.c(1458): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ps_lattice.c(1467): warning C4244: 'function' : conversion from 'float32' to 'int', possible loss of data
+     1>libpocketsphinx\ps_lattice.c(1550): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ps_lattice.c(1635): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ps_lattice.c(1641): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>libpocketsphinx\ps_lattice.c(1712): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+         ptm_mgau.c
+         s2_semi_mgau.c
+         state_align_search.c
+         tmat.c
+     1>libpocketsphinx\ptm_mgau.c(832): warning C4244: '=' : conversion from 'int16' to 'uint8', possible loss of data
+         vector.c
+     1>libpocketsphinx\vector.c(102): warning C4244: '*=' : conversion from 'float64' to 'float32', possible loss of data
+         agc.c
+         cmn.c
+         cmn_prior.c
+         feat.c
+         lda.c
+     1>libsphinxbase\feat\feat.c(370): warning C4018: '>=' : signed/unsigned mismatch
+     1>libsphinxbase\feat\feat.c(404): warning C4018: '>=' : signed/unsigned mismatch
+         fe_interface.c
+         fe_noise.c
+     1>libsphinxbase\feat\feat.c(899): warning C4018: '<' : signed/unsigned mismatch
+     1>libsphinxbase\feat\feat.c(902): warning C4018: '<' : signed/unsigned mismatch
+         fe_prespch_buf.c
+         fe_sigproc.c
+         fe_warp.c
+         fe_warp_affine.c
+         fe_warp_inverse_linear.c
+         fe_warp_piecewise_linear.c
+         fixlog.c
+         yin.c
+         fsg_model.c
+         jsgf.c
+         jsgf_parser.c
+     1>libsphinxbase\lm\fsg_model.c(668): warning C4244: '=' : conversion from 'double' to 'float32', possible loss of data
+     1>libsphinxbase\lm\jsgf.c(105): warning C4013: 'getenv' undefined; assuming extern returning int
+     1>libsphinxbase\lm\jsgf.c(105): warning C4047: '=' : 'char *' differs in levels of indirection from 'int'
+     1>libsphinxbase\lm\fsg_model.c(871): warning C4244: 'function' : conversion from 'float32' to 'int', possible loss of data
+         jsgf_scanner.c
+         lm3g_model.c
+     1>jsgf_scanner.c(915): warning C4018: '<' : signed/unsigned mismatch (libsphinxbase\lm\jsgf_scanner.c)
+     1>_jsgf_scanner.l(84): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data (libsphinxbase\lm\jsgf_scanner.c)
+         ngram_model.c
+     1>jsgf_scanner.c(1854): warning C4018: '<' : signed/unsigned mismatch (libsphinxbase\lm\jsgf_scanner.c)
+         ngram_model_arpa.c
+         ngram_model_dmp.c
+     1>e:\save data\learn 3\sphinx\pocketsphinx-wp-demo\pocketsphinxrntcomp\libsphinxbase\lm\lm3g_templates.c(56): warning C4018: '<' : signed/unsigned mismatch (libsphinxbase\lm\ngram_model_arpa.c)
+     1>e:\save data\learn 3\sphinx\pocketsphinx-wp-demo\pocketsphinxrntcomp\libsphinxbase\lm\lm3g_templates.c(58): warning C4018: '>' : signed/unsigned mismatch (libsphinxbase\lm\ngram_model_arpa.c)
+         ngram_model_dmp32.c
+         ngram_model_set.c
+     1>libsphinxbase\lm\ngram_model_dmp.c(663): warning C4244: '=' : conversion from 'float64' to 'float32', possible loss of data
+     1>libsphinxbase\lm\ngram_model_dmp.c(665): warning C4244: '=' : conversion from 'float64' to 'float32', possible loss of data
+     1>libsphinxbase\lm\ngram_model_dmp.c(817): warning C4244: 'initializing' : conversion from 'float64' to 'float32', possible loss of data
+     1>libsphinxbase\lm\ngram_model_dmp.c(830): warning C4244: 'initializing' : conversion from 'float64' to 'float32', possible loss of data
+     1>libsphinxbase\lm\ngram_model_dmp.c(843): warning C4244: 'initializing' : conversion from 'float64' to 'float32', possible loss of data
+         bio.c
+     1>libsphinxbase\lm\ngram_model_set.c(545): warning C4244: '=' : conversion from 'double' to 'float32', possible loss of data
+     1>libsphinxbase\lm\ngram_model_set.c(598): warning C4244: '=' : conversion from 'float64' to 'float32', possible loss of data
+     1>libsphinxbase\lm\ngram_model_set.c(803): warning C4244: 'function' : conversion from 'float64' to 'float32', possible loss of data
+         bitvec.c
+         blas_lite.c
+         case.c
+         ckd_alloc.c
+         cmd_ln.c
+         dtoa.c
+     1>libsphinxbase\util\cmd_ln.c(151): warning C4090: 'function' : different 'const' qualifiers
+         err.c
+     1>libsphinxbase\util\cmd_ln.c(218): warning C4013: 'getenv' undefined; assuming extern returning int
+     1>libsphinxbase\util\cmd_ln.c(218): warning C4047: '=' : 'const char *' differs in levels of indirection from 'int'
+     1>libsphinxbase\util\cmd_ln.c(331): warning C4090: 'function' : different 'const' qualifiers
+         errno.c
+         f2c_lite.c
+         filename.c
+         genrand.c
+         glist.c
+         hash_table.c
+         heap.c
+         huff_code.c
+         listelem_alloc.c
+     1>libsphinxbase\util\huff_code.c(339): warning C4018: '<' : signed/unsigned mismatch
+     1>libsphinxbase\util\huff_code.c(393): warning C4018: '<' : signed/unsigned mismatch
+     1>libsphinxbase\util\huff_code.c(429): warning C4018: '<' : signed/unsigned mismatch
+     1>libsphinxbase\util\huff_code.c(460): warning C4018: '<' : signed/unsigned mismatch
+         logmath.c
+         matrix.c
+         mmio.c
+         pio.c
+     1>libsphinxbase\util\matrix.c(71): warning C4244: '*=' : conversion from 'float64' to 'float32', possible loss of data
+         profile.c
+         slamch.c
+         slapack_lite.c
+         strfuncs.c
+     1>libsphinxbase\util\slapack_lite.c(1041): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>libsphinxbase\util\slapack_lite.c(1046): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+     1>libsphinxbase\util\slapack_lite.c(1074): warning C4244: '=' : conversion from 'doublereal' to 'real', possible loss of data
+     1>libsphinxbase\util\slapack_lite.c(1079): warning C4244: '=' : conversion from 'double' to 'real', possible loss of data
+         utf8.c
+     1>libsphinxbase\util\profile.c(90): warning C4142: benign redefinition of type
+     1>libsphinxbase\util\profile.c(90): warning C4273: 'unlink' : inconsistent dll linkage
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\include\stdio.h(285) : see previous definition of 'unlink'
+     1>libsphinxbase\util\profile.c(193): warning C4244: '=' : conversion from 'ULONGLONG' to 'float64', possible loss of data
+     1>libsphinxbase\util\profile.c(194): warning C4244: '=' : conversion from 'ULONGLONG' to 'float64', possible loss of data
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /I"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\/include" /I"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\/include/win32" /I"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\\" /I"Generated Files\\" /IARM\Debug\ /I"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\\" /I"Generated Files\\" /IARM\Debug\ /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D HAVE_CONFIG_H /D _WIN32 /D _WIN32_WP /D _CRT_SECURE_NO_WARNINGS /D _WINRT_DLL /D _WINDLL /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TP /FU"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\lib\arm\platform.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata\Windows.winmd" /analyze- /errorReport:prompt Output.cpp SpeechRecognizer.cpp WasapiAudio.cpp
+         Output.cpp
+         SpeechRecognizer.cpp
+         WasapiAudio.cpp
+     1>SpeechRecognizer.cpp(301): warning C4800: 'uint8' : forcing value to bool 'true' or 'false' (performance warning)
+     1>SpeechRecognizer.cpp(279): warning C4101: 'word' : unreferenced local variable
+     1>SpeechRecognizer.cpp(276): warning C4101: 'rem' : unreferenced local variable
+     1>SpeechRecognizer.cpp(276): warning C4101: 'ts' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\ARM\Debug\PocketSphinxRntComp\PocketSphinxRntComp.dll" /INCREMENTAL /NOLOGO WindowsPhoneCore.lib PhoneAudioSes.lib RuntimeObject.lib PhoneAppModelHost.lib WindowsPhoneCore.lib RuntimeObject.lib PhoneAppModelHost.lib /NODEFAULTLIB:ole32.lib /MANIFEST:NO /DEBUG /PDB:"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\ARM\Debug\PocketSphinxRntComp\PocketSphinxRntComp.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /WINMD /WINMDFILE:"E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\ARM\Debug\PocketSphinxRntComp\PocketSphinxRntComp.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:ARM /DLL ARM\Debug\acmod.obj
+         ARM\Debug\allphone_search.obj
+         ARM\Debug\bin_mdef.obj
+         ARM\Debug\blkarray_list.obj
+         ARM\Debug\dict.obj
+         ARM\Debug\dict2pid.obj
+         ARM\Debug\fsg_history.obj
+         ARM\Debug\fsg_lextree.obj
+         ARM\Debug\fsg_search.obj
+         ARM\Debug\hmm.obj
+         ARM\Debug\kws_detections.obj
+         ARM\Debug\kws_search.obj
+         ARM\Debug\mdef.obj
+         ARM\Debug\ms_gauden.obj
+         ARM\Debug\ms_mgau.obj
+         ARM\Debug\ms_senone.obj
+         ARM\Debug\ngram_search.obj
+         ARM\Debug\ngram_search_fwdflat.obj
+         ARM\Debug\ngram_search_fwdtree.obj
+         ARM\Debug\phone_loop_search.obj
+         ARM\Debug\pocketsphinx.obj
+         ARM\Debug\ps_alignment.obj
+         ARM\Debug\ps_lattice.obj
+         ARM\Debug\ps_mllr.obj
+         ARM\Debug\ptm_mgau.obj
+         ARM\Debug\s2_semi_mgau.obj
+         ARM\Debug\state_align_search.obj
+         ARM\Debug\tmat.obj
+         ARM\Debug\vector.obj
+         ARM\Debug\agc.obj
+         ARM\Debug\cmn.obj
+         ARM\Debug\cmn_prior.obj
+         ARM\Debug\feat.obj
+         ARM\Debug\lda.obj
+         ARM\Debug\fe_interface.obj
+         ARM\Debug\fe_noise.obj
+         ARM\Debug\fe_prespch_buf.obj
+         ARM\Debug\fe_sigproc.obj
+         ARM\Debug\fe_warp.obj
+         ARM\Debug\fe_warp_affine.obj
+         ARM\Debug\fe_warp_inverse_linear.obj
+         ARM\Debug\fe_warp_piecewise_linear.obj
+         ARM\Debug\fixlog.obj
+         ARM\Debug\yin.obj
+         ARM\Debug\fsg_model.obj
+         ARM\Debug\jsgf.obj
+         ARM\Debug\jsgf_parser.obj
+         ARM\Debug\jsgf_scanner.obj
+         ARM\Debug\lm3g_model.obj
+         ARM\Debug\ngram_model.obj
+         ARM\Debug\ngram_model_arpa.obj
+         ARM\Debug\ngram_model_dmp.obj
+         ARM\Debug\ngram_model_dmp32.obj
+         ARM\Debug\ngram_model_set.obj
+         ARM\Debug\bio.obj
+         ARM\Debug\bitvec.obj
+         ARM\Debug\blas_lite.obj
+         ARM\Debug\case.obj
+         ARM\Debug\ckd_alloc.obj
+         ARM\Debug\cmd_ln.obj
+         ARM\Debug\dtoa.obj
+         ARM\Debug\err.obj
+         ARM\Debug\errno.obj
+         ARM\Debug\f2c_lite.obj
+         ARM\Debug\filename.obj
+         ARM\Debug\genrand.obj
+         ARM\Debug\glist.obj
+         ARM\Debug\hash_table.obj
+         ARM\Debug\heap.obj
+         ARM\Debug\huff_code.obj
+         ARM\Debug\listelem_alloc.obj
+         ARM\Debug\logmath.obj
+         ARM\Debug\matrix.obj
+         ARM\Debug\mmio.obj
+         ARM\Debug\pio.obj
+         ARM\Debug\profile.obj
+         ARM\Debug\slamch.obj
+         ARM\Debug\slapack_lite.obj
+         ARM\Debug\strfuncs.obj
+         ARM\Debug\utf8.obj
+         ARM\Debug\Output.obj
+         ARM\Debug\SpeechRecognizer.obj
+         ARM\Debug\pch.obj
+         ARM\Debug\WasapiAudio.obj
+            Creating library E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\ARM\Debug\PocketSphinxRntComp\PocketSphinxRntComp.lib and object E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\ARM\Debug\PocketSphinxRntComp\PocketSphinxRntComp.exp
+         PocketSphinxRntComp.vcxproj -> E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\ARM\Debug\PocketSphinxRntComp\PocketSphinxRntComp.dll
+     1>Done Building Project "E:\Save Data\Learn 3\Sphinx\pocketsphinx-wp-demo\PocketSphinxRntComp\PocketSphinxRntComp.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.17

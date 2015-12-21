@@ -1,0 +1,7 @@
+#JSGF V1.0;
+
+grammar digits;
+
+<digit> = play | pause | stop | next | previous | setting | list ;
+
+public <digits> = <digit>+;

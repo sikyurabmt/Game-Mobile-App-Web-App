@@ -182,7 +182,7 @@ namespace File_Manager
 
         private void appbar_option_click(object sender, EventArgs e)
         {
-            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/SettingPage.xaml", UriKind.Relative));
         }
     }
 }

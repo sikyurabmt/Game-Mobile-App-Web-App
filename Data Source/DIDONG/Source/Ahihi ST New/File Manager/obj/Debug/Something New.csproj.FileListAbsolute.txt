@@ -32,7 +32,6 @@ D:\Data Projects\HQL\Data Source\DIDONG\Source\Ahihi ST New\File Manager\Bin\Deb
 D:\Data Projects\HQL\Data Source\DIDONG\Source\Ahihi ST New\File Manager\Bin\Debug\Properties\WMAppManifest.xml
 D:\Data Projects\HQL\Data Source\DIDONG\Source\Ahihi ST New\File Manager\Bin\Debug\File_Manager_Debug_AnyCPU.xap
 D:\Data Projects\HQL\Data Source\DIDONG\Source\Ahihi ST New\File Manager\obj\Debug\App.g.cs
-D:\Data Projects\HQL\Data Source\DIDONG\Source\Ahihi ST New\File Manager\obj\Debug\MainPage.g.cs
 D:\Data Projects\HQL\Data Source\DIDONG\Source\Ahihi ST New\File Manager\obj\Debug\Page1.g.cs
 D:\Data Projects\HQL\Data Source\DIDONG\Source\Ahihi ST New\File Manager\obj\Debug\File Manager.g.resources
 D:\Data Projects\HQL\Data Source\DIDONG\Source\Ahihi ST New\File Manager\obj\Debug\File_Manager.Resources.AppResources.resources
@@ -40,3 +39,4 @@ D:\Data Projects\HQL\Data Source\DIDONG\Source\Ahihi ST New\File Manager\obj\Deb
 D:\Data Projects\HQL\Data Source\DIDONG\Source\Ahihi ST New\File Manager\obj\Debug\File Manager.dll
 D:\Data Projects\HQL\Data Source\DIDONG\Source\Ahihi ST New\File Manager\obj\Debug\File Manager.pdb
 D:\Data Projects\HQL\Data Source\DIDONG\Source\Ahihi ST New\File Manager\obj\Debug\XapCacheFile.xml
+D:\Data Projects\HQL\Data Source\DIDONG\Source\Ahihi ST New\File Manager\obj\Debug\SettingPage.g.cs
