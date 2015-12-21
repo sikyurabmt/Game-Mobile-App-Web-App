@@ -429,11 +429,6 @@ namespace PocketSphinxWindowsPhoneDemo
                 case "previous":
                     PreviousProcess();
                     break;
-                case "setting":
-                    //SettingProcess();
-                    break;
-                case "list":
-                    break;
                 default:
                     break;
             }
