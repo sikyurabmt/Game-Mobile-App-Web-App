@@ -16,6 +16,7 @@ using File_Manager;
 using System.Windows.Threading;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using Microsoft.Xna.Framework.Media;
 
 namespace PocketSphinxWindowsPhoneDemo
 {
@@ -30,6 +31,10 @@ namespace PocketSphinxWindowsPhoneDemo
         MusicManager mm = new MusicManager();
         SettingManager st = new SettingManager();
         DispatcherTimer playTimer;
+        String ArrAlbum, ArrArtist;
+        String[] ArrAlbumIndex, ArrArtistIndex;
+        int[] AlbumIndex, ArtistIndex;
+        String indexNavigate;
         public MainPage()
         {
             InitializeComponent();
@@ -158,10 +163,54 @@ namespace PocketSphinxWindowsPhoneDemo
 
         private void LayoutRoot_Loaded(object sender, RoutedEventArgs e)
         {
-            if (mm.IsPlaying())
+            if (NavigationContext.QueryString.TryGetValue("ArrAlbum", out ArrAlbum))
             {
-                SetProperties();
+                ArrAlbum = string.Format("{0}", ArrAlbum);
+                if (ArrAlbum != "")
+                {
+                    ArrAlbumIndex = ArrAlbum.Split('-');
+                    AlbumIndex = new int[ArrAlbumIndex.Length];
+
+                    for (int i = 0; i < ArrAlbumIndex.Length; i++)
+                    {
+                        int index = int.Parse((ArrAlbumIndex[i]).ToString());
+                        AlbumIndex[i] = index;
+                    }
+                    mm.isGroup = true;
+                    mm.Arr = new int[AlbumIndex.Length];
+                    mm.Arr = AlbumIndex;
+                }
             }
+
+            if (NavigationContext.QueryString.TryGetValue("ArrArtist", out ArrArtist))
+            {
+
+                ArrArtist = string.Format("{0}", ArrArtist);
+
+                if (ArrArtist != "")
+                {
+                    ArrArtistIndex = ArrArtist.Split('-');
+                    ArtistIndex = new int[ArrArtistIndex.Length];
+                    for (int i = 0; i < ArrArtistIndex.Length; i++)
+                    {
+                        int index1 = int.Parse((ArrArtistIndex[i]).ToString());
+                        ArtistIndex[i] = index1;
+                    }
+                    mm.isGroup = true;
+                    mm.Arr = new int[ArtistIndex.Length];
+                    mm.Arr = ArtistIndex;
+                }
+            }
+
+
+            if (NavigationContext.QueryString.TryGetValue("index", out indexNavigate))
+            {
+                indexNavigate = string.Format("{0}", indexNavigate);
+            }
+
+            MusicManager._NowPlay = Convert.ToInt32(indexNavigate);
+            
+            SetProperties();
         }
 
         private void PreviousProcess()
@@ -215,7 +264,7 @@ namespace PocketSphinxWindowsPhoneDemo
 
         private void appbar_list_click(object sender, EventArgs e)
         {
-            
+            NavigationService.Navigate(new Uri("/ListSong.xaml", UriKind.Relative));
         }
 
         private void appbar_option_click(object sender, EventArgs e)
@@ -261,15 +310,15 @@ namespace PocketSphinxWindowsPhoneDemo
 
         private enum RecognizerMode { Wakeup, Digits};
 
-        private async void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
+        private  void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
             // Initializing
-            await InitialzeSpeechRecognizer();
-            InitializeAudioRecorder();
+            //await InitialzeSpeechRecognizer();
+            //InitializeAudioRecorder();
 
-            // Start processes
-            StartSpeechRecognizerProcessing();
-            StartNativeRecorder();
+            //// Start processes
+            //StartSpeechRecognizerProcessing();
+            //StartNativeRecorder();
 
             StateMessageBlock.Text = "ready for use";
         }
