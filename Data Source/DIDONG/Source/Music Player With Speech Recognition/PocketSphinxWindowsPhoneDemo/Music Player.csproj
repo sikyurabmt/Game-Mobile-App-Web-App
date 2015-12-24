@@ -193,6 +193,7 @@
     <Content Include="Assets\models\lm\weather.dmp.md5">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Files\nowplay.txt" />
     <Content Include="Files\setup.txt" />
     <Content Include="Images\album.png" />
     <Content Include="Images\next.png" />

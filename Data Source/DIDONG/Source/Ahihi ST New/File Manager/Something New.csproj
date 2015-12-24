@@ -150,6 +150,7 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Files\nowplay.txt" />
     <Content Include="Files\setup.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

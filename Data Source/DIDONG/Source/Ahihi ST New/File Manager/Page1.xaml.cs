@@ -24,6 +24,7 @@ namespace File_Manager
             InitializeComponent();
 
             st.FileReader();
+            mm.FileReader();
 
             CheckAvailable();
             SetProperties();
@@ -115,6 +116,30 @@ namespace File_Manager
             tblAlbum.Text = mm.GetAlbum();
             tblTotalTime.Text = String.Format(@"{0:hh\:mm\:ss}", mm.GetTotalTimeSpanOfSong());
             progressBar.Maximum = mm.GetTotalSecondsOfSong();
+            mm.FileWriter(mm.GetIndexOfNowPlay());
+            //FlipTileData flipTile = new FlipTileData
+            //{
+            //    Title = "Flip Tile",
+            //    BackTitle = mm.GetAlbum(), // title when it flip
+            //    BackContent = mm.GetArtist(), // content when it flip
+            //    WideBackContent = mm.GetTitle(), // content of WideBackground
+
+            //    SmallBackgroundImage = new Uri("/Assets/Tiles/Image1.png", UriKind.Relative),
+            //    BackgroundImage = new Uri("/Assets/Tiles/Image2.png", UriKind.Relative),
+            //    BackBackgroundImage = new Uri("/Assets/Tiles/Image3.png", UriKind.Relative),
+            //    WideBackgroundImage = new Uri("/Assets/Tiles/LargeImage1.png", UriKind.Relative),
+            //    WideBackBackgroundImage = new Uri("/Assets/Tiles/LargeImage2.png", UriKind.Relative)
+            //};
+
+            //string uri = string.Concat("/MainPage.xaml?", "id=flip");
+            //ShellTile shellTile = checkTile(uri);
+            //shellTile.Update(flipTile);
+        }
+
+        private ShellTile checkTile(string uri)
+        {
+            ShellTile shellTile = ShellTile.ActiveTiles.FirstOrDefault(tile => tile.NavigationUri.ToString().Contains(uri));
+            return shellTile;
         }
 
         private void SetDefault()

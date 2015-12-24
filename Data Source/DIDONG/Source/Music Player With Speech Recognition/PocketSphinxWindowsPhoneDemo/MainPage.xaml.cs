@@ -35,6 +35,7 @@ namespace PocketSphinxWindowsPhoneDemo
             InitializeComponent();
 
             st.FileReader();
+            mm.FileReader();
 
             CheckAvailable();
             SetProperties();
@@ -126,6 +127,7 @@ namespace PocketSphinxWindowsPhoneDemo
             tblAlbum.Text = mm.GetAlbum();
             tblTotalTime.Text = String.Format(@"{0:hh\:mm\:ss}", mm.GetTotalTimeSpanOfSong());
             progressBar.Maximum = mm.GetTotalSecondsOfSong();
+            mm.FileWriter(mm.GetIndexOfNowPlay());
         }
 
         private void SetDefault()

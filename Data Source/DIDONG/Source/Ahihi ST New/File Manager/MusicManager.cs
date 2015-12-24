@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace File_Manager
 {
     public class MusicManager
     {
+        private string _FilePath = "Files/nowplay.txt";
         public static int _NowPlay;
         private MediaLibrary _MediaLibrary = new MediaLibrary();
         private SongCollection _SongCollection;
@@ -18,7 +20,49 @@ namespace File_Manager
         {
             _SongCollection = _MediaLibrary.Songs;
             _MaxSong = _SongCollection.Count;
-            _NowPlay = 0;
+        }
+
+        public int GetIndexOfNowPlay()
+        {
+            return _NowPlay;
+        }
+
+        public void FileReader()
+        {
+            //Content File
+            string Content = "";
+            //Get content from file
+            using (StreamReader reader = new StreamReader(_FilePath))
+            {
+                Content = reader.ReadToEnd();
+            }
+            //Check content
+            if (Content != "")
+            {
+                //Get value Color
+                try
+                {
+                    _NowPlay = Convert.ToInt32(Content);
+                }
+                catch (Exception e)
+                {
+                    //Say something
+                    _NowPlay = 0;
+                }
+            }
+            //
+        }
+
+        public void FileWriter(int Nowplay)
+        {
+            //Concat string
+            string Content = Nowplay.ToString();
+            //Write content to file
+            using (StreamWriter writer = new StreamWriter(_FilePath))
+            {
+                writer.Write(Content);
+            }
+            _NowPlay = Nowplay;
         }
 
         private int Random(int Max)
