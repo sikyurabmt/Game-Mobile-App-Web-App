@@ -310,15 +310,15 @@ namespace PocketSphinxWindowsPhoneDemo
 
         private enum RecognizerMode { Wakeup, Digits};
 
-        private  void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
+        private async void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
             // Initializing
-            //await InitialzeSpeechRecognizer();
-            //InitializeAudioRecorder();
+            await InitialzeSpeechRecognizer();
+            InitializeAudioRecorder();
 
             //// Start processes
-            //StartSpeechRecognizerProcessing();
-            //StartNativeRecorder();
+            StartSpeechRecognizerProcessing();
+            StartNativeRecorder();
 
             StateMessageBlock.Text = "ready for use";
         }

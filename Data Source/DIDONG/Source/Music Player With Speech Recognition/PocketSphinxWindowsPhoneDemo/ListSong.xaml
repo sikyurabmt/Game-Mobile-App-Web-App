@@ -16,13 +16,13 @@
     <phone:PhoneApplicationPage.Resources>
         <DataTemplate x:Key="AddrSongItemTemplate">
             <StackPanel VerticalAlignment="Top">
-                <TextBlock FontSize="30" FontWeight="Bold" Text="{Binding Song}" Tap="song_tapped"/>
+                <TextBlock FontSize="30" FontWeight="Bold" Text="{Binding Song}" Tap="Song_Tapped"/>
                 <TextBlock Text="{Binding Artist}" />
             </StackPanel>
         </DataTemplate>
 
         <DataTemplate x:Key="AddrArtistItemTemplate" >
-            <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Tap="ar_tapped">
+            <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Tap="Artist_Tapped">
                 <Image Name="YourImage" Height="150" Width="150" Source="Images/play.png" />
                 <StackPanel Name="text" Orientation="Vertical">
                     <TextBlock Name="tbArtist" FontSize="30" FontWeight="Bold" Text="{Binding Artist}"  />
@@ -33,10 +33,10 @@
         </DataTemplate>
 
         <DataTemplate x:Key="AddrAlbumItemTemplate">
-            <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Tap="sp_tapped">
+            <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Tap="Album_Tapped">
                 <Image Name="YourImage" Height="150" Width="150" Source="Images/play.png"  />
                 <StackPanel Name="text" Orientation="Vertical">
-                    <TextBlock Name="tbAlbum" FontSize="30" FontWeight="Bold" Text="{Binding Album}" Tap="tapped_albumTB" />
+                    <TextBlock Name="tbAlbum" FontSize="30" FontWeight="Bold" Text="{Binding Album}" Tap="AlbumTB_Tapped" />
                     <TextBlock Text="{Binding Artist}" />
                     <TextBox Name="Song" Text="{Binding Song}" Visibility="Collapsed" />
                 </StackPanel>

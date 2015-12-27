@@ -18,12 +18,11 @@ namespace Ahihi_DBz
         MediaLibrary library = new MediaLibrary();
         SongCollection songs;
         ObservableCollection<AddSong> source { get; set; }
-
+        UIElement uiElement; 
         String ArrAlbum, ArrArtist;
         public ListSong()
         {
             InitializeComponent();
-            //List<AddSong> source = new List<AddSong>();
             source =  new ObservableCollection<AddSong>();
             songs = library.Songs;
             GroupSong();
@@ -66,101 +65,28 @@ namespace Ahihi_DBz
              AddrAlbum.ItemsSource = DataSource;
          }
 
-         private void tapped_albumTB(object sender, System.Windows.Input.GestureEventArgs e)
+         private void Song_Tapped(object sender, System.Windows.Input.GestureEventArgs e)
          {
              TextBlock tb = (TextBlock)sender;
-             try
+             int index = -1;
+             foreach (var number in library.Songs)
              {
-                 foreach (var number in library.Songs)
+                 index++;
+                 if (number.Name.Contains(tb.Text))
                  {
-                     if (number.Name.Contains(tb.TextDecorations.ToString()))
-                     {
-                         MediaPlayer.Play(number);
-                     }
+                     MediaPlayer.Play(number);
+                     break;
                  }
              }
-             catch(Exception)
-             {
-                 NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
-             }
-          
-             
+             string uri = string.Format("/MainPage.xaml?index={0}",index);
+             NavigationService.Navigate(new Uri(uri, UriKind.Relative));
          }
 
-
-         UIElement a; 
-         private void sp_tapped(object sender, System.Windows.Input.GestureEventArgs e)
+         private void Artist_Tapped(object sender, System.Windows.Input.GestureEventArgs e)
          {
              StackPanel st = (StackPanel)sender;
              int index = -1;
-             Point point = e.GetPosition(a); // lay duoc vi tri user tapped
-             Double x = point.X;
-             String album = "";
-             String song = "";
-             
-             foreach (var child in st.Children)
-             {
-                 if (child.GetType().ToString() == "System.Windows.Controls.StackPanel")
-                 {
-                     StackPanel st1 = (StackPanel)child;
-                     foreach(var child1 in st1.Children)
-                     {
-                         if (child1.GetType().ToString() == "System.Windows.Controls.TextBlock")
-                         {
-                             TextBlock textblock = (TextBlock)child1;
-                             if(textblock.Name == "tbAlbum")
-                             {
-                                 album = textblock.Text;
-                                 for (int i = 0; i < songs.Count; i++)
-                                 {
-                                     if (songs[i].Album.ToString() == album)
-                                         ArrAlbum += i.ToString() + "-";
-                                 }
-                             }
-                                
-                         }
-
-                         if (child1.GetType().ToString() == "System.Windows.Controls.TextBox")
-                         {
-                             TextBox song1 = (TextBox)child1;
-                             song = song1.Text;
-                         } 
-                     }
-                 }
-                 
-             }
-             ArrAlbum = ArrAlbum.Substring(0, ArrAlbum.Length - 1);
-             if (x < 180)
-             {
-                 foreach (var number in library.Songs)
-                 {
-                     index++;
-                     if (number.Name.Contains(song))
-                     {
-                         
-                         MediaPlayer.Play(number);
-                         break;
-                     }
-                 } 
-                 string uri = string.Format("/MainPage.xaml?ArrAlbum={0}&&index={1}", ArrAlbum,index);// sang trang song group theo album
-                 NavigationService.Navigate(new Uri(uri, UriKind.Relative));
-
-             }
-             else
-             {
-                 string kind = "album";
-                 string uri = string.Format("/Songs.xaml?album={0}&&kind={1}&&ArrAlbum={2}", album, kind, ArrAlbum);// sang trang song group theo album
-                 NavigationService.Navigate(new Uri(uri, UriKind.Relative));
-
-             }
-         }
-
-
-         private void ar_tapped(object sender, System.Windows.Input.GestureEventArgs e)
-         {
-             StackPanel st = (StackPanel)sender;
-             int index = -1;
-             Point point = e.GetPosition(a); // lay duoc vi tri user tapped
+             Point point = e.GetPosition(uiElement); // lay duoc vi tri user tapped
              Double x = point.X;
              String artist = "";
              string song = "";
@@ -188,8 +114,8 @@ namespace Ahihi_DBz
                          {
                              TextBox song1 = (TextBox)child1;
                              if (song1.Name.ToString() == "Song")
-                             song = song1.Text;
-                         } 
+                                 song = song1.Text;
+                         }
                      }
                  }
              }
@@ -204,35 +130,103 @@ namespace Ahihi_DBz
                          MediaPlayer.Play(number);
                          break;
                      }
-                 } 
-                 string uri = string.Format("/MainPage.xaml?ArrArtist={0}&&index={1}", ArrArtist,index);// sang trang song group theo artist
+                 }
+                 string uri = string.Format("/MainPage.xaml?ArrArtist={0}&&index={1}", ArrArtist, index);// sang trang song group theo artist
                  NavigationService.Navigate(new Uri(uri, UriKind.Relative));
-          
+
              }
              else
              {
                  String kind = "artist";
                  string uri = string.Format("/Songs.xaml?artist={0}&&kind={1}&&ArrArtist={2}", artist, kind, ArrArtist);// sang trang songs group theo artist
                  NavigationService.Navigate(new Uri(uri, UriKind.Relative));
-        
+
              }
          }
 
-         private void song_tapped(object sender, System.Windows.Input.GestureEventArgs e)
+         private void Album_Tapped(object sender, System.Windows.Input.GestureEventArgs e)
+         {
+             StackPanel st = (StackPanel)sender;
+             int index = -1;
+             Point point = e.GetPosition(uiElement); // lay duoc vi tri user tapped
+             Double x = point.X;
+             String album = "";
+             String song = "";
+
+             foreach (var child in st.Children)
+             {
+                 if (child.GetType().ToString() == "System.Windows.Controls.StackPanel")
+                 {
+                     StackPanel st1 = (StackPanel)child;
+                     foreach (var child1 in st1.Children)
+                     {
+                         if (child1.GetType().ToString() == "System.Windows.Controls.TextBlock")
+                         {
+                             TextBlock textblock = (TextBlock)child1;
+                             if (textblock.Name == "tbAlbum")
+                             {
+                                 album = textblock.Text;
+                                 for (int i = 0; i < songs.Count; i++)
+                                 {
+                                     if (songs[i].Album.ToString() == album)
+                                         ArrAlbum += i.ToString() + "-";
+                                 }
+                             }
+
+                         }
+
+                         if (child1.GetType().ToString() == "System.Windows.Controls.TextBox")
+                         {
+                             TextBox song1 = (TextBox)child1;
+                             song = song1.Text;
+                         }
+                     }
+                 }
+
+             }
+             ArrAlbum = ArrAlbum.Substring(0, ArrAlbum.Length - 1);
+             if (x < 180)
+             {
+                 foreach (var number in library.Songs)
+                 {
+                     index++;
+                     if (number.Name.Contains(song))
+                     {
+
+                         MediaPlayer.Play(number);
+                         break;
+                     }
+                 }
+                 string uri = string.Format("/MainPage.xaml?ArrAlbum={0}&&index={1}", ArrAlbum, index);// sang trang song group theo album
+                 NavigationService.Navigate(new Uri(uri, UriKind.Relative));
+
+             }
+             else
+             {
+                 string kind = "album";
+                 string uri = string.Format("/Songs.xaml?album={0}&&kind={1}&&ArrAlbum={2}", album, kind, ArrAlbum);// sang trang song group theo album
+                 NavigationService.Navigate(new Uri(uri, UriKind.Relative));
+
+             }
+         }
+
+         private void AlbumTB_Tapped(object sender, System.Windows.Input.GestureEventArgs e)
          {
              TextBlock tb = (TextBlock)sender;
-             int index = -1;
-             foreach (var number in library.Songs)
+             try
              {
-                 index++;
-                 if (number.Name.Contains(tb.Text))
+                 foreach (var number in library.Songs)
                  {
-                     MediaPlayer.Play(number);
-                     break;
+                     if (number.Name.Contains(tb.TextDecorations.ToString()))
+                     {
+                         MediaPlayer.Play(number);
+                     }
                  }
              }
-             string uri = string.Format("/MainPage.xaml?index={0}",index);
-             NavigationService.Navigate(new Uri(uri, UriKind.Relative));
+             catch (Exception)
+             {
+                 NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+             }
          }
     }
     public class AddSong
