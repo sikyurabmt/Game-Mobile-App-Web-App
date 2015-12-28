@@ -83,9 +83,13 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <phone:Panorama Title="MUSIC">
-
-            <!--Panorama item one-->
+            <phone:Panorama >
+                <phone:Panorama.TitleTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="MUSIC" FontSize="20" Margin="0,46,0,0" FontWeight="Bold"/>
+                    </DataTemplate>
+                </phone:Panorama.TitleTemplate>
+                <!--Panorama item one-->
                 <phone:PanoramaItem Header="songs">
                     <phone:LongListSelector x:Name="AddrSong"
                       JumpListStyle="{StaticResource AddrJumpListStyle}"
@@ -117,8 +121,7 @@
                       IsGroupingEnabled="true"
                       HideEmptyGroups ="true"/>
                 </phone:PanoramaItem>
-        </phone:Panorama>
-
+            </phone:Panorama>
         </Grid>
     </Grid>
 

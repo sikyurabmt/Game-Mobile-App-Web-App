@@ -265,11 +265,15 @@ namespace PocketSphinxWindowsPhoneDemo
         private void appbar_list_click(object sender, EventArgs e)
         {
             NavigationService.Navigate(new Uri("/ListSong.xaml", UriKind.Relative));
+            StopNativeRecorder();
+            StopSpeechRecognizerProcessing();
         }
 
         private void appbar_option_click(object sender, EventArgs e)
         {
             SettingProcess();
+            StopNativeRecorder();
+            StopSpeechRecognizerProcessing();
         }
 
 
