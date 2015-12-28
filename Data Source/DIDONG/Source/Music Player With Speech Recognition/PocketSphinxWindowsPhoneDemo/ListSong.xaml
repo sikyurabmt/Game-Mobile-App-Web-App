@@ -86,7 +86,7 @@
             <phone:Panorama >
                 <phone:Panorama.TitleTemplate>
                     <DataTemplate>
-                        <TextBlock Text="MUSIC" FontSize="20" Margin="0,46,0,0" FontWeight="Bold"/>
+                        <TextBlock Text="MUSIC AND SPEECH" FontSize="20" Margin="0,46,0,0" FontWeight="Bold"/>
                     </DataTemplate>
                 </phone:Panorama.TitleTemplate>
                 <!--Panorama item one-->
