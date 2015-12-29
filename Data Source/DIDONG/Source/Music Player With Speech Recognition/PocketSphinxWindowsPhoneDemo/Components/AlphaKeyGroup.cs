@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ahihi_DBz
+namespace PocketSphinxWindowsPhoneDemo
 {
      public class AlphaKeyGroup<T> : List<T>
     {

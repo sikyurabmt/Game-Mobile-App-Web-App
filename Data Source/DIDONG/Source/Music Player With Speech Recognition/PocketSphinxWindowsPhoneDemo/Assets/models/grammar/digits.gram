@@ -2,6 +2,6 @@
 
 grammar digits;
 
-<digit> = play | pause | stop | next | previous ;
+<digit> = play | pause | stop | next | previous | list | option;
 
 public <digits> = <digit>+;

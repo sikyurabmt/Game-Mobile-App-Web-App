@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="Ahihi_DBz.ListSong"
+    x:Class="PocketSphinxWindowsPhoneDemo.ListSongPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -52,7 +52,7 @@
                 </Border>
             </Border>
         </DataTemplate>
-        
+
         <phone:JumpListItemBackgroundConverter x:Key="BackgroundConverter"/>
         <phone:JumpListItemForegroundConverter x:Key="ForegroundConverter"/>
         <Style x:Key="AddrJumpListStyle" TargetType="phone:LongListSelector">
@@ -79,14 +79,14 @@
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
-        
+
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <phone:Panorama >
                 <phone:Panorama.TitleTemplate>
                     <DataTemplate>
-                        <TextBlock Text="MUSIC AND SPEECH" FontSize="20" Margin="0,46,0,0" FontWeight="Bold"/>
+                        <TextBlock Text="MUSIC LIBRARY" FontSize="20" Margin="0,46,0,0" FontWeight="Bold"/>
                     </DataTemplate>
                 </phone:Panorama.TitleTemplate>
                 <!--Panorama item one-->

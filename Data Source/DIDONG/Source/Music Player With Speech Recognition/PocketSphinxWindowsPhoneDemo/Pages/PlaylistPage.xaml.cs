@@ -7,19 +7,19 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using System.Collections.ObjectModel;
 using Microsoft.Xna.Framework.Media;
+using System.Collections.ObjectModel;
 
-namespace Ahihi_DBz
+namespace PocketSphinxWindowsPhoneDemo
 {
-    public partial class Songs : PhoneApplicationPage
+    public partial class PlaylistPage : PhoneApplicationPage
     {
         MediaLibrary library = new MediaLibrary();
         SongCollection songs;
         ObservableCollection<AddSong1> source { get; set; }
         String album, artist, ArrAlbum, ArrArtist;
         String kind;
-        public Songs()
+        public PlaylistPage()
         {
             InitializeComponent();
             source = new ObservableCollection<AddSong1>();
@@ -33,12 +33,12 @@ namespace Ahihi_DBz
                 source.Clear();
             for (int i = 0; i < songs.Count; i++)
             {
-                if(songs[i].Album.ToString() == album)
+                if (songs[i].Album.ToString() == album)
                 {
                     AddSong1 add = new AddSong1(songs[i].Name.ToString(), songs[i].Artist.ToString(), songs[i].Album.ToString());
                     source.Add(add);
                 }
-                
+
             }
 
             List<AlphaKeyGroup<AddSong1>> DataSource = AlphaKeyGroup<AddSong1>.CreateGroups(source,
@@ -79,27 +79,27 @@ namespace Ahihi_DBz
                 index++;
                 if (number.Name.Contains(tb.Text))
                 {
-                    
+
                     MediaPlayer.Play(number);
                     break;
                 }
-            } 
-            string uri = string.Format("/MainPage.xaml?ArrAlbum={0}&&ArrArtist={1}&&index={2}", ArrAlbum, ArrArtist,index);
+            }
+            string uri = string.Format("/MainPage.xaml?ArrAlbum={0}&&ArrArtist={1}&&index={2}", ArrAlbum, ArrArtist, index);
             NavigationService.Navigate(new Uri(uri, UriKind.Relative));
-            
+
         }
 
 
         #region Page Load
         private void Song_loaded(object sender, RoutedEventArgs e)
         {
-           
+
             if (NavigationContext.QueryString.TryGetValue("album", out album))
             {
                 album = string.Format("{0}", album);
-               
+
             }
-           
+
             if (NavigationContext.QueryString.TryGetValue("artist", out artist))
             {
                 artist = string.Format("{0}", artist);

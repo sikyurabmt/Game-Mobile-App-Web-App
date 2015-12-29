@@ -237,11 +237,19 @@ namespace PocketSphinxWindowsPhoneDemo
             SetDefault();
         }
 
+        private void ListProcess()
+        {
+            NavigationService.Navigate(new Uri("/ListSongPage.xaml", UriKind.Relative));
+            StopNativeRecorder();
+            StopSpeechRecognizerProcessing();
+        }
+
         private void SettingProcess()
         {
             NavigationService.Navigate(new Uri("/SettingPage.xaml", UriKind.Relative));
+            StopNativeRecorder();
+            StopSpeechRecognizerProcessing();
         }
-
         private void appbar_previous_click(object sender, EventArgs e)
         {
             PreviousProcess();
@@ -264,16 +272,12 @@ namespace PocketSphinxWindowsPhoneDemo
 
         private void appbar_list_click(object sender, EventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ListSong.xaml", UriKind.Relative));
-            StopNativeRecorder();
-            StopSpeechRecognizerProcessing();
+            ListProcess();
         }
 
         private void appbar_option_click(object sender, EventArgs e)
         {
             SettingProcess();
-            StopNativeRecorder();
-            StopSpeechRecognizerProcessing();
         }
 
 
@@ -483,6 +487,12 @@ namespace PocketSphinxWindowsPhoneDemo
                     break;
                 case "previous":
                     PreviousProcess();
+                    break;
+                case "list":
+                    ListProcess();
+                    break;
+                case "option":
+                    SettingProcess();
                     break;
                 default:
                     break;

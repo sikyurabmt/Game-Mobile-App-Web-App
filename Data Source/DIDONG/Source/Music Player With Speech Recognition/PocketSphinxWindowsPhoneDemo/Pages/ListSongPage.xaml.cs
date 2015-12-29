@@ -7,20 +7,19 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-
 using Microsoft.Xna.Framework.Media;
 using System.Collections.ObjectModel;
 
-namespace Ahihi_DBz
+namespace PocketSphinxWindowsPhoneDemo
 {
-    public partial class ListSong : PhoneApplicationPage
+    public partial class ListSongPage : PhoneApplicationPage
     {
         MediaLibrary library = new MediaLibrary();
         SongCollection songs;
         ObservableCollection<AddSong> source { get; set; }
         UIElement uiElement; 
         String ArrAlbum, ArrArtist;
-        public ListSong()
+        public ListSongPage()
         {
             InitializeComponent();
             source =  new ObservableCollection<AddSong>();
@@ -53,7 +52,7 @@ namespace Ahihi_DBz
               System.Threading.Thread.CurrentThread.CurrentUICulture,
               (AddSong s) => { return s.Album; }, true);
 
-            AddrArtist.ItemsSource = DataSource;
+            AddrAlbum.ItemsSource = DataSource;
         }
 
          void GroupArtist()
@@ -62,7 +61,7 @@ namespace Ahihi_DBz
                System.Threading.Thread.CurrentThread.CurrentUICulture,
                (AddSong s) => { return s.Artist; }, true);
 
-             AddrAlbum.ItemsSource = DataSource;
+             AddrArtist.ItemsSource = DataSource;
          }
 
          private void Song_Tapped(object sender, System.Windows.Input.GestureEventArgs e)
@@ -138,7 +137,7 @@ namespace Ahihi_DBz
              else
              {
                  String kind = "artist";
-                 string uri = string.Format("/Songs.xaml?artist={0}&&kind={1}&&ArrArtist={2}", artist, kind, ArrArtist);// sang trang songs group theo artist
+                 string uri = string.Format("/PlaylistPage.xaml?artist={0}&&kind={1}&&ArrArtist={2}", artist, kind, ArrArtist);// sang trang songs group theo artist
                  NavigationService.Navigate(new Uri(uri, UriKind.Relative));
 
              }
