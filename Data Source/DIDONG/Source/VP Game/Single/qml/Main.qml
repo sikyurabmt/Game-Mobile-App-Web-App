@@ -49,13 +49,13 @@ GameWindow {
             y: 400
 
             SpriteVPlay {
-                name: "tank"
-                frameCount: 2
-                frameRate: 7
+                name: "player"
+                frameCount: 1
+                frameRate: 10
 
-                frameWidth: 114
-                frameHeight: 90
-                source: "../assets/tank.png"
+                frameWidth: 104
+                frameHeight: 71
+                source: "../assets/player.png"
             }
         }
 
@@ -142,7 +142,7 @@ GameWindow {
             anchors.fill: parent
             onClicked: {
                 //3 diem P1, P2, P3 => angle la goc tai P1 hop boi P2 va P3
-                var P1 = Qt.point(50+90,400);
+                var P1 = Qt.point(50+104,400+71/3);
                 var P2 = Qt.point(mouseX-5,mouseY-5);//tru` body ball cho dung ti le
                 var P3 = Qt.point(P1.x+100,P1.y);
                 var angle = Math.atan2(P2.y - P1.y, P2.x - P1.x) - Math.atan2(P3.y - P1.y, P3.x - P1.x);
@@ -151,7 +151,7 @@ GameWindow {
                 var newBall = ball.createObject(root);
                 newBall.x = offsetX;
                 newBall.y = offsetY;
-                var impulse = 90; //van toc ban
+                var impulse = 100; //van toc ban
                 var impulseX = impulse * Math.cos(angle);
                 var impulseY = impulse * Math.sin(angle);
                 newBall.body.applyLinearImpulse(Qt.point(impulseX, impulseY), newBall.body.getWorldCenter());
@@ -165,6 +165,6 @@ GameWindow {
             visible: false
         }
 
-        SoundEffect { id: shotSound; source: "../assets/cannon.wav" }
+        SoundEffect { id: shotSound; source: "../assets/Attack1.WAV" }
     }
 }
