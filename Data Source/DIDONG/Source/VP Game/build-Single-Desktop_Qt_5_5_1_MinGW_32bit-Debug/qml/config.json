@@ -1,0 +1,8 @@
+{
+    "title": "Single",
+    "identifier": "com.yourcompany.wizardEVP.Single",
+    "orientation": "landscape",
+    "versioncode": 1,
+    "versionname": "1.0",
+    "stage": "test"
+}
