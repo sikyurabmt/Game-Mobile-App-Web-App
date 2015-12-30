@@ -1,0 +1,10 @@
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWindowsPhoneDemo\obj\Debug\App.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWindowsPhoneDemo\obj\Debug\ListSongPage.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWindowsPhoneDemo\obj\Debug\MainPage.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWindowsPhoneDemo\obj\Debug\PlaylistPage.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWindowsPhoneDemo\obj\Debug\SettingPage.g.cs
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWindowsPhoneDemo\obj\Debug\PocketSphinxWindowsPhoneDemo.g.resources
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWindowsPhoneDemo\obj\Debug\PocketSphinxWindowsPhoneDemo.Resources.AppResources.resources
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWindowsPhoneDemo\obj\Debug\Music Player.csproj.GenerateResource.Cache
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWindowsPhoneDemo\obj\Debug\PocketSphinxWindowsPhoneDemo.dll
+D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWindowsPhoneDemo\obj\Debug\PocketSphinxWindowsPhoneDemo.pdb
