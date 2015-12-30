@@ -142,7 +142,7 @@ GameWindow {
             anchors.fill: parent
             onClicked: {
                 //3 diem P1, P2, P3 => angle la goc tai P1 hop boi P2 va P3
-                var P1 = Qt.point(50+80,400+20);
+                var P1 = Qt.point(50+90,400);
                 var P2 = Qt.point(mouseX-5,mouseY-5);//tru` body ball cho dung ti le
                 var P3 = Qt.point(P1.x+100,P1.y);
                 var angle = Math.atan2(P2.y - P1.y, P2.x - P1.x) - Math.atan2(P3.y - P1.y, P3.x - P1.x);
@@ -151,7 +151,7 @@ GameWindow {
                 var newBall = ball.createObject(root);
                 newBall.x = offsetX;
                 newBall.y = offsetY;
-                var impulse = 2.8 * 32; //van toc ban
+                var impulse = 90; //van toc ban
                 var impulseX = impulse * Math.cos(angle);
                 var impulseY = impulse * Math.sin(angle);
                 newBall.body.applyLinearImpulse(Qt.point(impulseX, impulseY), newBall.body.getWorldCenter());
