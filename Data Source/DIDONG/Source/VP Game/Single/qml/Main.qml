@@ -1,7 +1,5 @@
-import QtQuick 2.2
-import QtQuick.Controls 1.1
+import QtQuick 2.0
 import VPlay 2.0
-import QtMultimedia 5.0
 
 GameWindow {
     id: gameWindow
@@ -25,38 +23,25 @@ GameWindow {
             anchors.centerIn: parent
             movementVelocity: Qt.point(root.velocityX,0)
             ratio: Qt.point(0.5,1.0)
-            sourceImage: "../assets/background-mountains.png"
+            sourceImage: "../assets/backgrounds/background-mountains.png"
         }
         ParallaxScrollingBackground {
             anchors.centerIn: parent
             movementVelocity: Qt.point(root.velocityX,0)
             ratio: Qt.point(1.0,1.0)
-            sourceImage: "../assets/background-hills.png"
-            sourceImage2: "../assets/background-hills2.png"
+            sourceImage: "../assets/backgrounds/background-hills.png"
+            sourceImage2: "../assets/backgrounds/background-hills2.png"
         }
 
         ParallaxScrollingBackground {
             anchors.centerIn: parent
             movementVelocity: Qt.point(root.velocityX,0)
             ratio: Qt.point(1.3,1.0)
-            sourceImage: "../assets/background-lawn.png"
+            sourceImage: "../assets/backgrounds/background-lawn.png"
         }
 
-        SpriteSequenceVPlay {
-            id: spriteSequence
-
-            x: 50
-            y: 400
-
-            SpriteVPlay {
-                name: "player"
-                frameCount: 1
-                frameRate: 10
-
-                frameWidth: 104
-                frameHeight: 71
-                source: "../assets/player.png"
-            }
+        Player{
+            id: player
         }
 
         World { id: physicsWorld }
@@ -165,6 +150,6 @@ GameWindow {
             visible: false
         }
 
-        SoundEffect { id: shotSound; source: "../assets/Attack1.WAV" }
+        SoundEffectVPlay { id: shotSound; source: "../assets/sounds/Attack1.WAV" }
     }
 }

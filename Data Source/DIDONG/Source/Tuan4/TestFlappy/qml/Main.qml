@@ -19,18 +19,18 @@ GameWindow {
     // this resolution is for iPhone 4 & iPhone 4S
     Scene {
         id: scene
-PhysicsWorld  {
-}
+        PhysicsWorld  {
+        }
         Player {
-              id: player
-              x: 160
-              y: 180
-            }
+            id: player
+            x: 160
+            y: 180
+        }
         Player2 {
-              id: player2
-              x: 360
-              y: 180
-            }
+            id: player2
+            x: 360
+            y: 180
+        }
         // the "logical size" - the scene content is auto-scaled to match the GameWindow size
-}
+    }
 }

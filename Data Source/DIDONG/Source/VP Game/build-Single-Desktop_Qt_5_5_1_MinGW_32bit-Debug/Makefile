@@ -364,7 +364,7 @@ distclean: debug-distclean release-distclean  FORCE
 first: $(first) copydeploymentfolders
 
 copydeploymentfolders:
-	@echo Copying application data... && $(COPY_DIR) "D:\VP Game\Single\qml" "D:\VP Game\build-Single-Desktop_Qt_5_5_1_MinGW_32bit-Debug\qml" && $(COPY_DIR) "D:\VP Game\Single\assets" "D:\VP Game\build-Single-Desktop_Qt_5_5_1_MinGW_32bit-Debug\assets"
+	@echo Copying application data... && $(COPY_DIR) "D:\Data Projects\HQL\Data Source\DIDONG\Source\VP Game\Single\qml" "D:\Data Projects\HQL\Data Source\DIDONG\Source\VP Game\build-Single-Desktop_Qt_5_5_1_MinGW_32bit-Debug\qml" && $(COPY_DIR) "D:\Data Projects\HQL\Data Source\DIDONG\Source\VP Game\Single\assets" "D:\Data Projects\HQL\Data Source\DIDONG\Source\VP Game\build-Single-Desktop_Qt_5_5_1_MinGW_32bit-Debug\assets"
 
 debug-mocclean:
 	$(MAKE) -f $(MAKEFILE).Debug mocclean

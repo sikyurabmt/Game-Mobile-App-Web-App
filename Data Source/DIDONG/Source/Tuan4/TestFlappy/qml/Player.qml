@@ -5,12 +5,12 @@ EntityBase {
     id: player
     entityType: "player"
 
-MovementAnimation {
-              target: parent
-              property: "pos"
-              velocity: Qt.point(20, 0)
-              running: true
-            }
+    MovementAnimation {
+        target: parent
+        property: "pos"
+        velocity: Qt.point(20, 0)
+        running: true
+    }
     BoxCollider {
         id:aaa
         anchors.fill: bird // make the collider as big as the image
