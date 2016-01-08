@@ -210,8 +210,8 @@ GameWindow {
                         gameWindow.activeScene = sceneEarth
                         sceneEarth.visible = true
 
-                        timer1.restart()
                         timer1.running = true
+                        player.resetInfo()
                     }
                     onPressed: {
                         imgEarth.opacity = 0.5
@@ -366,7 +366,9 @@ GameWindow {
                         sceneStage.visible = true
 
                         timer1.running = false
+                        timer1.restart()
                         timer1.stop()
+                        entityManager.removeAllPooledEntities()
                     }
 
                     onPressed: {
@@ -742,11 +744,11 @@ GameWindow {
             id: timer1
             running: false
             repeat: true
-            interval: 1000
+            interval: 100
             onTriggered:{
                 sceneEarth.secondTime++
 
-                if(sceneEarth.secondTime%4===0) {
+                if(sceneEarth.secondTime%30===0) {
                     entityManager.createEntityFromComponent(cell)
                 }
                 //                if(sceneEarth.secondTime%10===0) {

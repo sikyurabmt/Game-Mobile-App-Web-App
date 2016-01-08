@@ -16,6 +16,8 @@ EntityBase {
     property var directY: player.y + player.height*0.23
     property var __HP: 4
     property var __MP: 4
+    property var __isDie : false
+    property var __isWin : false
 
     signal upPressed(variant event)
     signal downPressed(variant event)
@@ -144,7 +146,8 @@ EntityBase {
                     collidedEntity.entityType === "cellskill2" ||
                     collidedEntity.entityType === "TienSkill" ||
                     collidedEntity.entityType === "TienSkill2" ||
-                    collidedEntity.entityType === "TienSkill3"
+                    collidedEntity.entityType === "TienSkill3" ||
+                    collidedEntity.entityType === "saibama"
                     ) {
                 collidedEntity.removeEntity()
                 playerHPMP.downHP() //xoa enemy
@@ -275,6 +278,16 @@ EntityBase {
 
     function playerDie() {
         dieSound.play()
+    }
+
+    function resetInfo() {
+        player.x = 82
+        player.y = 100
+        standAnimation()
+        __HP = 4
+        __MP = 4
+        playerHPMP.upHP()
+        playerHPMP.upMP()
     }
 
     MediaPlayer { id: spiritblastSound; source: "../assets/sounds/player/spiritblast.wav" }
