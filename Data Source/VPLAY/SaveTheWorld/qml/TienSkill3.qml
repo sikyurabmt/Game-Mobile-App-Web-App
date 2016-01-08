@@ -39,8 +39,11 @@ EntityBase {
         collisionTestingOnlyMode: true
         fixture.onBeginContact: {
             var collidedEntity = other.getBody().target
-            if(collidedEntity.entityType === "player") {
-                removeEntity()
+            if(collidedEntity.entityType === "skillPlayer" || collidedEntity.entityType === "skillAuraBlast") {
+                collidedEntity.removeEntity() //xoa dan
+            }
+            if(collidedEntity.entityType === "skillKamehameha") {
+                removeEntity() //xoa enemy
             }
         }
     }

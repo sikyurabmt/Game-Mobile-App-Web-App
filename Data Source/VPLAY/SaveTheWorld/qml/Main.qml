@@ -741,14 +741,14 @@ GameWindow {
         Timer {
             id: timer1
             running: false
-            repeat: false
+            repeat: true
             interval: 1000
             onTriggered:{
                 sceneEarth.secondTime++
-                entityManager.createEntityFromComponent(bardockOozaru)
-                //                if(sceneEarth.secondTime%2===0) {
-                //                    entityManager.createEntityFromComponent(tien)
-                //                }
+
+                if(sceneEarth.secondTime%4===0) {
+                    entityManager.createEntityFromComponent(cell)
+                }
                 //                if(sceneEarth.secondTime%10===0) {
                 //                    entityManager.createEntityFromComponent(senzuBeans)
                 //                }

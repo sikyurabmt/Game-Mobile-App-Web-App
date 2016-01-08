@@ -4,7 +4,7 @@ import QtMultimedia 5.5
 
 EntityBase {
     id: enemies
-    entityType: "Android18"
+    entityType: "Buu"
 
     property var directX: enemies.x - enemies.width
     property var directY: enemies.y + enemies.height/4

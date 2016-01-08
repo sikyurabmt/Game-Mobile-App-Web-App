@@ -136,7 +136,16 @@ EntityBase {
         sleepingAllowed: false
         fixture.onBeginContact: {
             var collidedEntity = other.getBody().target
-            if(collidedEntity.entityType === "saibama") {
+            if(     collidedEntity.entityType === "SkillAndroid18" ||
+                    collidedEntity.entityType === "SkillBardockOozaru" ||
+                    collidedEntity.entityType === "BardockOozaru" ||
+                    collidedEntity.entityType === "SkillBuu" ||
+                    collidedEntity.entityType === "cellskill1" ||
+                    collidedEntity.entityType === "cellskill2" ||
+                    collidedEntity.entityType === "TienSkill" ||
+                    collidedEntity.entityType === "TienSkill2" ||
+                    collidedEntity.entityType === "TienSkill3"
+                    ) {
                 collidedEntity.removeEntity()
                 playerHPMP.downHP() //xoa enemy
                 if(__HP>0) {
