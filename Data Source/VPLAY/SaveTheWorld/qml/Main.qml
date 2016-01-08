@@ -9,6 +9,7 @@ GameWindow {
     width: 960
     height: 640
     visible: true
+    property var __Stage: 0
 
     Scene {
         id: sceneMenu
@@ -209,7 +210,7 @@ GameWindow {
                         sceneStage.visible = false
                         gameWindow.activeScene = sceneEarth
                         sceneEarth.visible = true
-
+                        __Stage = 0
                         timer1.running = true
                         player.resetInfo()
                     }
@@ -235,9 +236,12 @@ GameWindow {
                 MouseArea {
                     anchors.fill: imgNamek
                     onClicked: {
-                        //sceneStage.visible = false
-                        //gameWindow.activeScene = sceneNamek
-                        //sceneNamek.visible = true
+                        sceneStage.visible = false
+                        gameWindow.activeScene = sceneEarth
+                        sceneEarth.visible = true
+                        __Stage = 1
+                        timer1.running = true
+                        player.resetInfo()
                     }
                     onPressed: {
                         imgNamek.opacity = 0.5
@@ -279,6 +283,11 @@ GameWindow {
         }
     }
 
+    EntityManager {
+        id: entityManager
+        entityContainer: sceneEarth
+    }
+
     Scene {
         id: sceneEarth
         visible: false
@@ -286,11 +295,6 @@ GameWindow {
         height: 320
         Keys.forwardTo: player.controller
         property real secondTime: 0
-
-        EntityManager {
-            id: entityManager
-            entityContainer: sceneEarth
-        }
 
         Rectangle {
             id: rtgGamePlay
@@ -301,7 +305,7 @@ GameWindow {
 
             Image {
                 anchors.fill: rtgGamePlay
-                source: "../assets/backgrounds/parallax_earth.png"
+                source: "../assets/backgrounds/stage"+__Stage+".png"
             }
 
             //            ParallaxScrollingBackground {
@@ -368,7 +372,6 @@ GameWindow {
                         timer1.running = false
                         timer1.restart()
                         timer1.stop()
-                        entityManager.removeAllPooledEntities()
                     }
 
                     onPressed: {
@@ -743,23 +746,29 @@ GameWindow {
         Timer {
             id: timer1
             running: false
-            repeat: true
-            interval: 100
+            repeat: false
+            interval: 1000
             onTriggered:{
-                sceneEarth.secondTime++
-
-                if(sceneEarth.secondTime%30===0) {
+                if(__Stage === 0) {
+                    sceneEarth.secondTime++
                     entityManager.createEntityFromComponent(cell)
+                    //if(sceneEarth.secondTime%10===0) {
+                    //entityManager.createEntityFromComponent(senzuBeans)
+                    //}
                 }
-                //                if(sceneEarth.secondTime%10===0) {
-                //                    entityManager.createEntityFromComponent(senzuBeans)
-                //                }
+                if(__Stage === 1) {
+                    sceneEarth.secondTime++
+                    entityManager.createEntityFromComponent(buu)
+                    //if(sceneEarth.secondTime%10===0) {
+                    //entityManager.createEntityFromComponent(senzuBeans)
+                    //}
+                }
             }
         }
 
         PhysicsWorld {
             id: physicsWorld
-            debugDrawVisible: false
+            debugDrawVisible: true
         }
     }
 

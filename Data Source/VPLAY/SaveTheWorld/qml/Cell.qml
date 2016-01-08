@@ -111,25 +111,20 @@ EntityBase {
             var collidedEntity = other.getBody().target
             if(collidedEntity.entityType === "skillPlayer") {
                 collidedEntity.removeEntity() //xoa dan
-                _EHP =_EHP - 1
-                if(_EHP === 2)
-                absorbAnimation()
-
-                if(_EHP === 0)
-                    dieAnimation()
-            }
-            if (collidedEntity.entityType === "skillAuraBlast") {
-                collidedEntity.removeEntity()
-                _EHP =_EHP - 1
-
-            }
-            if(collidedEntity.entityType === "skillKamehameha") {
-                if(_EHP>1) {
-                    _EHP=_EHP-1
+                if(_EHP === 1 || _EHP === 2 || _EHP === 3) {
+                    _EHP = _EHP + 1
+                    absorbAnimation()
                 }
-
             }
-
+            if (collidedEntity.entityType === "skillAuraBlast" || collidedEntity.entityType === "skillKamehameha") {
+                collidedEntity.removeEntity()
+                if(_EHP > 0) {
+                    _EHP =_EHP - 1
+                }
+                if(_EHP === 0) {
+                    dieAnimation()
+                }
+            }
         }
     }
 
@@ -142,7 +137,8 @@ EntityBase {
     }
 
     Timer{
-        running:true
+        id: tmCell
+        running: true
         repeat: true
         interval: 1000
         onTriggered: {
@@ -175,10 +171,23 @@ EntityBase {
                 if(count === 15)
                     count = 0
             }
-            if(_EHP < 0){
+            if(_EHP === 0){
                 iFrametoDie ++;
-                if(iFrametoDie ===2)
+                if(iFrametoDie === 2) {
+                    removeEntity()
+                    tmCell.stop()
+                    sceneEarth.visible = false
+                    gameWindow.activeScene = sceneWin
+                    sceneWin.visible = true
+                }
+            }
+
+            if(player.__isDie === 1) {
                 removeEntity()
+                tmCell.stop()
+                sceneEarth.visible = false
+                gameWindow.activeScene = sceneLose
+                sceneLose.visible = true
             }
         }
     }
@@ -208,6 +217,7 @@ EntityBase {
         enemyCells.jumpTo("die")
         isShoot = false
         cellDie.play()
+        player.__isWin = 1
     }
 
     function shootAnimation() {
@@ -217,7 +227,7 @@ EntityBase {
 
     function kickSkill1(){
         var destination = Qt.point(player.x, player.y)
-        entityManager.createEntityFromComponentWithProperties(cellSkill1, {"appear": Qt.point(cells.x,cells.y),"destination": destination}) 
+        entityManager.createEntityFromComponentWithProperties(cellSkill1, {"appear": Qt.point(cells.x,cells.y),"destination": destination})
         cellAttack1.play()
     }
     function kickSkill2(){

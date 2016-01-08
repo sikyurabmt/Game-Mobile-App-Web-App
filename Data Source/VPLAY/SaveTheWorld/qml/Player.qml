@@ -16,8 +16,8 @@ EntityBase {
     property var directY: player.y + player.height*0.23
     property var __HP: 4
     property var __MP: 4
-    property var __isDie : false
-    property var __isWin : false
+    property var __isDie : 0
+    property var __isWin : 0
 
     signal upPressed(variant event)
     signal downPressed(variant event)
@@ -154,6 +154,9 @@ EntityBase {
                 if(__HP>0) {
                     hurtSound.play()
                 }
+                if(__HP === 0) {
+                    playerDie()
+                }
             }
             if(collidedEntity.entityType === "senzubeans") {
                 collidedEntity.removeEntity()
@@ -278,6 +281,7 @@ EntityBase {
 
     function playerDie() {
         dieSound.play()
+        __isDie = 1
     }
 
     function resetInfo() {
@@ -288,6 +292,8 @@ EntityBase {
         __MP = 4
         playerHPMP.upHP()
         playerHPMP.upMP()
+        __isDie = 0
+        __isWin = 0
     }
 
     MediaPlayer { id: spiritblastSound; source: "../assets/sounds/player/spiritblast.wav" }
