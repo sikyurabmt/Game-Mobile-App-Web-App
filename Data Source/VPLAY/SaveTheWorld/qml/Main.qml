@@ -961,6 +961,7 @@ GameWindow {
                         sceneWin.visible = false
                         gameWindow.activeScene = sceneStage
                         sceneStage.visible = true
+                        player.resetInfo()
                     }
                     onPressed: {
                         btnBack_Win.opacity = 0.5
