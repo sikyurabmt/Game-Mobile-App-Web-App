@@ -51,7 +51,7 @@ EntityBase {
         interval: 100
         repeat: true
         onTriggered: {
-            if(cellskill1.x <= rtgGamePlay.x*1.2)
+            if(cellSkill1.x <= rtgGamePlay.x*1.2)
             {
                 removeEntity()
             }

@@ -211,6 +211,7 @@ GameWindow {
                         gameWindow.activeScene = sceneEarth
                         sceneEarth.visible = true
                         __Stage = 0
+                        timer1.restart()
                         timer1.running = true
                         player.resetInfo()
                     }
@@ -240,6 +241,7 @@ GameWindow {
                         gameWindow.activeScene = sceneEarth
                         sceneEarth.visible = true
                         __Stage = 1
+                        timer1.restart()
                         timer1.running = true
                         player.resetInfo()
                     }
@@ -751,6 +753,10 @@ GameWindow {
             onTriggered:{
                 sceneEarth.secondTime++
                 if(__Stage  === 0){
+                    if(sceneEarth.secondTime%20 === 0){
+                        entityManager.createEntityFromComponent(senzuBeans)
+                    }
+
                     if(sceneEarth.secondTime < 20  ){
                         entityManager.createEntityFromComponent(saibama)
                     }
@@ -777,6 +783,10 @@ GameWindow {
                     }
                 }
                 if(__Stage === 1){
+                    if(sceneEarth.secondTime%20 === 0){
+                        entityManager.createEntityFromComponent(senzuBeans)
+                    }
+
                     if(sceneEarth.secondTime < 20  ){
                         entityManager.createEntityFromComponent(saibama)
                     }

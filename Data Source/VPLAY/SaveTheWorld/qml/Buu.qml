@@ -48,6 +48,13 @@ EntityBase {
             {
                 removeEntity()
             }
+            if(player.__isDie === 1) {
+                removeEntity()
+                time.stop()
+                sceneEarth.visible = false
+                gameWindow.activeScene = sceneLose
+                sceneLose.visible = true
+            }
         }
     }
 

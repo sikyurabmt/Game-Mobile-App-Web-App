@@ -133,8 +133,6 @@ EntityBase {
             if(collidedEntity.entityType === "skillPlayer") {
                 collidedEntity.removeEntity() //xoa dan
                 _EHP =_EHP - 1
-                if(_EHP === 0)
-                    dieTien()
             }
             if (collidedEntity.entityType === "skillAuraBlast") {
                 collidedEntity.removeEntity()
@@ -145,13 +143,14 @@ EntityBase {
                 if(_EHP>1) {
                     _EHP=_EHP-1
                 }
-
             }
-
+            if(_EHP === 0)
+                dieTien()
         }
     }
 
     Timer{
+        id: time
         running:true
         repeat:true
         interval: 1000
@@ -185,6 +184,13 @@ EntityBase {
                 iFrameToExplore++
                 if(iFrameToExplore === 2)
                     removeEntity()
+            }
+            if(player.__isDie === 1) {
+                removeEntity()
+                time.stop()
+                sceneEarth.visible = false
+                gameWindow.activeScene = sceneLose
+                sceneLose.visible = true
             }
         }
     }

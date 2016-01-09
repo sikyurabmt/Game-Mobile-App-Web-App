@@ -46,6 +46,7 @@ EntityBase {
         }
     }
     Timer {
+        id: time
         running: true
         interval: 100
         repeat: true
@@ -53,6 +54,13 @@ EntityBase {
             if(saibama.x <= rtgGamePlay.x*1.05)
             {
                 removeEntity()
+            }
+            if(player.__isDie === 1) {
+                removeEntity()
+                time.stop()
+                sceneEarth.visible = false
+                gameWindow.activeScene = sceneLose
+                sceneLose.visible = true
             }
         }
     }
