@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>VEGETAPC</Machine>
+    <WindowsUser>Vegeta</WindowsUser>
+    <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>f5466164-deb7-40f1-b71d-b931f02bf4f3</PackageIdentityName>
+    <IntermediateOutputPath>E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Bin\Debug\CycleTile.dll">
+      <PackagePath>CycleTile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\AlignmentGrid.png">
+      <PackagePath>Assets\AlignmentGrid.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\ApplicationIcon.png">
+      <PackagePath>Assets\ApplicationIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\SquareTile150x150.png">
+      <PackagePath>Assets\SquareTile150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\SquareTile71x71.png">
+      <PackagePath>Assets\SquareTile71x71.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\Tiles\Image4.png">
+      <PackagePath>Assets\Tiles\Image4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\Tiles\Image5.png">
+      <PackagePath>Assets\Tiles\Image5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\Tiles\Image1.png">
+      <PackagePath>Assets\Tiles\Image1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\Tiles\Image2.png">
+      <PackagePath>Assets\Tiles\Image2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\Tiles\Image3.png">
+      <PackagePath>Assets\Tiles\Image3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\Tiles\FlipCycleTileMedium.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\Tiles\FlipCycleTileSmall.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Assets\Tiles\IconicTileMediumLarge.png">
+      <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Save Data\Learn 3\Live Tiles\Demo Live Tiles - Edit Vez\CycleTile\Bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
