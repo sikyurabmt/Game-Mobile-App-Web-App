@@ -52,8 +52,6 @@ GameWindow {
                         sceneMenu.visible = false
                         gameWindow.activeScene = sceneStage
                         sceneStage.visible = true
-                        introAttack.stop()
-                        isAllowPlay = false
                     }
                 }
 
@@ -63,8 +61,6 @@ GameWindow {
                         sceneMenu.visible = false
                         gameWindow.activeScene = sceneHelps
                         sceneHelps.visible = true
-                        introAttack.stop()
-                        isAllowPlay = false
                     }
                 }
 
@@ -74,8 +70,6 @@ GameWindow {
                         sceneMenu.visible = false
                         gameWindow.activeScene = sceneCredits
                         sceneCredits.visible = true
-                        introAttack.stop()
-                        isAllowPlay = false
                     }
                 }
 
@@ -221,7 +215,10 @@ GameWindow {
                 MouseArea {
                     anchors.fill: imgEarth
                     onClicked: {
+                        introAttack.stop()
+                        isAllowPlay = false
                         sceneStage.visible = false
+                        earthAttack.play()
                         gameWindow.activeScene = sceneEarth
                         sceneEarth.visible = true
                         __Stage = 0
@@ -252,6 +249,9 @@ GameWindow {
                 MouseArea {
                     anchors.fill: imgNamek
                     onClicked: {
+                        introAttack.stop()
+                        isAllowPlay = false
+                        namekAttack.play()
                         sceneStage.visible = false
                         gameWindow.activeScene = sceneEarth
                         sceneEarth.visible = true
@@ -289,7 +289,6 @@ GameWindow {
                         gameWindow.activeScene = sceneMenu
                         sceneMenu.visible = true
                         sceneEarth.secondTime = 0
-
                     }
                     onPressed: {
                         btnBack_Stage.opacity = 0.5
@@ -392,6 +391,8 @@ GameWindow {
                         sceneEarth.secondTime = 0
                         timer1.restart()
                         timer1.stop()
+                        earthAttack.stop()
+                        namekAttack.stop()
                     }
 
                     onPressed: {
@@ -769,6 +770,11 @@ GameWindow {
             repeat: true
             interval: 1000
             onTriggered:{
+                if(player.__isDie === 1){
+                    earthAttack.stop()
+                    namekAttack.stop()
+                }
+
                 sceneEarth.secondTime++
                 if(__Stage  === 0){
                     if(sceneEarth.secondTime%20 === 0){
@@ -975,4 +981,6 @@ GameWindow {
         }
     }
     MediaPlayer { id: introAttack; source: "../assets/sounds/game/Intro.wav" }
+    MediaPlayer { id: earthAttack; source: "../assets/sounds/game/Earth.wav" }
+    MediaPlayer { id: namekAttack; source: "../assets/sounds/game/Namek.wav" }
 }
