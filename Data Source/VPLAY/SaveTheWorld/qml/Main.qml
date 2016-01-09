@@ -746,22 +746,61 @@ GameWindow {
         Timer {
             id: timer1
             running: false
-            repeat: false
+            repeat: true
             interval: 1000
             onTriggered:{
-                if(__Stage === 0) {
-                    sceneEarth.secondTime++
-                    entityManager.createEntityFromComponent(cell)
-                    //if(sceneEarth.secondTime%10===0) {
-                    //entityManager.createEntityFromComponent(senzuBeans)
-                    //}
+                sceneEarth.secondTime++
+                if(__Stage  === 0){
+                    if(sceneEarth.secondTime < 20  ){
+                        entityManager.createEntityFromComponent(saibama)
+                    }
+
+                    if(19 < sceneEarth.secondTime && sceneEarth.secondTime < 40){
+                        if((sceneEarth.secondTime) %5 === 0){
+                            entityManager.createEntityFromComponent(android18)
+                        }
+                    }
+
+                    if(40 < sceneEarth.secondTime && sceneEarth.secondTime < 70 && sceneEarth.secondTime %3 === 0){
+                        entityManager.createEntityFromComponent(bardockOozaru)
+                    }
+
+                    if(sceneEarth.secondTime === 71){
+                        timer1.repeat = false
+                        entityManager.createEntityFromComponent(cell)
+                        sceneEarth.secondTime = 80
+                    }
+
+                    if(sceneEarth.secondTime === 80){
+
+                        timer1.repeat = true
+                    }
                 }
-                if(__Stage === 1) {
-                    sceneEarth.secondTime++
-                    entityManager.createEntityFromComponent(buu)
-                    //if(sceneEarth.secondTime%10===0) {
-                    //entityManager.createEntityFromComponent(senzuBeans)
-                    //}
+                if(__Stage === 1){
+                    if(sceneEarth.secondTime < 20  ){
+                        entityManager.createEntityFromComponent(saibama)
+                    }
+
+                    if(19 < sceneEarth.secondTime && sceneEarth.secondTime < 40){
+                        if((sceneEarth.secondTime) %5 === 0){
+                            entityManager.createEntityFromComponent(android18)
+                        }
+                    }
+
+                    if(40 < sceneEarth.secondTime && sceneEarth.secondTime < 70 && sceneEarth.secondTime %3 === 0){
+                        entityManager.createEntityFromComponent(buu)
+                    }
+
+                    if(sceneEarth.secondTime === 71){
+                        timer1.repeat = false
+                        entityManager.createEntityFromComponent(tien)
+                        sceneEarth.secondTime = 80
+                    }
+
+                    if(sceneEarth.secondTime === 80){
+
+                        timer1.repeat = true
+                    }
                 }
             }
         }
