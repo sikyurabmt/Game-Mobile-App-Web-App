@@ -1,19 +1,27 @@
 import VPlay 2.0
 import QtQuick 2.0
 import ".."
+import QtMultimedia 5.5
 
 GameWindow {
     id: gameWindow
 
     activeScene: sceneMenu
+
     width: 960
     height: 640
     visible: true
     property var __Stage: 0
+    property var isAllowPlay: true
 
     Scene {
         id: sceneMenu
         visible: true
+        onActiveFocusChanged: {
+            if(isAllowPlay === true){
+                introAttack.play()
+            }
+        }
 
         Rectangle {
             id: idMenu
@@ -44,6 +52,8 @@ GameWindow {
                         sceneMenu.visible = false
                         gameWindow.activeScene = sceneStage
                         sceneStage.visible = true
+                        introAttack.stop()
+                        isAllowPlay = false
                     }
                 }
 
@@ -53,6 +63,8 @@ GameWindow {
                         sceneMenu.visible = false
                         gameWindow.activeScene = sceneHelps
                         sceneHelps.visible = true
+                        introAttack.stop()
+                        isAllowPlay = false
                     }
                 }
 
@@ -62,6 +74,8 @@ GameWindow {
                         sceneMenu.visible = false
                         gameWindow.activeScene = sceneCredits
                         sceneCredits.visible = true
+                        introAttack.stop()
+                        isAllowPlay = false
                     }
                 }
 
@@ -959,4 +973,5 @@ GameWindow {
             }
         }
     }
+    MediaPlayer { id: introAttack; source: "../assets/sounds/game/Intro.wav" }
 }
