@@ -211,6 +211,7 @@ GameWindow {
                         gameWindow.activeScene = sceneEarth
                         sceneEarth.visible = true
                         __Stage = 0
+                        sceneEarth.secondTime = 0
                         timer1.restart()
                         timer1.running = true
                         player.resetInfo()
@@ -241,6 +242,7 @@ GameWindow {
                         gameWindow.activeScene = sceneEarth
                         sceneEarth.visible = true
                         __Stage = 1
+                        sceneEarth.secondTime = 0
                         timer1.restart()
                         timer1.running = true
                         player.resetInfo()
@@ -272,6 +274,8 @@ GameWindow {
                         sceneStage.visible = false
                         gameWindow.activeScene = sceneMenu
                         sceneMenu.visible = true
+                        sceneEarth.secondTime = 0
+
                     }
                     onPressed: {
                         btnBack_Stage.opacity = 0.5
@@ -370,8 +374,8 @@ GameWindow {
                         sceneEarth.visible = false
                         gameWindow.activeScene = sceneStage
                         sceneStage.visible = true
-
                         timer1.running = false
+                        sceneEarth.secondTime = 0
                         timer1.restart()
                         timer1.stop()
                     }
@@ -875,6 +879,7 @@ GameWindow {
                         sceneLose.visible = false
                         gameWindow.activeScene = sceneStage
                         sceneStage.visible = true
+                        player.resetInfo()
                     }
                     onPressed: {
                         btnBack_Lose.opacity = 0.5
