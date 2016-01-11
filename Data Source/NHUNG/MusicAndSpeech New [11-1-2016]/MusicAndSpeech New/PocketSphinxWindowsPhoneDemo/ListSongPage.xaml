@@ -1,0 +1,128 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PocketSphinxWindowsPhoneDemo.ListSongPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="AddrSongItemTemplate">
+            <StackPanel VerticalAlignment="Top">
+                <TextBlock FontSize="30" FontWeight="Bold" Text="{Binding Song}" Tap="Song_Tapped"/>
+                <TextBlock Text="{Binding Artist}" />
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="AddrArtistItemTemplate" >
+            <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Tap="Artist_Tapped">
+                <Image Name="YourImage" Height="150" Width="150" Source="Images/play.png" />
+                <StackPanel Name="text" Orientation="Vertical">
+                    <TextBlock Name="tbArtist" FontSize="30" FontWeight="Bold" Text="{Binding Artist}"  />
+                    <TextBox Name="Album" Text="{Binding Album}" Visibility="Collapsed" />
+                    <TextBox Name="Song" Text="{Binding Song}" Visibility="Collapsed" />
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="AddrAlbumItemTemplate">
+            <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Tap="Album_Tapped">
+                <Image Name="YourImage" Height="150" Width="150" Source="Images/play.png"  />
+                <StackPanel Name="text" Orientation="Vertical">
+                    <TextBlock Name="tbAlbum" FontSize="30" FontWeight="Bold" Text="{Binding Album}"/>
+                    <TextBlock Text="{Binding Artist}" />
+                    <TextBox Name="Song" Text="{Binding Song}" Visibility="Collapsed" />
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="AddrGroupHeaderTemplate">
+            <Border Background="Transparent" Padding="5">
+                <Border Background="{StaticResource PhoneAccentBrush}" BorderBrush="{StaticResource PhoneAccentBrush}" BorderThickness="2" Width="62" 
+         Height="62" Margin="0,0,18,0" HorizontalAlignment="Left">
+                    <TextBlock Text="{Binding Key}" Foreground="{StaticResource PhoneForegroundBrush}" FontSize="48" Padding="6" 
+            FontFamily="{StaticResource PhoneFontFamilySemiLight}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Border>
+            </Border>
+        </DataTemplate>
+
+        <phone:JumpListItemBackgroundConverter x:Key="BackgroundConverter"/>
+        <phone:JumpListItemForegroundConverter x:Key="ForegroundConverter"/>
+        <Style x:Key="AddrJumpListStyle" TargetType="phone:LongListSelector">
+            <Setter Property="GridCellSize"  Value="113,113"/>
+            <Setter Property="LayoutMode" Value="Grid" />
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Border Background="{Binding Converter={StaticResource BackgroundConverter}}" Width="113" Height="113" Margin="6" >
+                            <TextBlock Text="{Binding Key}" FontFamily="{StaticResource PhoneFontFamilySemiBold}" FontSize="48" Padding="6" 
+               Foreground="{Binding Converter={StaticResource ForegroundConverter}}" VerticalAlignment="Center"/>
+                        </Border>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </phone:PhoneApplicationPage.Resources>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <phone:Panorama >
+                <phone:Panorama.TitleTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="MUSIC LIBRARY" FontSize="20" Margin="0,46,0,0" FontWeight="Bold"/>
+                    </DataTemplate>
+                </phone:Panorama.TitleTemplate>
+                <!--Panorama item one-->
+                <phone:PanoramaItem Header="songs">
+                    <phone:LongListSelector x:Name="AddrSong"
+                      JumpListStyle="{StaticResource AddrJumpListStyle}"
+                      Background="Transparent"
+                      GroupHeaderTemplate="{StaticResource AddrGroupHeaderTemplate}"
+                      ItemTemplate="{StaticResource AddrSongItemTemplate}"
+                      LayoutMode="List"
+                      IsGroupingEnabled="true"
+                      HideEmptyGroups ="true"/>
+                </phone:PanoramaItem>
+                <!--Panorama item two-->
+                <phone:PanoramaItem Header="album">
+                    <phone:LongListSelector x:Name="AddrAlbum"
+                      JumpListStyle="{StaticResource AddrJumpListStyle}"
+                      Background="Transparent"
+                      GroupHeaderTemplate="{StaticResource AddrGroupHeaderTemplate}"
+                      ItemTemplate="{StaticResource AddrAlbumItemTemplate}"
+                      LayoutMode="List"
+                      IsGroupingEnabled="true"
+                      HideEmptyGroups ="true"/>
+                </phone:PanoramaItem>
+                <phone:PanoramaItem Header="artist">
+                    <phone:LongListSelector x:Name="AddrArtist"
+                      JumpListStyle="{StaticResource AddrJumpListStyle}"
+                      Background="Transparent"
+                      GroupHeaderTemplate="{StaticResource AddrGroupHeaderTemplate}"
+                      ItemTemplate="{StaticResource AddrArtistItemTemplate}"
+                      LayoutMode="List"
+                      IsGroupingEnabled="true"
+                      HideEmptyGroups ="true"/>
+                </phone:PanoramaItem>
+            </phone:Panorama>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
