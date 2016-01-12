@@ -45,3 +45,50 @@ D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWi
 D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\PocketSphinxWindowsPhoneDemo.dll
 D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\PocketSphinxWindowsPhoneDemo.pdb
 D:\Data Projects\HQL\Data Source\DIDONG\Source\MusicAndSpeech New\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\XapCacheFile.xml
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\dict\cmu07a.dic
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\dict\cmu07a.dic.md5
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\grammar\digits.gram
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\grammar\digits.gram.md5
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\feat.params
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\feat.params.md5
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\mdef
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\mdef.md5
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\means
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\means.md5
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\noisedict
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\noisedict.md5
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\README
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\README.md5
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\sendump
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\sendump.md5
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\transition_matrices
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\transition_matrices.md5
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\variances
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\hmm\en-us-semi\variances.md5
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\lm\weather.dmp
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\models\lm\weather.dmp.md5
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\ApplicationIcon.png
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\Tiles\FlipCycleTileLarge.png
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\Tiles\FlipCycleTileMedium.png
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\Tiles\FlipCycleTileSmall.png
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\Tiles\IconicTileMediumLarge.png
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Assets\Tiles\IconicTileSmall.png
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\PocketSphinxWindowsPhoneDemo.dll
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\PocketSphinxWindowsPhoneDemo.pdb
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\AppManifest.xaml
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\Properties\WMAppManifest.xml
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\PocketSphinxWindowsPhoneDemo_Debug_x86.xap
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\PocketSphinxRntComp.winmd
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\Bin\x86\Debug\PocketSphinxRntComp.pdb
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\Music Player.csprojResolveAssemblyReference.cache
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\App.g.cs
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\ListSongPage.g.cs
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\MainPage.g.cs
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\PlaylistPage.g.cs
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\SettingPage.g.cs
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\PocketSphinxWindowsPhoneDemo.g.resources
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\PocketSphinxWindowsPhoneDemo.Resources.AppResources.resources
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\Music Player.csproj.GenerateResource.Cache
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\PocketSphinxWindowsPhoneDemo.dll
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\PocketSphinxWindowsPhoneDemo.pdb
+D:\Data Projects\HQL\Data Source\NHUNG\MusicAndSpeechError\PocketSphinxWindowsPhoneDemo\obj\x86\Debug\XapCacheFile.xml

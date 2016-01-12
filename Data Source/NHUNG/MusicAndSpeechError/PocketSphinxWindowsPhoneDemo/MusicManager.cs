@@ -385,8 +385,6 @@ namespace File_Manager
             using (StreamReader reader = new StreamReader(_FilePath))
             {
                 Content = reader.ReadToEnd();
-                Debug.WriteLine("Reader: ");
-                 Debug.WriteLine( Content);
             }
             //Check content
             if (Content != "")
@@ -402,7 +400,6 @@ namespace File_Manager
                     _NowPlay = 0;
                 }
             }
-            //
         }
 
         public void FileWriter(int Nowplay)
@@ -412,20 +409,7 @@ namespace File_Manager
             //Write content to file
             using (StreamWriter writer = new StreamWriter(_FilePath))
             {
-                
-                //writer.AutoFlush();
-               //  writer.Flush();
-                
-                //Debug.WriteLine(Content);
-               // writer.Write(Content);
-               
-                writer.Close();
-                using (StreamReader reader = new StreamReader(_FilePath))
-                {
-                    Content = reader.ReadToEnd();
-                }
-                Debug.WriteLine(Content);
-                
+                writer.Write(Content);
             }
             _NowPlay = Nowplay;
         }

@@ -40,7 +40,7 @@ namespace PocketSphinxWindowsPhoneDemo
             InitializeComponent();
 
             st.FileReader();
-            mm.FileReader();
+            //mm.FileReader();
 
             CheckAvailable();
             SetProperties();
@@ -127,12 +127,12 @@ namespace PocketSphinxWindowsPhoneDemo
 
         private void SetProperties()
         {
+            mm.FileWriter(mm.GetIndexOfNowPlay());
             tblTitle.Text = mm.GetTitle();
             tblArtist.Text = mm.GetArtist();
             tblAlbum.Text = mm.GetAlbum();
             tblTotalTime.Text = String.Format(@"{0:hh\:mm\:ss}", mm.GetTotalTimeSpanOfSong());
             progressBar.Maximum = mm.GetTotalSecondsOfSong();
-            mm.FileWriter(mm.GetIndexOfNowPlay());
         }
 
         private void SetDefault()
@@ -206,9 +206,9 @@ namespace PocketSphinxWindowsPhoneDemo
             if (NavigationContext.QueryString.TryGetValue("index", out indexNavigate))
             {
                 indexNavigate = string.Format("{0}", indexNavigate);
+                MusicManager._NowPlay = Convert.ToInt32(indexNavigate);
             }
 
-            MusicManager._NowPlay = Convert.ToInt32(indexNavigate);
 
             SetProperties();
         }
