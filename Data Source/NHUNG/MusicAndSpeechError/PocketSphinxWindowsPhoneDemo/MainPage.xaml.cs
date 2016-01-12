@@ -28,24 +28,24 @@ namespace PocketSphinxWindowsPhoneDemo
     /// </summary>
     public partial class MainPage : PhoneApplicationPage
     {
+        MusicManager mm = new MusicManager();
         SettingManager st = new SettingManager();
         DispatcherTimer playTimer;
         String ArrAlbum, ArrArtist;
         String[] ArrAlbumIndex, ArrArtistIndex;
         int[] AlbumIndex, ArtistIndex;
         String indexNavigate;
-        Record record;
-        MusicManager mm = new MusicManager();
         public MainPage()
         {
             InitializeComponent();
+
             st.FileReader();
-            //mm.FileReader();
-            record = new Record(this);
+            mm.FileReader();
+
             CheckAvailable();
             SetProperties();
             LoadSettingProperties();
-            Record.isOtherPage = false;
+
             playTimer = new DispatcherTimer();
             playTimer.Interval = TimeSpan.FromSeconds(1); //one second
             playTimer.Tick += new EventHandler(playTimer_Tick);
@@ -125,7 +125,7 @@ namespace PocketSphinxWindowsPhoneDemo
             }
         }
 
-        public void SetProperties()
+        private void SetProperties()
         {
             tblTitle.Text = mm.GetTitle();
             tblArtist.Text = mm.GetArtist();
@@ -142,17 +142,6 @@ namespace PocketSphinxWindowsPhoneDemo
             ManagerButton();
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            string guid = string.Empty;
-            if (NavigationContext.QueryString.TryGetValue("Refresh", out guid))
-            {
-                //guid exists therefore it's a reload, so delete the last entry
-                //from the navigation stack
-                if (NavigationService.CanGoBack)
-                    NavigationService.RemoveBackEntry();
-            }
-        }
         private void ManagerButton()
         {
             if (mm.IsPlaying())
@@ -174,8 +163,6 @@ namespace PocketSphinxWindowsPhoneDemo
 
         private void LayoutRoot_Loaded(object sender, RoutedEventArgs e)
         {
-            SetProperties();
-            ManagerButton();
             if (NavigationContext.QueryString.TryGetValue("ArrAlbum", out ArrAlbum))
             {
                 ArrAlbum = string.Format("{0}", ArrAlbum);
@@ -221,7 +208,7 @@ namespace PocketSphinxWindowsPhoneDemo
                 indexNavigate = string.Format("{0}", indexNavigate);
             }
 
-            //MusicManager._NowPlay = Convert.ToInt32(indexNavigate);
+            MusicManager._NowPlay = Convert.ToInt32(indexNavigate);
 
             SetProperties();
         }
@@ -253,15 +240,15 @@ namespace PocketSphinxWindowsPhoneDemo
         private void ListProcess()
         {
             NavigationService.Navigate(new Uri("/ListSongPage.xaml", UriKind.Relative));
-            record.StopNativeRecorder();
-            record.StopSpeechRecognizerProcessing();
+            StopNativeRecorder();
+            StopSpeechRecognizerProcessing();
         }
 
-        public void SettingProcess()
+        private void SettingProcess()
         {
             NavigationService.Navigate(new Uri("/SettingPage.xaml", UriKind.Relative));
-            record.StopNativeRecorder();
-            record.StopSpeechRecognizerProcessing();
+            StopNativeRecorder();
+            StopSpeechRecognizerProcessing();
         }
         private void appbar_previous_click(object sender, EventArgs e)
         {
@@ -293,18 +280,259 @@ namespace PocketSphinxWindowsPhoneDemo
             SettingProcess();
         }
 
+
+
+        //
+        //  NHAN
+        //  DIEN
+        //  GIONG
+        //  NOI
+        //
+
+
+
+        private const string WakeupText = "go to home";
+
+        private string[] DigitValues = new string[] { "play", "pause", "stop", "next", "previous", "setting", "list" };
+
+        private RecognizerMode _mode = RecognizerMode.Wakeup;
+        private RecognizerMode Mode
+        {
+            get
+            {
+                return _mode;
+            }
+            set
+            {
+                if (_mode != value)
+                {
+                    _mode = value;
+                    SetRecognizerMode(_mode);
+                }
+            }
+        }
+
+        private SpeechRecognizer speechRecognizer;
+
+        private WasapiAudioRecorder audioRecorder;
+
+        private enum RecognizerMode { Wakeup, Digits };
+
         private async void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
             // Initializing
-            await record.InitialzeSpeechRecognizer();
-            record.InitializeAudioRecorder();
+            await InitialzeSpeechRecognizer();
+            InitializeAudioRecorder();
 
             //// Start processes
-            record.StartSpeechRecognizerProcessing();
-            record.StartNativeRecorder();
+            StartSpeechRecognizerProcessing();
+            StartNativeRecorder();
 
             StateMessageBlock.Text = "ready for use";
         }
 
+        private void FindMatchToToggle(string recognizedText)
+        {
+            bool matchFound = false;
+
+            switch (Mode)
+            {
+                case RecognizerMode.Wakeup:
+                    matchFound = (recognizedText == WakeupText);
+                    break;
+                case RecognizerMode.Digits:
+                    var recognizedWords = recognizedText.Split(' ');
+                    foreach (var word in recognizedWords)
+                    {
+                        if (DigitValues.Contains(word.ToLower()))
+                        {
+                            recognizedText = word;
+                            matchFound = true;
+                        }
+                    }
+                    break;
+            }
+
+            if (matchFound)
+            {
+                ToggleSearch();
+            }
+        }
+
+        private void ToggleSearch()
+        {
+            switch (Mode)
+            {
+                case RecognizerMode.Wakeup:
+                    Mode = RecognizerMode.Digits;
+                    break;
+                case RecognizerMode.Digits:
+                    Mode = RecognizerMode.Wakeup;
+                    break;
+            }
+        }
+
+        private void SetRecognizerMode(RecognizerMode mode)
+        {
+            string result = string.Empty;
+            speechRecognizer.StopProcessing();
+            Debug.WriteLine(result);
+            result = speechRecognizer.SetSearch(mode.ToString());
+            Debug.WriteLine(result);
+            speechRecognizer.StartProcessing();
+            Debug.WriteLine(result);
+        }
+
+        private async Task InitialzeSpeechRecognizer()
+        {
+            List<string> initResults = new List<string>();
+
+            try
+            {
+                AudioContainer.SphinxSpeechRecognizer = new SpeechRecognizer();
+                speechRecognizer = AudioContainer.SphinxSpeechRecognizer;
+
+                speechRecognizer.resultFound += speechRecognizer_resultFound;
+                speechRecognizer.resultFinalizedBySilence += speechRecognizer_resultFinalizedBySilence;
+
+                // Load Async
+                await Task.Run(() =>
+                {
+                    var initResult = speechRecognizer.Initialize("\\Assets\\models\\hmm\\en-us-semi", "\\Assets\\models\\dict\\cmu07a.dic");
+                    initResults.Add(initResult);
+                    initResult = speechRecognizer.AddKeyphraseSearch(RecognizerMode.Wakeup.ToString(), WakeupText);
+                    initResults.Add(initResult);
+                    initResult = speechRecognizer.AddGrammarSearch(RecognizerMode.Digits.ToString(), "\\Assets\\models\\grammar\\digits.gram");
+                    initResults.Add(initResult);
+                    initResult = speechRecognizer.AddNgramSearch("forecast", "\\Assets\\models\\lm\\weather.dmp");
+                    initResults.Add(initResult);
+                });
+
+                SetRecognizerMode(Mode);
+            }
+            catch (Exception ex)
+            {
+                var initResult = ex.Message;
+                initResults.Add(initResult);
+            }
+
+            foreach (var result in initResults)
+            {
+                Debug.WriteLine(result);
+            }
+        }
+
+        private void StartSpeechRecognizerProcessing()
+        {
+            string result = string.Empty;
+
+            try
+            {
+                if (speechRecognizer.IsProcessing())
+                {
+                    result = "PocketSphinx already started";
+                }
+                else
+                {
+                    result = speechRecognizer.StartProcessing();
+                }
+            }
+            catch
+            {
+                result = "Starting PocketSphinx processing failed";
+            }
+
+            Debug.WriteLine(result);
+        }
+
+        private void StopSpeechRecognizerProcessing()
+        {
+            string result = string.Empty;
+
+            try
+            {
+                result = speechRecognizer.StopProcessing();
+            }
+            catch
+            {
+                result = "Stopping PocketSphinx processing failed";
+            }
+
+            Debug.WriteLine(result);
+        }
+
+        void speechRecognizer_resultFinalizedBySilence(string finalResult)
+        {
+            Debug.WriteLine("final result found: {0}", finalResult);
+            FindMatchToToggle(finalResult);
+        }
+
+        void speechRecognizer_resultFound(string result)
+        {
+            Debug.WriteLine("result found: {0}", result);
+            StateMessageBlock.Text = string.Format("found: {0}", result);
+            switch (result)
+            {
+                case "play":
+                    PlayOrPauseProcess();
+                    break;
+                case "pause":
+                    PlayOrPauseProcess();
+                    break;
+                case "stop":
+                    ListProcess();
+                    //StopProcess();
+                    break;
+                case "next":
+                    NextProcess();
+                    break;
+                case "previous":
+                    PreviousProcess();
+                    break;
+                case "list":
+                    ListProcess();
+                    break;
+                case "option":
+                    SettingProcess();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void InitializeAudioRecorder()
+        {
+            AudioContainer.AudioRecorder = new WasapiAudioRecorder();
+            audioRecorder = AudioContainer.AudioRecorder;
+            audioRecorder.BufferReady += audioRecorder_BufferReady;
+
+            Debug.WriteLine("AudioRecorder Initialized");
+        }
+
+        private void StartNativeRecorder()
+        {
+            audioRecorder.StartRecording();
+        }
+
+        private void StopNativeRecorder()
+        {
+            audioRecorder.StopRecording();
+        }
+
+        void audioRecorder_BufferReady(object sender, AudioDataEventArgs e)
+        {
+            int registerResult = 0;
+            try
+            {
+                registerResult = speechRecognizer.RegisterAudioBytes(e.Data);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                StopNativeRecorder();
+                StopSpeechRecognizerProcessing();
+                StateMessageBlock.Text = "all stoped because of error";
+            }
+        }
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework.Media;
 using System.IO;
+using System.Diagnostics;
 
 
 namespace File_Manager
@@ -17,7 +18,7 @@ namespace File_Manager
         private int _MaxSong;
         public bool isGroup = false;
         public int[] Arr;
-        public static string _FilePath = "Files/nowplay.txt";
+        public string _FilePath = "Files/nowplay.txt";
         public MusicManager()
         {
             _SongCollection = _MediaLibrary.Songs;
@@ -384,6 +385,8 @@ namespace File_Manager
             using (StreamReader reader = new StreamReader(_FilePath))
             {
                 Content = reader.ReadToEnd();
+                Debug.WriteLine("Reader: ");
+                 Debug.WriteLine( Content);
             }
             //Check content
             if (Content != "")
@@ -409,7 +412,20 @@ namespace File_Manager
             //Write content to file
             using (StreamWriter writer = new StreamWriter(_FilePath))
             {
-                writer.Write(Content);
+                
+                //writer.AutoFlush();
+               //  writer.Flush();
+                
+                //Debug.WriteLine(Content);
+               // writer.Write(Content);
+               
+                writer.Close();
+                using (StreamReader reader = new StreamReader(_FilePath))
+                {
+                    Content = reader.ReadToEnd();
+                }
+                Debug.WriteLine(Content);
+                
             }
             _NowPlay = Nowplay;
         }

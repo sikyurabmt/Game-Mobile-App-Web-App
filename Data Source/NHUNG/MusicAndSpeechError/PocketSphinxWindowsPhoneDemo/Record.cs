@@ -20,7 +20,8 @@ namespace PocketSphinxWindowsPhoneDemo
          Page page;
          MusicManager mmRecord;
          public static bool isOtherPage = false;
-         PocketSphinxWindowsPhoneDemo.MainPage mainpage;
+         public bool isAvailable = false; // truong hop dang o list doc lai list se bi stop luon
+         
         //
         //  NHAN
         //  DIEN
@@ -31,59 +32,15 @@ namespace PocketSphinxWindowsPhoneDemo
          {
              page = main;
              mmRecord  = new MusicManager();
-         }
-         private void PreviousProcess()
-         {
-             mmRecord.PlayPrevious();
-             if (isOtherPage == true)
-             {
-                 StopNativeRecorder();
-                 StopSpeechRecognizerProcessing();
-             }
              
-             page.NavigationService.Navigate(new Uri("/MainPage.xaml?Refresh=true", UriKind.Relative));
-             //page.NavigationService.Navigate(new Uri("/MainPage.xaml?{0}",refresh , UriKind.Absolute));
-             //page.NavigationService.GoBack();
          }
 
-         private void NextProcess()
+         public Record()
          {
-             mmRecord.PlayNext();
-             //if (isOtherPage == true)
-             //{
-            StopNativeRecorder();
-            StopSpeechRecognizerProcessing();
-             page.NavigationService.Navigate(new Uri("/MainPage.xaml?Refresh=true", UriKind.Relative));
-             //page.NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
-             //page.NavigationService.GoForward();
-             //StopNativeRecorder();
-             //StopSpeechRecognizerProcessing();
-             mmRecord.FileWriter(MusicManager._NowPlay);
+             MainPage main = new MainPage();
+             mmRecord = new MusicManager();
          }
-
-         private void PlayOrPauseProcess()
-         {
-             mmRecord.PlayOrPause();
-             //if (isOtherPage == true) 
-             //{
-                 StopNativeRecorder();
-                 page.NavigationService.RemoveBackEntry();
-                 StopSpeechRecognizerProcessing();
-             //}
-                 page.NavigationService.Navigate(new Uri("/MainPage.xaml?Refresh=true", UriKind.Relative));
-             //page.NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.RelativeOrAbsolute));
-         }
-
-         private void StopProcess()
-         {
-             mmRecord.Stop();
-             if (isOtherPage == true)
-             {
-                 StopNativeRecorder();
-                 StopSpeechRecognizerProcessing();
-             }
-             //SetDefault();
-         }
+       
 
         public const string WakeupText = "go to home";
 
@@ -258,6 +215,12 @@ namespace PocketSphinxWindowsPhoneDemo
             StopSpeechRecognizerProcessing();
         }
 
+        private void SettingProcess()
+        {
+            page.NavigationService.Navigate(new Uri("/SettingPage.xaml", UriKind.Relative));
+            StopNativeRecorder();
+            StopSpeechRecognizerProcessing();
+        }
         private void Main()
         {
             page.NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.RelativeOrAbsolute));
@@ -266,6 +229,33 @@ namespace PocketSphinxWindowsPhoneDemo
                 StopNativeRecorder();
                 StopSpeechRecognizerProcessing();
             }
+        }
+
+        private void PreviousProcess()
+        {
+            mmRecord.PlayPrevious();
+
+            if (page.NavigationService.Navigate(new Uri("/MainPage.xaml?Refresh=true", UriKind.Relative)))
+            {
+                StopNativeRecorder();
+                StopSpeechRecognizerProcessing();
+            }
+        }
+
+        private void NextProcess()
+        {
+            mmRecord.PlayNext();
+            mmRecord.FileWriter(MusicManager._NowPlay);
+        }
+
+        private void PlayOrPauseProcess()
+        {
+            mmRecord.PlayOrPause();
+        }
+
+        private void StopProcess()
+        {
+            mmRecord.Stop();
         }
         void speechRecognizer_resultFound(string result)
         {
@@ -278,19 +268,20 @@ namespace PocketSphinxWindowsPhoneDemo
                     PlayOrPauseProcess();
                     break;
                 case "pause":
-                    NextProcess();
+                    PlayOrPauseProcess();
                     break;
                 case "stop":
-                    Main();
+                    Main(); // chuyen ve ham main
+                    //StopProcess();
                     break;
                 case "next":
                     NextProcess();
                     break;
                 case "previous":
-                    ListProcess();
-                    //PreviousProcess();
+                    PreviousProcess();
                     break;
                 case "list":
+                    if (isAvailable == false) // truong hop dang o list, ma noi list tiep, no se stop han, vi khong navigate lai, nen can kiem tra
                     ListProcess();
                     break;
                 //case "option":
@@ -332,8 +323,7 @@ namespace PocketSphinxWindowsPhoneDemo
                 Debug.WriteLine(ex.Message);
                 StopNativeRecorder();
                 StopSpeechRecognizerProcessing();
-                
-                    //StateMessageBlock.Text = "all stoped because of error";
+              //StateMessageBlock.Text = "all stoped because of error";
             }
         }
     }

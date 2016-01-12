@@ -31,6 +31,7 @@ namespace PocketSphinxWindowsPhoneDemo
             GroupArtist();
             record = new Record(this);
             Record.isOtherPage = true;
+            record.isAvailable = true;
         }
 
         void GroupSong()
@@ -81,7 +82,7 @@ namespace PocketSphinxWindowsPhoneDemo
                     break;
                 }
             }
-            string uri = string.Format("/MainPage.xaml?index={0}", index);
+            string uri = string.Format("/MainPage.xaml?index={0}", index+1);
             NavigationService.Navigate(new Uri(uri, UriKind.Relative));
         }
 
