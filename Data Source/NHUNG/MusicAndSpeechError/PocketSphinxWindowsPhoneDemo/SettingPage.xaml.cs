@@ -19,12 +19,16 @@ namespace PocketSphinxWindowsPhoneDemo
         private string sPlayback, sRepeat, sTheme, sColor;
 
         SettingManager _SettingManager = new SettingManager();
+
+        Record record;
       
         public SettingPage()
         {
             InitializeComponent();
             _SettingManager.FileReader();
             SetDefaultRadioButton();
+            record = new Record(this);
+            record.isAvailable = true;
         }
         private void LoadImage(string ImagePath)
         {
@@ -160,11 +164,35 @@ namespace PocketSphinxWindowsPhoneDemo
             }
             //Write file
             _SettingManager.FileWriter(sPlayback, sRepeat, sTheme, sColor);
+            record.StopNativeRecorder();
+            record.StopSpeechRecognizerProcessing();
             NavigationService.GoBack();
         }
         private void btn_cancel_Click(object sender, RoutedEventArgs e)
         {
             //NavigationService.Navigate(new Uri("/Page1.xaml", UriKind.Relative));
+            record.StopNativeRecorder();
+            record.StopSpeechRecognizerProcessing();
+            NavigationService.GoBack();
+        }
+
+        private async void Setting_Loaded(object sender, RoutedEventArgs e)
+        {
+            await record.InitialzeSpeechRecognizer();
+            record.InitializeAudioRecorder();
+
+            //// Start processes
+            record.StartSpeechRecognizerProcessing();
+            record.StartNativeRecorder();
+        }
+
+        protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
+        {
+
+            e.Cancel = true;
+
+            record.StopNativeRecorder();
+            record.StopSpeechRecognizerProcessing();
             NavigationService.GoBack();
         }
     }

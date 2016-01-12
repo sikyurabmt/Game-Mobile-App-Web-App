@@ -34,12 +34,6 @@ namespace PocketSphinxWindowsPhoneDemo
              mmRecord  = new MusicManager();
              
          }
-
-         public Record()
-         {
-             MainPage main = new MainPage();
-             mmRecord = new MusicManager();
-         }
        
 
         public const string WakeupText = "go to home";
@@ -271,8 +265,7 @@ namespace PocketSphinxWindowsPhoneDemo
                     PlayOrPauseProcess();
                     break;
                 case "stop":
-                    Main(); // chuyen ve ham main
-                    //StopProcess();
+                    StopProcess();
                     break;
                 case "next":
                     NextProcess();
@@ -284,9 +277,10 @@ namespace PocketSphinxWindowsPhoneDemo
                     if (isAvailable == false) // truong hop dang o list, ma noi list tiep, no se stop han, vi khong navigate lai, nen can kiem tra
                     ListProcess();
                     break;
-                //case "option":
-                //    SettingProcess();
-                //    break;
+                case "option":
+                    if (isAvailable == false)
+                    SettingProcess();
+                    break;
                 default:
                     break;
             }

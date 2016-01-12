@@ -15,56 +15,69 @@ namespace PocketSphinxWindowsPhoneDemo
 {
     public partial class ListSongPage : PhoneApplicationPage
     {
-        MediaLibrary library = new MediaLibrary();
-        SongCollection songs;
-        ObservableCollection<AddSong> source { get; set; }
+        MediaLibrary _MediaLibrary = new MediaLibrary();
+        SongCollection _Song;
+        ObservableCollection<ArrSong> _SourceSong { get; set; }
+        ObservableCollection<ArrSong> _SourceArtist { get; set; }
         UIElement uiElement;
         String ArrAlbum, ArrArtist;
         Record record;
         public ListSongPage()
         {
             InitializeComponent();
-            source = new ObservableCollection<AddSong>();
-            songs = library.Songs;
+            _SourceSong = new ObservableCollection<ArrSong>();
+            _SourceArtist = new ObservableCollection<ArrSong>();
+            _Song = _MediaLibrary.Songs;
             GroupSong();
             GroupAlbum();
             GroupArtist();
             record = new Record(this);
-            Record.isOtherPage = true;
             record.isAvailable = true;
         }
 
         void GroupSong()
         {
-            if (source != null)
-                source.Clear();
-            for (int i = 0; i < songs.Count; i++)
+            if (_SourceSong != null)
+                _SourceSong.Clear();
+            for (int i = 0; i < _Song.Count; i++)
             {
-                AddSong add = new AddSong(songs[i].Name.ToString(), songs[i].Artist.ToString(), songs[i].Album.ToString());
-                source.Add(add);
+                ArrSong add = new ArrSong(_Song[i].Name.ToString(), _Song[i].Artist.ToString(), _Song[i].Album.ToString());
+                _SourceSong.Add(add);
             }
 
-            List<AlphaKeyGroup<AddSong>> DataSource = AlphaKeyGroup<AddSong>.CreateGroups(source,
+            _SourceArtist = _SourceSong;
+            for (int i = 0; i < _SourceArtist.Count - 1; i++)
+            {
+                for (int j = i + 1; j < _SourceArtist.Count; j++)
+                {
+                    if (_SourceArtist[i].Artist.ToString() == _SourceArtist[j].Artist.ToString())
+                    {
+                        _SourceArtist.Remove(_SourceArtist[i]);
+                    }
+                }
+            }
+
+            List<AlphaKeyGroup<ArrSong>> DataSource = AlphaKeyGroup<ArrSong>.CreateGroups(_SourceSong,
                 System.Threading.Thread.CurrentThread.CurrentUICulture,
-                (AddSong s) => { return s.Song; }, true);
+                (ArrSong s) => { return s.Song; }, true);
 
             AddrSong.ItemsSource = DataSource;
         }
 
         void GroupAlbum()
         {
-            List<AlphaKeyGroup<AddSong>> DataSource = AlphaKeyGroup<AddSong>.CreateGroups(source,
+            List<AlphaKeyGroup<ArrSong>> DataSource = AlphaKeyGroup<ArrSong>.CreateGroups(_SourceSong,
               System.Threading.Thread.CurrentThread.CurrentUICulture,
-              (AddSong s) => { return s.Album; }, true);
+              (ArrSong s) => { return s.Album; }, true);
 
             AddrAlbum.ItemsSource = DataSource;
         }
 
         void GroupArtist()
         {
-            List<AlphaKeyGroup<AddSong>> DataSource = AlphaKeyGroup<AddSong>.CreateGroups(source,
+            List<AlphaKeyGroup<ArrSong>> DataSource = AlphaKeyGroup<ArrSong>.CreateGroups(_SourceArtist,
               System.Threading.Thread.CurrentThread.CurrentUICulture,
-              (AddSong s) => { return s.Artist; }, true);
+              (ArrSong s) => { return s.Artist; }, true);
 
             AddrArtist.ItemsSource = DataSource;
         }
@@ -73,7 +86,7 @@ namespace PocketSphinxWindowsPhoneDemo
         {
             TextBlock tb = (TextBlock)sender;
             int index = -1;
-            foreach (var number in library.Songs)
+            foreach (var number in _MediaLibrary.Songs)
             {
                 index++;
                 if (number.Name.Contains(tb.Text))
@@ -82,8 +95,10 @@ namespace PocketSphinxWindowsPhoneDemo
                     break;
                 }
             }
-            string uri = string.Format("/MainPage.xaml?index={0}", index+1);
+            string uri = string.Format("/MainPage.xaml?index={0}", index);
             NavigationService.Navigate(new Uri(uri, UriKind.Relative));
+            record.StopNativeRecorder();
+            record.StopSpeechRecognizerProcessing();
         }
 
         private void Artist_Tapped(object sender, System.Windows.Input.GestureEventArgs e)
@@ -107,9 +122,9 @@ namespace PocketSphinxWindowsPhoneDemo
                             if (textblock.Name == "tbArtist")
                             {
                                 artist = textblock.Text;
-                                for (int i = 0; i < songs.Count; i++)
+                                for (int i = 0; i < _Song.Count; i++)
                                 {
-                                    if (songs[i].Artist.ToString() == artist)
+                                    if (_Song[i].Artist.ToString() == artist)
                                         ArrArtist += i.ToString() + "-";
                                 }
                             }
@@ -126,7 +141,7 @@ namespace PocketSphinxWindowsPhoneDemo
             ArrArtist = ArrArtist.Substring(0, ArrArtist.Length - 1);
             if (x < 180)
             {
-                foreach (var number in library.Songs)
+                foreach (var number in _MediaLibrary.Songs)
                 {
                     index++;
                     if (number.Name.Contains(song))
@@ -146,6 +161,8 @@ namespace PocketSphinxWindowsPhoneDemo
                 NavigationService.Navigate(new Uri(uri, UriKind.Relative));
 
             }
+            record.StopNativeRecorder();
+            record.StopSpeechRecognizerProcessing();
         }
 
         private void Album_Tapped(object sender, System.Windows.Input.GestureEventArgs e)
@@ -170,9 +187,9 @@ namespace PocketSphinxWindowsPhoneDemo
                             if (textblock.Name == "tbAlbum")
                             {
                                 album = textblock.Text;
-                                for (int i = 0; i < songs.Count; i++)
+                                for (int i = 0; i < _Song.Count; i++)
                                 {
-                                    if (songs[i].Album.ToString() == album)
+                                    if (_Song[i].Album.ToString() == album)
                                         ArrAlbum += i.ToString() + "-";
                                 }
                             }
@@ -191,7 +208,7 @@ namespace PocketSphinxWindowsPhoneDemo
             ArrAlbum = ArrAlbum.Substring(0, ArrAlbum.Length - 1);
             if (x < 180)
             {
-                foreach (var number in library.Songs)
+                foreach (var number in _MediaLibrary.Songs)
                 {
                     index++;
                     if (number.Name.Contains(song))
@@ -208,42 +225,12 @@ namespace PocketSphinxWindowsPhoneDemo
             else
             {
                 string kind = "album";
-                string uri = string.Format("/Songs.xaml?album={0}&&kind={1}&&ArrAlbum={2}", album, kind, ArrAlbum);// sang trang song group theo album
+                string uri = string.Format("/PlaylistPage.xaml?album={0}&&kind={1}&&ArrAlbum={2}", album, kind, ArrAlbum);// sang trang song group theo album
                 NavigationService.Navigate(new Uri(uri, UriKind.Relative));
 
             }
-        }
-
-        private async void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
-        {
-            // Initializing
-            await record.InitialzeSpeechRecognizer();
-            record.InitializeAudioRecorder();
-
-            //// Start processes
-            record.StartSpeechRecognizerProcessing();
-            record.StartNativeRecorder();
-
-            //StateMessageBlock.Text = "ready for use";
-        }
-        
-        private void AlbumTB_Tapped(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            TextBlock tb = (TextBlock)sender;
-            try
-            {
-                foreach (var number in library.Songs)
-                {
-                    if (number.Name.Contains(tb.TextDecorations.ToString()))
-                    {
-                        MediaPlayer.Play(number);
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
-            }
+            record.StopNativeRecorder();
+            record.StopSpeechRecognizerProcessing();
         }
 
         private async void listSong_Loaded(object sender, RoutedEventArgs e)
@@ -255,14 +242,24 @@ namespace PocketSphinxWindowsPhoneDemo
             record.StartSpeechRecognizerProcessing();
             record.StartNativeRecorder();
         }
+
+        protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
+        {
+
+            e.Cancel = true;
+
+            record.StopNativeRecorder();
+            record.StopSpeechRecognizerProcessing();
+            NavigationService.GoBack();
+        }
     }
-    public class AddSong
+    public class ArrSong
     {
         public string Song { get; set; }
         public string Artist { get; set; }
         public string Album { get; set; }
 
-        public AddSong(string song, string artist, string album)
+        public ArrSong(string song, string artist, string album)
         {
             this.Song = song;
             this.Album = album;

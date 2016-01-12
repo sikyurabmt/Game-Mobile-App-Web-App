@@ -45,7 +45,7 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,105">
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,105" Loaded="Setting_Loaded">
             <Grid HorizontalAlignment="Left" Height="135" Margin="10,10,0,0" VerticalAlignment="Top" Width="436">
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Playback" VerticalAlignment="Top" FontSize="30" FontFamily="Segoe WP Black"/>
                 <RadioButton x:Name="rbtn_playback_order" Content="Order" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top"/>

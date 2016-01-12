@@ -15,57 +15,60 @@ namespace PocketSphinxWindowsPhoneDemo
 {
     public partial class PlaylistPage : PhoneApplicationPage
     {
-        MediaLibrary library = new MediaLibrary();
-        SongCollection songs;
-        ObservableCollection<AddSong1> source { get; set; }
+        MediaLibrary _MediaLibrary = new MediaLibrary();
+        SongCollection _Songs;
+        ObservableCollection<ArrSongGrouped> _SourceSongGrouped { get; set; }
         String album, artist, ArrAlbum, ArrArtist;
         String kind;
+        Record record;
         public PlaylistPage()
         {
             InitializeComponent();
-            source = new ObservableCollection<AddSong1>();
-            songs = library.Songs;
+            _SourceSongGrouped = new ObservableCollection<ArrSongGrouped>();
+            _Songs = _MediaLibrary.Songs;
+            record = new Record(this);
+            record.isAvailable = true;
         }
 
 
         void GroupSong_Album()
         {
-            if (source != null)
-                source.Clear();
-            for (int i = 0; i < songs.Count; i++)
+            if (_SourceSongGrouped != null)
+                _SourceSongGrouped.Clear();
+            for (int i = 0; i < _Songs.Count; i++)
             {
-                if (songs[i].Album.ToString() == album)
+                if (_Songs[i].Album.ToString() == album)
                 {
-                    AddSong1 add = new AddSong1(songs[i].Name.ToString(), songs[i].Artist.ToString(), songs[i].Album.ToString());
-                    source.Add(add);
+                    ArrSongGrouped add = new ArrSongGrouped(_Songs[i].Name.ToString(), _Songs[i].Artist.ToString(), _Songs[i].Album.ToString());
+                    _SourceSongGrouped.Add(add);
                 }
 
             }
 
-            List<AlphaKeyGroup<AddSong1>> DataSource = AlphaKeyGroup<AddSong1>.CreateGroups(source,
+            List<AlphaKeyGroup<ArrSongGrouped>> DataSource = AlphaKeyGroup<ArrSongGrouped>.CreateGroups(_SourceSongGrouped,
                 System.Threading.Thread.CurrentThread.CurrentUICulture,
-                (AddSong1 s) => { return s.Song; }, true);
+                (ArrSongGrouped s) => { return s.Song; }, true);
 
             AddrSong1.ItemsSource = DataSource;
         }
 
         void GroupSong_Artist()
         {
-            if (source != null)
-                source.Clear();
-            for (int i = 0; i < songs.Count; i++)
+            if (_SourceSongGrouped != null)
+                _SourceSongGrouped.Clear();
+            for (int i = 0; i < _Songs.Count; i++)
             {
-                if (songs[i].Artist.ToString() == artist)
+                if (_Songs[i].Artist.ToString() == artist)
                 {
-                    AddSong1 add = new AddSong1(songs[i].Name.ToString(), songs[i].Artist.ToString(), songs[i].Album.ToString());
-                    source.Add(add);
+                    ArrSongGrouped add = new ArrSongGrouped(_Songs[i].Name.ToString(), _Songs[i].Artist.ToString(), _Songs[i].Album.ToString());
+                    _SourceSongGrouped.Add(add);
                 }
 
             }
 
-            List<AlphaKeyGroup<AddSong1>> DataSource = AlphaKeyGroup<AddSong1>.CreateGroups(source,
+            List<AlphaKeyGroup<ArrSongGrouped>> DataSource = AlphaKeyGroup<ArrSongGrouped>.CreateGroups(_SourceSongGrouped,
                 System.Threading.Thread.CurrentThread.CurrentUICulture,
-                (AddSong1 s) => { return s.Song; }, true);
+                (ArrSongGrouped s) => { return s.Song; }, true);
 
             AddrSong1.ItemsSource = DataSource;
         }
@@ -75,7 +78,7 @@ namespace PocketSphinxWindowsPhoneDemo
             TextBlock tb = (TextBlock)sender;
             int index = -1;
 
-            foreach (var number in library.Songs)
+            foreach (var number in _MediaLibrary.Songs)
             {
                 index++;
                 if (number.Name.Contains(tb.Text))
@@ -87,13 +90,30 @@ namespace PocketSphinxWindowsPhoneDemo
             }
             string uri = string.Format("/MainPage.xaml?ArrAlbum={0}&&ArrArtist={1}&&index={2}", ArrAlbum, ArrArtist, index);
             NavigationService.Navigate(new Uri(uri, UriKind.Relative));
+            record.StopNativeRecorder();
+            record.StopSpeechRecognizerProcessing();
 
         }
 
+        protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
+        {
+
+            e.Cancel = true;
+
+            record.StopNativeRecorder();
+            record.StopSpeechRecognizerProcessing();
+            NavigationService.GoBack();
+        }
 
         #region Page Load
-        private void Song_loaded(object sender, RoutedEventArgs e)
+        private async void Song_loaded(object sender, RoutedEventArgs e)
         {
+            await record.InitialzeSpeechRecognizer();
+            record.InitializeAudioRecorder();
+
+            //// Start processes
+            record.StartSpeechRecognizerProcessing();
+            record.StartNativeRecorder();
 
             if (NavigationContext.QueryString.TryGetValue("album", out album))
             {
@@ -129,13 +149,13 @@ namespace PocketSphinxWindowsPhoneDemo
         #endregion
 
     }
-    public class AddSong1
+    public class ArrSongGrouped
     {
         public string Song { get; set; }
         public string Artist { get; set; }
         public string Album { get; set; }
 
-        public AddSong1(string song, string artist, string album)
+        public ArrSongGrouped(string song, string artist, string album)
         {
             this.Song = song;
             this.Album = album;

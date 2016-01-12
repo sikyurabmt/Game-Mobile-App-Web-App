@@ -36,7 +36,7 @@
             <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Tap="Album_Tapped">
                 <Image Name="YourImage" Height="150" Width="150" Source="Images/play.png"  />
                 <StackPanel Name="text" Orientation="Vertical">
-                    <TextBlock Name="tbAlbum" FontSize="30" FontWeight="Bold" Text="{Binding Album}" Tap="AlbumTB_Tapped" />
+                    <TextBlock Name="tbAlbum" FontSize="30" FontWeight="Bold" Text="{Binding Album}" />
                     <TextBlock Text="{Binding Artist}" />
                     <TextBox Name="Song" Text="{Binding Song}" Visibility="Collapsed" />
                 </StackPanel>
