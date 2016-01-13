@@ -33,7 +33,7 @@ namespace PocketSphinxWindowsPhoneDemo.Recorder
             wasapiAudio = new WasapiAudio();
 
             intervalTimer = new DispatcherTimer();
-            intervalTimer.Interval = TimeSpan.FromMilliseconds(33);
+            intervalTimer.Interval = TimeSpan.FromMilliseconds(100);
             intervalTimer.Tick += new EventHandler(intervalTimer_Tick);
         }
 

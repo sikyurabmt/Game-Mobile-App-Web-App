@@ -107,7 +107,6 @@
     </Compile>
     <Compile Include="PlayManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Record.cs" />
     <Compile Include="Record2.cs" />
     <Compile Include="Recorder\AudioDataEventArgs.cs" />
     <Compile Include="Resources\AppResources.Designer.cs">
@@ -202,12 +201,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\models\hmm\en-us-semi\variances.md5">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\models\lm\weather.dmp">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\models\lm\weather.dmp.md5">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Tiles\picture0.png" />
